@@ -1,0 +1,191 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<title> Planilha de {TIPO_PLANILHA}</title>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" >
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.Valor { text-align: right}
+</style>
+<script language="Javascript"  type="text/JavaScript">
+<!--
+var Focar = null;
+var Economias = [{LISTA_ECONOMIAS}];
+var Alterado = false;
+
+function Salva() {
+ if(Focar!=null && Focar.value != '')
+	 return;
+ document.operacao.oper.value = 'salvar';
+ document.operacao.submit();
+}
+//--
+function Encerra() {
+if(Focar!=null && Focar.value != '')
+	 return false;
+ var i, iLen = Economias.length;
+ var elem, econ;
+ for (i = 0; i < iLen; i++) {
+	econ = Economias[i];
+	elem = document.getElementById(econ[0]);
+	if (elem == null || elem.value == null || elem.value == '') {
+		if (!confirm("A leitura da unidade '"+econ[1]+"' nao foi informada!\nEncerrar assim mesmo?"))
+		{
+			if (elem) {
+				Focar = elem;
+				elem.focus();
+			}
+			return false;
+		}
+	}
+ }
+ if (confirm("Voce confirma o encerramento da digitacao da planilha e o envio dos dados para a administradora?\nATENCAO: Nao sera mais possivel digitar nesta competencia!")) {
+	document.operacao.oper.value = 'encerrar';
+	document.operacao.encerrado.value = 'S';
+	document.operacao.submit();
+ }
+ Focar = null;
+ return false;
+}
+//--
+function ValidaLeitura(elem,econ,leit_ant,leit_atual,consumo) {
+ var nova = elem.value;
+ var ult = leit_atual;
+ if (ult <= 0)
+	ult=leit_ant;
+ if (nova != '') {
+	nova = parseFloat(nova);
+	if (nova < ult) {
+		alert(econ + ': Nova leitura (' + nova + ') nao pode ser menor que a ultima leitura (' + ult + ')!');
+		Focar = elem;
+		elem.focus();
+		return false;
+	}
+	else if (ult > 0 ) {
+		if (consumo <= 0)
+			consumo = 1;
+		if (nova-ult > consumo*3) {
+			 if (!confirm(econ + ': Voce confirma um consumo tao elevado em relacao ao da ultima competencia?')) {
+				Focar = elem;
+				elem.focus();
+				return false;
+			}
+		}
+	}
+ }
+ Alterado=true;
+ Focar = null;
+ return false;
+}
+//--
+function Foco(origem) {
+ if (Focar == null)
+	 return;
+ Focar.focus();
+ if (Focar.value != '')
+	Focar.select();
+ else
+	Focar = null;
+}
+//--
+function Sair() {
+ if (Alterado && confirm("Voce deseja salvar as alteracoes realizadas?"))
+	Salva();
+}
+//-->
+</script>
+</head>
+
+<body onUnload="Sair()">
+
+<form name="operacao" action="planilhaGas.php" method="post">
+<input name="oper" value="" type="hidden">
+<input name="PROD" value="{PROD}" type="hidden">
+<input name="id" value="{ID}" type="hidden">
+<input name="CHAVE" value="{CHAVE}" type="hidden">
+<input name="ASSESSOR" value="{ASSESSOR}" type="hidden">
+<input name="btn" value="{BTN}" type="hidden">
+<input name="encerrado" value="{ENCERRADO}" type="hidden">
+
+<table>
+<tr>
+	<th>DIGITA&Ccedil;&Atilde;O DO CONSUMO DE {TIPO_PLANILHA}</th>
+</tr>
+<tr>
+	<td>
+	<table>
+	<tr>
+		<td>CONDOM&Iacute;NIO:</td>
+		<td>{CODCONDOM} - {NOMECONDOM}</td>
+	</tr>
+	<tr>
+		<td>BLOCO:</td>
+		<td>{CODBLOCO} - {NOMEBLOCO}</td>
+	</tr>
+	<tr>
+		<td>COMPET&Ecirc;NCIA:</td>
+		<td>{COMPETENCIA}</td>
+	</tr>
+	<tr>
+		<td>VENCIMENTO:</td>
+		<td>{DIAVENCDOC}</td>
+	</tr>
+	<tr>
+		<td>ASSESSOR:</td>
+		<td>{ASSESSOR}</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr class="NaoImprime">
+	<td align="right">
+		<input type="button" name="imprimir" value="Imprimir" onclick="javascript:window.print();" title="Imprime a planilha.">
+	</td>
+</tr>
+<tr>
+	<td>
+	<table border=1>
+	<tr>
+		<th rowspan=2>UNIDADE</th>
+		<th colspan=3>COMPETENCIA ANTERIOR</th>
+		<th rowspan=2>LEITURA<br>ATUAL</th>
+	</tr>
+	<tr>
+		<th colspan=2>Leituras do per&iacute;odo</th>
+		<th>Consumo</th>
+	</tr>
+<!-- BEGIN DYNAMIC BLOCK: LEITURAS -->
+	<tr>
+		<td>{CODECONOMIA}</td>
+		<td class="Valor">{LEITURAANT}</td>
+		<td class="Valor">{LEITURAATU}</td>
+		<td class="Valor">{CONSUMO}</td>
+		<td>
+			<input class="Valor" type="text" id="{IDECONOMIA}" name="ECON_{IDECONOMIA}" value="{NOVALEITURA}" maxlength="10"  size="10" {READONLY} onFocus="javascript:Foco('I')" onChange="javascript:ValidaLeitura(this,'{CODECONOMIA}',{LEITURAANT},{LEITURAATU},{CONSUMO})">
+		</td>
+	</tr>
+<!-- END DYNAMIC BLOCK: LEITURAS -->
+	</table>
+	</td>
+</tr>
+<!-- BEGIN DYNAMIC BLOCK: BOTOES -->
+<tr class="NaoImprime">
+	<td>
+	<table width="100%">
+	<tr>
+		<td width="50%" align="left">
+			<input type="button" name="salvar" value="Salvar" onclick="javascript:Salva();" onFocus="javascript:Foco('S')" title="Salva os dados mantendo a planilha aberta para continuar digitando posteriormente!">
+		</td>
+		<td align="right">
+			<input type="button" name="enviar" value="Encerrar e Enviar" onclick="javascript:Encerra();" onFocus="javascript:Foco('E')" title="Encerra a digita&ccedil;&atilde;o da planilha e envia os dados para a administradora.\nATENCAO: N&atilde;o ser&aacute; mais poss&iacute;vel digitar nesta compet&ecirc;ncia!">
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<!-- END DYNAMIC BLOCK: BOTOES -->
+</table>
+</form>
+
+</body>
+</html>

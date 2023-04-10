@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>ANEXOS</conteudo>
+ </resultado>
+ 
+ <informacoes_gerais>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <tipo>{TIPO_RELACIONAMENTO}</tipo>
+  <codigo>{CODIGO}</codigo>
+  <data_atual>{DATA_ATUAL}</data_atual>
+</informacoes_gerais>
+
+ <anexos>
+<!-- BEGIN DYNAMIC BLOCK: CATEGORIA -->
+<!-- BEGIN DYNAMIC BLOCK: ANEXO -->
+	<anexo>
+	 <categoria><![CDATA[{CATEG_ANEXO}]]></categoria>
+	 <formato>{ANEXO_TIPO_ALT}</formato>
+	 <urls>
+<!-- BEGIN DYNAMIC BLOCK: URL -->
+	  <url>
+		<descricao><![CDATA[{ANEXO_DESCR}]]></descricao>
+		<link><![CDATA[{ANEXO_LINK}]]></link>
+	  </url>
+<!-- END DYNAMIC BLOCK: URL -->
+	 </urls>
+	</anexo>
+<!-- END DYNAMIC BLOCK: ANEXO -->
+<!-- END DYNAMIC BLOCK: CATEGORIA -->
+ </anexos>
+</sessao>

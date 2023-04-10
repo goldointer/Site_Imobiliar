@@ -1,0 +1,89 @@
+.normalObrigatoria {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 15px;
+	color: #333333;
+	background-color: #FFFF00;
+}
+.normal {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 15px;
+	color: #333333;
+}
+.normal a {
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+.normal a:hover {
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FF6600;
+}
+.negrito {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: justify;
+	color: #333333;
+}
+.Chamada {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #003300;
+	text-decoration: none;
+}
+.Chamada a {
+	color: #FF6600;
+	text-decoration: none;
+}
+.Chamada a:hover {
+	font-weight: bold;
+	color: #003300;
+	text-decoration: none;
+}
+@media print {
+	.NaoImprime { display: none }
+}
+.menu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	text-decoration: none;
+	color: #666666;
+}
+.menu a {
+	text-decoration: none;
+	color: #666666;
+}
+
+.menu a:hover {
+	text-decoration: none;
+	color: #FF6600;
+}
+body {
+	scrollbar-face-color: #ffffff;
+	scrollbar-shadow-color: #666666;
+	scrollbar-highlight-color: #666666;
+	scrollbar-3dlight-color: #ffffff;
+	scrollbar-darkshadow-color: #ffffff;
+	scrollbar-track-color: #ffffff;
+	scrollbar-arrow-color: #666666;
+}

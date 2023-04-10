@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<!-- {DICA} -->
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>{CONTEUDO}</conteudo>
+ </resultado>
+ 
+ <informacoes_gerais>
+  <titulo>INFORMATIVO DOS VALORES ACUMULADOS DO ANO</titulo>
+  <ano_base>{INFO_ANO}</ano_base>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <imobiliaria_nome><![CDATA[{IMOBILIARIA_NOME}]]></imobiliaria_nome>
+  <imobiliaria_cnpj>{IMOBILIARIA_CNPJ}</imobiliaria_cnpj>
+  <data_processamento>{DATA_ARQUIVO}</data_processamento>
+  <data_atual>{DATA_ATUAL}</data_atual>
+</informacoes_gerais>
+ 
+ <informacoes_pessoa>
+  <cliente_nome><![CDATA[{CLIENTE_NOME}]]></cliente_nome>
+  <cliente_codigo>{CLIENTE_COD}</cliente_codigo>
+  <cliente_cpf_cnpj>{CLIENTE_CNPJ}</cliente_cpf_cnpj>
+  <cliente_endereco><![CDATA[{CLIENTE_ENDER}]]></cliente_endereco>
+  <cliente_cep>{CLIENTE_CEP}</cliente_cep>
+  <cliente_bairro><![CDATA[{CLIENTE_BAIRRO}]]></cliente_bairro>
+  <cliente_cidade><![CDATA[{CLIENTE_CIDADE}]]></cliente_cidade>
+  <cliente_uf>{CLIENTE_UF}</cliente_uf>
+</informacoes_pessoa>
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_RESUMO_PF --> 
+<resumo_pf>
+	<titulo>RESUMO DOS VALORES - PESSOA FISICA</titulo>
+	<valores>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_PF --> 
+		<valor>
+			<mes>{PF_MES}</mes>
+			<aluguel>{PF_ALUGUEL}</aluguel>
+			<multa>{PF_MULTA}</multa>
+			<taxa_adm>{PF_TX_ADM}</taxa_adm>
+			<liquido>{PF_LIQUIDO}</liquido>
+		</valor>
+<!-- END DYNAMIC BLOCK: RESUMO_PF -->
+	</valores>
+	<total_resumo>
+		<descricao>{PF_TOT_DESCR}</descricao>
+		<aluguel>{PF_TOT_ALUGUEL}</aluguel>
+		<multa>{PF_TOT_MULTA}</multa>
+		<taxa_adm>{PF_TOT_TX_ADM}</taxa_adm>
+		<liquido>{PF_TOT_LIQUIDO}</liquido>
+	</total_resumo>
+</resumo_pf>
+<!-- END DYNAMIC BLOCK: EXIBE_RESUMO_PF --> 
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_RESUMO_PJ --> 
+<resumo_pj>
+	<titulo>RESUMO DOS VALORES - PESSOA JURIDICA</titulo>
+	<valores>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_PJ --> 
+		<valor>
+			<locatario_cpf_cnpj>{PJ_LOCAT_CNPJ}</locatario_cpf_cnpj>
+			<locatario_nome><![CDATA[{PJ_LOCAT_NOME}]]></locatario_nome>
+			<aluguel_multa>{PJ_ALUGUEL_MULTA}</aluguel_multa>
+			<taxa_adm>{PJ_TX_ADM}</taxa_adm>
+			<liquido>{PJ_LIQUIDO}</liquido>
+			<ir_fonte>{PJ_IR_FONTE}</ir_fonte>
+		</valor>
+<!-- END DYNAMIC BLOCK: RESUMO_PJ -->
+	</valores>
+	<total_resumo>
+		<descricao>{PJ_TOT_DESCR}</descricao>
+		<aluguel_multa>{PJ_TOT_ALUGUEL_MULTA}</aluguel_multa>
+		<taxa_adm>{PJ_TOT_TX_ADM}</taxa_adm>
+		<liquido>{PJ_TOT_LIQUIDO}</liquido>
+		<ir_fonte>{PJ_TOT_IR_FONTE}</ir_fonte>
+	</total_resumo>
+</resumo_pj>
+<!-- END DYNAMIC BLOCK: EXIBE_RESUMO_PJ --> 
+<imoveis>
+<!-- BEGIN DYNAMIC BLOCK: IMOVEL -->
+ <imovel>
+  <imovel_codigo>{IMOV_COD}</imovel_codigo>
+  <imovel_endereco><![CDATA[{IMOV_ENDER}]]></imovel_endereco>
+  <imovel_tipo><![CDATA[{IMOV_TIPO}]]></imovel_tipo>
+  <locatarios>
+<!-- BEGIN DYNAMIC BLOCK: LOCATARIO -->
+   <locatario>
+	   <locatario_nome><![CDATA[{LOCAT_NOME}]]></locatario_nome>
+    <locatario_cpf_cnpj>{LOCAT_CNPJ}</locatario_cpf_cnpj>
+    <valores>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_LOCAT -->
+     <valor>
+      <mes>{LOCAT_MES}</mes>
+      <aluguel>{LOCAT_ALUGUEL}</aluguel>
+      <multa>{LOCAT_MULTA}</multa>
+      <taxa_adm>{LOCAT_TX_ADM}</taxa_adm>
+      <ir_fonte>{LOCAT_IR_FONTE}</ir_fonte>
+     </valor>
+<!-- END DYNAMIC BLOCK: RESUMO_LOCAT -->
+    </valores>
+
+    <total_locatario>
+		<descricao><![CDATA[{LOCAT_TOT_DESCR}]]></descricao>
+     <aluguel>{LOCAT_TOT_ALUGUEL}</aluguel>
+     <multa>{LOCAT_TOT_MULTA}</multa>
+     <taxa_adm>{LOCAT_TOT_TX_ADM}</taxa_adm>
+     <ir_fonte>{LOCAT_TOT_IR_FONTE}</ir_fonte>
+    </total_locatario>
+   </locatario>
+<!-- END DYNAMIC BLOCK: LOCATARIO -->
+  </locatarios>
+
+  <total_imovel>
+	  <descricao><![CDATA[{IMOV_TOT_DESCR}]]></descricao>
+   <aluguel>{IMOV_TOT_ALUGUEL}</aluguel>
+   <multa>{IMOV_TOT_MULTA}</multa>
+   <taxa_adm>{IMOV_TOT_TX_ADM}</taxa_adm>
+   <ir_fonte>{IMOV_TOT_IR_FONTE}</ir_fonte>
+  </total_imovel>
+ </imovel>
+<!-- END DYNAMIC BLOCK: IMOVEL -->
+</imoveis>
+
+</sessao>

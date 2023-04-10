@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<!-- {DICA} -->
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>{CONTEUDO}</conteudo>
+ </resultado>
+ 
+ <informacoes_gerais>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <assessor_nome><![CDATA[{ASSESSOR_NOME}]]></assessor_nome>
+  <condominio_codigo>{COND_COD}</condominio_codigo>
+  <condominio_nome><![CDATA[{COND_NOME}]]></condominio_nome>
+  <blocobase_codigo><![CDATA[{BLOCOBASE_COD}]]></blocobase_codigo>
+  <data_processamento>{DATA_ARQUIVO}</data_processamento>
+  <data_atual>{DATA_ATUAL}</data_atual>
+</informacoes_gerais>
+ 
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_INADIMP -->
+<inadimplencias>
+<!-- BEGIN DYNAMIC BLOCK: INADIMP -->
+  <inadimplencia>
+   <data>{DATA}</data>
+   <pessoa_codigo>{COD_PESSOA}</pessoa_codigo>
+   <economia_codigo>{ID_ECON}</economia_codigo>
+   <economia_tipo>{TIPO_ECON}</economia_tipo>
+   <bloco_codigo><![CDATA[{BLOCO_COD}]]></bloco_codigo>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <valor_original>{DEBT}</valor_original>
+   <multa>{MULTA}</multa>
+   <juros>{JUROS}</juros>
+   <correcao>{CORRECAO}</correcao>
+   <valor_corrigido>{CRED}</valor_corrigido>
+   <tipo_doc>{TIPO_DOC}</tipo_doc>
+   <competencia>{COMPET}</competencia>
+   <nosso_numero>{NOSSO_NRO}</nosso_numero>
+   <advogado_nome><![CDATA[{ADVOGADO_NOME}]]></advogado_nome>
+  </inadimplencia>
+<!-- END DYNAMIC BLOCK: INADIMP -->
+ </inadimplencias>
+<!-- END DYNAMIC BLOCK: EXIBE_INADIMP -->
+
+</sessao>

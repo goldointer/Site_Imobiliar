@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>imobili&aacute;ria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/javascript" src="modelos/pesq_imoveis/pesqImovUnif.js"></script>
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="javascript:VerCaracteristicas();VerQuartos()">
+
+<table width="500" border="0" cellspacing="0" cellpadding="0" height="19" style="background-color: rgb(120, 120, 120);">
+  <tbody>
+	<tr>
+	  <td style="text-align: center; background-color: rgb(102, 102, 102);" wrap>
+	  <span style="font-weight: bold; color: rgb(255, 255, 102);">PESQUISA DE IM&Oacute;VEIS PARA VENDA EM {NOMECIDADE}</span><br> <!-- {RES_COM} -->
+	  </td>
+	</tr>
+  </tbody>
+</table>
+
+<table width="500" border="1" cellspacing="0" cellpadding="0" height="30" style="background-color: rgb(153, 153, 153);">
+  <tbody>
+	<tr align="center" valign="middle">
+	  <td>
+	  <form name="" action="pesqImovRes.php" method="post">
+		<input type="hidden" id="lv" name="lv" value="V">
+		<input type="hidden" id="selcidade" name="selcidade" value="{CIDADE}">
+		<table border="0" cellpadding="5" cellspacing="3" width="90%">
+		  <tbody>
+			<tr style="background-color: rgb(120, 120, 120);">
+			  <td>
+			  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#ffffff">
+				<font face="Arial, Helvetica, sans-serif">
+				Selecione as chaves para a consulta e aperte o bot&atilde;o.
+				</font></font>
+			  </div>
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+
+		<table border="0" cellpadding="5" cellspacing="3" width="100%">
+		  <tbody>
+			<tr height="80">
+			  <td width="90" align="right">
+			  <b><font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="1">
+			  Tipo de Im&oacute;vel:</font></b></div>
+			  </td>
+			  <td>
+			  <table width="100%">
+				<tbody>
+				  <tr>
+					<td>
+					<select name="seltipo" id="seltipo" onchange="javascript:VerQuartos()">
+<!-- BEGIN DYNAMIC BLOCK: TIPOS -->
+					<option value="{TVALOR}">{TOPCAO}</option>
+<!-- END DYNAMIC BLOCK: TIPOS -->
+					</select>
+					</td>
+					<td>
+						<table>
+						<tr id="tem_quartos" style="visibility:hidden">
+							<td align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">Dormit&oacute;rios:</font></td>
+							<td>
+							  <SELECT name="nro_quartos">
+								<OPTION VALUE=0 selected>Todos</OPTION>
+								<OPTION VALUE=1>1</OPTION>
+								<OPTION VALUE=2>2</OPTION>
+								<OPTION VALUE=3>3</OPTION>
+								<OPTION VALUE=4>4 ou mais</OPTION>
+							  </SELECT>
+							</td>
+						</tr>
+						<tr id="tem_garagem" style="visibility:hidden">
+							<td align="right"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">Garagem:</font></td>
+							<td>
+							  <SELECT name="nro_vagas">
+								<OPTION VALUE=0 selected>Tanto faz</OPTION>
+								<OPTION VALUE=1>1 ou mais vagas</OPTION>
+								<OPTION VALUE=2>2 ou mais vagas</OPTION>
+								<OPTION VALUE=3>3 ou mais vagas</OPTION>
+								<OPTION VALUE=4>4 ou mais vagas</OPTION>
+							  </SELECT>
+							</td>
+						</tr>
+						</table>
+					</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  </td>
+			</tr>
+
+			<tr id="divcarac1">
+			  <td width="90" align="right" valign="top">
+			  <b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">
+			  Caracter&iacute;sticas:</font></b>
+			  </td>
+			  <td>
+			  <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+<!-- BEGIN DYNAMIC BLOCK: CARAC -->
+				<input type="checkbox" id="selcarac" name="cbCarac[]" value="{COD}">
+				<font color="#ffffff">{DESCR}</font><br>
+<!-- END DYNAMIC BLOCK: CARAC --> 
+			  </font></p>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td width="90" align="right">
+			  <b><font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  <input type="hidden" name="reg_bairro" value="B" checked="checked">
+			  Bairro:</font></b>
+			  <small>(use a tecla control+click do mouse para marcar v&aacute;rios bairros para a pesquisa)</small>
+			  </td>
+			  <td> <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+			  <select name="selbairro[]" multiple="multiple" size="10">
+			  <option selected> - QUALQUER BAIRRO - </option>
+<!-- BEGIN DYNAMIC BLOCK: BAIRROS -->
+			  <option {SELEC} value="{BVALOR}">{BOPCAO}</option>
+<!-- END DYNAMIC BLOCK: BAIRROS -->
+			  </select>
+			  </font><br>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td width="90" align="right">
+			  <b><font face="tahoma,arial" size="2">
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  Faixade Pre&ccedil;o:</font></font></b></div>
+			  </td>
+			  <td>
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif">R$</font>
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  <input maxlength="8" name="faixa1" size="8">,00 <b>A</b> R$ </font>
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  <input maxlength="8" name="faixa2" size="8">,00</font>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td colspan=2 align="center">
+				<input type="submit" value=" Pesquisar Im&oacute;veis " name="btnPesq">
+			  </td>
+			</tr>
+
+		  </tbody>
+		</table>
+	  </form>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+<br>
+<br>
+</body>
+<!-- buscavenda.shtml -->
+</html>

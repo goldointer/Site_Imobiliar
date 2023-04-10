@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>imobili&aacute;ria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #resumo TR {
+	background-color: #666666
+  }
+  #resumo TD {
+	WIDTH: 50%; HEIGHT: 20px; COLOR: #ffcc33; FONT-STYLE: normal; FONT-SIZE: 10px; FONT-WEIGHT: bolder; TEXT-ALIGN: left
+  }
+  #lista TABLE {
+	BACKGROUND-COLOR: #ffffff; FONT-STYLE: normal; FONT-SIZE: 12px; FONT-WEIGHT: bolder; TEXT-ALIGN: center
+  }
+  #lista TH {
+	COLOR: #ffffff; FONT-STYLE: normal; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-ALIGN: center
+  }
+  #lista TD {
+	COLOR: #000000; FONT-STYLE: normal; FONT-SIZE: 10px; FONT-WEIGHT: normal
+  }
+  </style>
+
+  <script language="Javascript">
+  <!--
+	// Chamada que abre janela "pop-up" com fotos ou informacoes do imovel.
+	// A chamada window.open() deve ser parametrizada conforme o projeto visual.
+	function wopen(cod, pos, foto)
+	{
+		url = "exibeFotos.php?cod=" + cod + "&codfoto=" + foto + "&p="+ pos + "&lv=L";
+		if (foto != '*')
+			window.open(url,"fotos","width=800,height=600,top=50,left=100,status=0,toolbar=0,resizable=1,scrollbars=1");
+		else
+			window.open(url,"fotos","width=500,height=430,top=50,left=100,status=0,toolbar=0,resizable=0");
+
+		return false;
+	}
+  //-->
+  </script>
+</head>
+
+<body >
+
+<table class="NaoImprime" width="760" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	  <td style="text-align: center; font-size: 12px;" height="20" valign="top">
+		<b>Foram encontrados os seguintes im&oacute;veis para locação que se enquadram na sua pesquisa:</b>
+	  </td>
+	</tr>
+</table>
+
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+	<tr align="center">
+	  <td width="759" valign="top">
+	  <table width="700" border="0" cellspacing="0" cellpadding="0" height="30" bgcolor="#999999">
+		  <tr>
+			<td>
+			  <table id="resumo" width="100%" border="0" cellpadding="5" cellspacing="5">
+				  <tr>
+					<td>
+						{NOMECIDADE}: &nbsp;<font color="#ffffff">{TIPOIMOV}</font>
+					</td>
+					<td>
+						&nbsp;&nbsp;{ACHADOS}
+					</td>
+				  </tr>
+			  </table>
+
+			  <form>
+			  <table id="lista" width="100%" border="0" cellpadding="5" cellspacing="2" bgcolor="#869cc6">
+				  <tr bgcolor="#666666">
+					<th width="7%">C&oacute;digo</th>
+					<th width="15%">Bairro</th>
+					<th width="45%" {EXIBE_ENDER}>Endere&ccedil;o</th>
+					<th width="8%">&Aacute;rea(m&sup2;)</th>
+					<th align="center" width="15%">Aluguel</th>
+					<th align="center" width="5%">&nbsp;</th>
+				  </tr>
+<!-- BEGIN DYNAMIC BLOCK: IMOV_RES --> 
+				  <tr bgcolor="#ededed" border="0">
+					<td align="right">{COD}</td>
+					<td align="center">{BAIRRO}</td>
+					<td align="left" {EXIBE_ENDER}>&nbsp;{END}</td>
+					<td align="center">{AREA}<!--{AREA_TOTAL}--></td>
+					<td align="right">{VAL}&nbsp;</td>
+					<td align="center">
+						<input type="image" class="NaoImprime" src="{_SRC}" border="0" onclick="{_CLICK}" title="{_ALT}">
+					</td>
+				  </tr>
+<!-- END DYNAMIC BLOCK: IMOV_RES -->
+			  </table>
+			  </form>
+		  </td>
+		</tr>
+	  </table>
+	  <br>
+	  </td>
+	</tr>
+</table>
+
+<table class="NaoImprime" width="760" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+	  <td align="center">
+			<input name="voltartela" id="voltartela" value="Nova Consulta" onclick="javascript:history.back();" type="button">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input name="imprimir" id="imprimir" value="Imprimir" onclick="javascript:window.print();" type="button">
+	  </td>
+	</tr>
+</table>
+
+</body>
+<!-- locconsres.shtml -->
+</html>

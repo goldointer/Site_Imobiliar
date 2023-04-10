@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<!-- {DICA} -->
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>{CONTEUDO}</conteudo>
+ </resultado>
+ 
+ <informacoes_gerais>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <assessor_nome><![CDATA[{ASSESSOR_NOME}]]></assessor_nome>
+  <condominio_codigo><![CDATA[{COND_COD}]]></condominio_codigo>
+  <condominio_nome><![CDATA[{COND_NOME}]]></condominio_nome>
+  <bloco_codigo><![CDATA[{BLOCO_COD}]]></bloco_codigo>
+  <bloco_nome><![CDATA[{BLOCO_NOME}]]></bloco_nome>
+  <bloco_endereco><![CDATA[{BLOCO_ENDER}]]></bloco_endereco>
+  <bloco_tipo><![CDATA[{BLOCO_TIPO}]]></bloco_tipo>
+  <blocobase_codigo><![CDATA[{BLOCOBASE_COD}]]></blocobase_codigo>
+  <data_processamento>{DATA_ARQUIVO}</data_processamento>
+  <data_atual>{DATA_ATUAL}</data_atual>
+  <observacoes><![CDATA[{MSG_RODAPE}]]></observacoes>
+</informacoes_gerais>
+ 
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_EXTRATO --> 
+ <lancamentos>
+<!-- BEGIN DYNAMIC BLOCK: EXTRATO --> 
+  <lancamento>
+   <data>{DATA}</data>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <debito>{DEBT}</debito>
+   <credito>{CRED}</credito>
+   <saldo>{SALDO}</saldo>
+   <numero>{NRO_LANCTO}</numero>{IMAGENS_LANCTO}
+  </lancamento>
+<!-- END DYNAMIC BLOCK: EXTRATO -->
+ </lancamentos>
+<!-- END DYNAMIC BLOCK: EXIBE_EXTRATO --> 
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_RESUMO -->
+ <resumo_despesas>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO -->
+  <despesa>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <debito>{DEBT}</debito>
+  </despesa>
+<!-- END DYNAMIC BLOCK: RESUMO -->
+ </resumo_despesas>
+<!-- END DYNAMIC BLOCK: EXIBE_RESUMO -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_RESUMO_REC -->
+ <resumo_receitas>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_REC -->
+  <receita>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <credito>{CRED}</credito>
+  </receita>
+<!-- END DYNAMIC BLOCK: RESUMO_REC -->
+ </resumo_receitas>
+<!-- END DYNAMIC BLOCK: EXIBE_RESUMO_REC -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_RESUMO_ENT -->
+ <resumo_entradas>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_ENT -->
+  <entrada>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <debito>{DEBT}</debito>
+   <credito>{CRED}</credito>
+  </entrada>
+<!-- END DYNAMIC BLOCK: RESUMO_ENT -->
+ </resumo_entradas>
+<!-- END DYNAMIC BLOCK: EXIBE_RESUMO_ENT -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_FUTUROS -->
+<lancamentos_futuros>
+<!-- BEGIN DYNAMIC BLOCK: FUTUROS -->
+  <lancamento>
+   <data>{DATA}</data>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <debito>{DEBT}</debito>
+   <numero>{NRO_LANCTO}</numero>
+  </lancamento>
+<!-- END DYNAMIC BLOCK: FUTUROS -->
+ </lancamentos_futuros>
+<!-- END DYNAMIC BLOCK: EXIBE_FUTUROS -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_INADIMP -->
+<inadimplencias>
+<!-- BEGIN DYNAMIC BLOCK: INADIMP -->
+  <inadimplencia>
+   <data>{DATA}</data>
+   <pessoa_codigo>{COD_PESSOA}</pessoa_codigo>
+   <economia_codigo>{ID_ECON}</economia_codigo>
+   <economia_tipo><![CDATA[{TIPO_ECON}]]></economia_tipo>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <valor_original>{DEBT}</valor_original>
+   <multa>{MULTA}</multa>
+   <juros>{JUROS}</juros>
+   <correcao>{CORRECAO}</correcao>
+   <valor_corrigido>{CRED}</valor_corrigido>
+   <tipo_doc>{TIPO_DOC}</tipo_doc>
+   <competencia>{COMPET}</competencia>
+   <nosso_numero>{NOSSO_NRO}</nosso_numero>
+  </inadimplencia>
+<!-- END DYNAMIC BLOCK: INADIMP -->
+ </inadimplencias>
+<!-- END DYNAMIC BLOCK: EXIBE_INADIMP -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_TOTALDOCS -->
+<controle_docs>
+<!-- BEGIN DYNAMIC BLOCK: TOTALDOCS -->
+  <controle_doc>
+   <quantidade>{DOC_QTDE}</quantidade>
+   <descricao><![CDATA[{DOC_DESCR}]]></descricao>
+   <total>{DOC_TOTAL}</total>
+   <percentual>{DOC_PERCENT}</percentual>
+  </controle_doc>
+<!-- END DYNAMIC BLOCK: TOTALDOCS -->
+ </controle_docs>
+<!-- END DYNAMIC BLOCK: EXIBE_TOTALDOCS -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_LST_CONSULTORES -->
+<lista_consultores>
+<!-- BEGIN DYNAMIC BLOCK: LST_CONSULTORES -->
+  <consultor>
+   <atuacao>{ATUACAO}</atuacao>
+   <nome><![CDATA[{NOME}]]></nome>
+   <email>{EMAIL}</email>
+   <telefone>{TELEFONE}</telefone>
+  </consultor>
+<!-- END DYNAMIC BLOCK: LST_CONSULTORES -->
+ </lista_consultores>
+<!-- END DYNAMIC BLOCK: EXIBE_LST_CONSULTORES -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_LST_NOTAS_FISCAIS -->
+<lista_notasfiscais>
+<!-- BEGIN DYNAMIC BLOCK: LST_NOTAS_FISCAIS -->
+  <notafiscal>
+   <data_pagamento>{DATAPAGTO}</data_pagamento>
+   <descricao><![CDATA[{DESCRICAO}]]></descricao>
+   <valor_original>{VLRORIGINAL}</valor_original>
+   <retencao_inss>{RETENCAOINSS}</retencao_inss>
+   <retencao_irf>{RETENCAOIRF}</retencao_irf>
+   <retencao_federal>{RETENCAOFEDERAL}</retencao_federal>
+   <retencao_issqn>{RETENCAOISSQN}</retencao_issqn>
+   <valor_nota>{VALORNOTA}</valor_nota>
+   <desconto>{DESCONTO}</desconto>
+  </notafiscal>
+<!-- END DYNAMIC BLOCK: LST_NOTAS_FISCAIS -->
+ </lista_notasfiscais>
+<!-- END DYNAMIC BLOCK: EXIBE_LST_NOTAS_FISCAIS -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_LST_MANUTENCOES -->
+<lista_manutencoes>
+<!-- BEGIN DYNAMIC BLOCK: LST_MANUTENCOES -->
+  <manutencao>
+   <vencimento>{DATAFIM}</vencimento>
+   <fornecedor><![CDATA[{FORNECEDOR}]]></fornecedor>
+   <operacao><![CDATA[{OPERACAO}]]></operacao>
+  </manutencao>
+<!-- END DYNAMIC BLOCK: LST_MANUTENCOES -->
+ </lista_manutencoes>
+<!-- END DYNAMIC BLOCK: EXIBE_LST_MANUTENCOES -->
+
+</sessao>

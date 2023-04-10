@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<!-- {DICA} -->
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>RESUMO_RECEITAS_DESPESAS_COND</conteudo>
+ </resultado>
+ 
+ <informacoes_gerais>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <assessor_nome><![CDATA[{ASSESSOR_NOME}]]></assessor_nome>
+  <condominio_codigo>{COND_COD}></condominio_codigo>
+  <condominio_nome><![CDATA[{COND_NOME}]]></condominio_nome>
+  <periodo_inicio>{PERIODO_INICIO}</periodo_inicio>
+  <periodo_fim>{PERIODO_FIM}</periodo_fim>
+  <data_processamento>{DATA_ARQUIVO}</data_processamento>
+  <data_atual>{DATA_ATUAL}</data_atual>
+</informacoes_gerais>
+ 
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_TABELA --> 
+<resumo id="{RESUMO_ID}">
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_LINHA --> 
+ <item>
+  <descricao><![CDATA[{DESCRICAO}]]></descricao>
+  <valores>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_COLUNA -->   <valor id="{COLUNA_ID}">{COLUNA_VALOR}</valor>
+<!-- END DYNAMIC BLOCK: RESUMO_COLUNA --> 
+  </valores>
+ </item>
+<!-- END DYNAMIC BLOCK: RESUMO_LINHA -->
+</resumo>
+<!-- END DYNAMIC BLOCK: RESUMO_TABELA --> 
+
+</sessao>

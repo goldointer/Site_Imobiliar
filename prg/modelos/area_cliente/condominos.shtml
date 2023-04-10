@@ -1,0 +1,55 @@
+<html><head>
+<title>Rela&ccedil;&atilde;o de Cond&ocirc;minos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr> 
+	<td class="negrito" colspan=3><div align="right">RELA&Ccedil;&Atilde;O DE COND&Ocirc;MINOS</div></td>
+  </tr>
+  <tr> 
+	<td colspan=3> <hr></td>
+  </tr>
+
+  <tr>
+	<td class="normal" colspan=3>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+		<tbody><tr>
+		  <td class="normal" width="19%">CONDOM&Iacute;NIO: </td>
+		  <td class="negrito" width="81%">{CONDOM_COD} - {CONDOM_NOME}</td>
+		</tr>
+		</tbody></table></td>
+  </tr>
+  <tr>
+	<td class="normal" colspan=3>&nbsp;</td>
+  </tr>
+
+  <tr class="negrito">
+	<td>UNIDADE</td>
+	<td>COND&Ocirc;MINO</td>
+	<td>ENDERE&Ccedil;O</td>
+  </tr>
+  <tr bgcolor="#999999" height="4px"><td colspan=3></td></tr>
+<!-- BEGIN DYNAMIC BLOCK: CONDONIMO -->
+  <tr bgcolor="#999999" height="2px" {EXIBE_SEPARADOR}><td colspan=3></td></tr>
+  <tr class="normal">
+	<td valign="top">{UNID}</td>
+	{DESCR}
+  </tr>
+<!-- END DYNAMIC BLOCK: CONDONIMO -->
+  <tr bgcolor="#999999" height="4px"><td colspan=3></td></tr>
+</tbody></table>
+
+<br>
+<CENTER>
+	<form action="" method="get" onsubmit="javascript:return false">
+	<input type="button" class="NaoImprime" name="Fechar" value="Fechar" onclick="javascript:window.close()">
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="button" class="NaoImprime" name="Imprimir" value="Imprimir" onclick="javascript:window.print()">
+	</form>
+</CENTER>
+
+</body>
+</html>

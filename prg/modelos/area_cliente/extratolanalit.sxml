@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<!-- {DICA} -->
+
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>EXTRATO_LOCACAO</conteudo>
+ </resultado>
+
+ <informacoes_gerais>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <assessor_nome><![CDATA[{ASSESSOR_NOME}]]></assessor_nome>
+  <data_processamento>{DATA_ARQUIVO}</data_processamento>
+  <data_atual>{DATA_ATUAL}</data_atual>
+</informacoes_gerais>
+
+ <lancamentos>
+<!-- BEGIN DYNAMIC BLOCK: EXTRATO --> 
+  <lancamento>
+   <data>{DATA}</data>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <competencia>{COMPET}</competencia>
+   <debito>{DEBT}</debito>
+   <credito>{CRED}</credito>
+  </lancamento>
+<!-- END DYNAMIC BLOCK: EXTRATO -->
+ </lancamentos>
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_RESUMO -->
+ <resumo_despesas>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO -->
+  <despesa>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <debito>{DEBT}</debito>
+   <credito>{CRED}</credito>
+  </despesa>
+<!-- END DYNAMIC BLOCK: RESUMO -->
+ </resumo_despesas>
+<!-- END DYNAMIC BLOCK: EXIBE_RESUMO -->
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_FUTUROS -->
+<lancamentos_futuros>
+<!-- BEGIN DYNAMIC BLOCK: FUTUROS -->
+  <lancamento>
+   <data>{DATA}</data>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <competencia>{COMPET}</competencia>
+   <debito>{DEBT}</debito>
+   <credito>{CRED}</credito>
+  </lancamento>
+<!-- END DYNAMIC BLOCK: FUTUROS -->
+ </lancamentos_futuros>
+<!-- END DYNAMIC BLOCK: EXIBE_FUTUROS -->
+
+</sessao>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>imobili&aacute;ria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+<script language="Javascript">
+<!--
+// Chamada que abre janela "pop-up" com fotos ou informacoes do imovel.
+// A chamada window.open() deve ser parametrizada conforme o projeto visual.
+ function wopen(cod, pos, foto)
+ {
+	var agora = new Date();
+	var url = "exibeFotos.php?cod="+cod+"&codfoto="+foto+"&p="+pos+"&lv=L&time="+agora.getTime();
+	if (foto != '*')
+		window.open(url,"fotos","width=800,height=600,top=50,left=100,status=0,toolbar=0,location=0,menubar=0,resizable=1,scrollbars=1");
+	else
+		window.open(url,"fotos","width=500,height=430,top=50,left=100,status=0,toolbar=0,location=0,menubar=0,resizable=0");
+	return false;
+ }
+//-->
+  </script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	<tr>
+	  <td style="text-align: center;" height="41" valign="top">
+	  <font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#000000">
+	  Foram encontrados os seguintes im&oacute;veis para locação que se enquadram na sua pesquisa:</font>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	<tr align="center">
+	  <td width="759" valign="top"><br>
+	  <table width="700" border="0" cellspacing="0" cellpadding="0" height="30" bgcolor="#999999">
+		<tbody>
+		  <tr>
+			<td>
+			<form>
+			  <table width="98%" border="0" cellpadding="5" cellspacing="5">
+				<tbody>
+				  <tr bgcolor="#666666">
+					<td align="center" width="50%" height="20">
+					<div align="left">
+					<font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+					<b><font color="#ffcc33">{NOMECIDADE}:</font> </b> {TIPOIMOV}</small></font></div>
+					</td>
+					<td align="center" width="50%" height="20">
+					<div align="left">
+					<font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+					<b><font color="#ffcc33"> &nbsp;&nbsp;{ACHADOS}<!--Bairro:--></font></b></small></font></div>
+					</td>
+				  </tr>
+				</tbody>
+			  </table>
+
+			  <table width="98%" border="0" align="center" cellpadding="2" cellspacing="2">
+<!-- BEGIN DYNAMIC BLOCK: IMOV_RES --> 
+				<tr>
+				  <td width="25%" valign="top">
+					<div align="center" {EXIBE_THUMB}>
+					  <a href="javascript:void(0)" onclick="{_CLICK}">
+					  <img src="{IMG_SRC}" width="{IMG_WIDTH}" border="0" title="Clique para ampliar e ver mais fotos."> <!-- {IMG_FT} -->
+					  <br>
+					  <strong>mais fotos</strong>
+					  </a>
+					</div>
+				  </td>
+				  <td width="75%" valign="top">
+					<div align="left" {EXIBE_IMOVEL}>
+					  <b>C&oacute;digo:</b>&nbsp;{COD}<br>
+					  <span {EXIBE_ENDER}><b>Endere&ccedil;o:</b>&nbsp;{END}<br></span>
+					  <b>Bairro:</b>&nbsp;{BAIRRO}<br>
+					  <b>Descri&ccedil;&atilde;o:</b>&nbsp;{DESCR}<br>
+					  <br>
+					</div>
+					<b>{VAL}</b>
+				  </td>
+				</tr>
+				<tr>
+				  <td colspan="2"><hr></td>
+				</tr>
+<!-- END DYNAMIC BLOCK: IMOV_RES -->
+			  </table>
+
+			  <br>
+			</form>
+		  </td>
+		</tr>
+
+		<tr>
+		  <td>
+			  <center>
+			  <font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
+				<input name="voltartela" id="voltartela" value="Nova Consulta" onclick="javascript:history.back();" type="button">
+			  </font>
+			  </center>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	  <br>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+</body>
+<!-- locconsresThumb.shtml -->
+</html>
