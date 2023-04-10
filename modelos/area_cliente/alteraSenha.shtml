@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Troca Senha</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="Javascript" type="text/JavaScript">
+<!--
+ var botao="";
+ function Carga()
+ {
+	var msg="{MSG}";
+	if ("{OPERACAO}" == "expirou") {
+		document.getElementById("trocar").style.display = 'none';
+		if (msg == "")
+			msg="Sua senha expirou e deve ser trocada!";
+	}
+	frm.SENHA.value = "";
+	if (msg != "")
+		alert(msg);
+ }
+
+ function Validar()
+ {
+	if (botao == "alterar") {
+		var msg = "";
+		var senha = frm.SENHA.value.trim();
+		if ("{OPERACAO}" != "expirou" && senha == "")
+			msg = "Informar a senha atual!";
+		else {
+			var senha1 = frm.SENHANOVA.value;
+			if (senha1 == "")
+				msg = "Nova senha nao pode ser vazia!";
+			else {
+				var senha2 = frm.SENHANOVA2.value;
+				if (senha1 != senha2)
+					msg = "As novas senhas nao conferem entre si!";
+			}
+		}
+		if (msg != "") {
+			alert(msg);
+			return false;
+		}
+	}
+	return true;
+ }
+//-->
+</script>
+</head>
+
+<body onload="javascript:Carga();" leftmargin="0" topmargin="0" style="background-color: rgb(255, 255, 255);" marginheight="0" marginwidth="0">
+<form action="alteraSenha.php" method="POST" name="frm" onsubmit="javascript:return Validar();">
+	<input name="timestamp" value="{TIMESTAMP}" type="hidden">
+	<input name="OPERACAO" value="alterar" type="hidden">
+	<br><br>
+	<table border="0" width="800" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td style="text-align: center;" valign="top" width="474">
+				<table style="text-align: left; margin-left: auto; margin-right: auto;" bgcolor="#999999" border="0" height="30" width="473" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr align="center">
+							<td>
+							<span id="trocar">
+
+							<table border="0" width="530" cellpadding="4" cellspacing="0">
+								<tbody>
+									<tr>
+										<td align="right" width="105">
+											<b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">SENHA ATUAL:</font></b>
+										</td>
+										<td width="160">
+											<font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+											<input name="SENHA" size="20" type="password" onfocus="javascript:this.value='';"> </font>
+										</td>
+										<td align="right" width="105">
+											&nbsp;
+										</td>
+										<td width="160">
+											&nbsp;
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</span>
+
+							<table border="0" width="530" cellpadding="4" cellspacing="0">
+							<tbody>
+								<tr>
+									<td align="right" width="105">
+										<b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">NOVA SENHA:</font></b>
+									</td>
+									<td width="160">
+										<font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+										<input name="SENHANOVA" size="20" type="password"></font>
+									</td>
+									<td align="right" width="105">
+										<b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">REPETIR:</font></b>
+									</td>
+									<td width="160">
+										<font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+										<input name="SENHANOVA2" size="20" type="password"></font>
+									</td>
+								</tr>
+							</tbody>
+							</table>
+							<table border="0" width="530" cellpadding="4" cellspacing="0">
+								<tbody>
+									<tr>
+										<td align="center" width="65%">
+											<font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+											<input value=" Alterar Senha " name="alterar" type="submit" onclick="javascript:botao='alterar';">
+											</font>
+										</td>
+										<td align="center">
+											<font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+											<input value=" Cancelar " name="cancelar" type="submit" onclick="javascript:botao='cancelar';">
+											</font>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>
+
+</body>
+</html>

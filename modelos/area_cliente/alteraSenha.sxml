@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>ALTERACAO DE SENHA</conteudo>
+ </resultado>
+ 
+ <informacoes_gerais>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <codigo>{CODIGO}</codigo>
+  <data_atual>{DATA_ATUAL}</data_atual>
+</informacoes_gerais>
+
+</sessao>

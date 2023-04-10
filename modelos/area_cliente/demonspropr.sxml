@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<!-- {DICA} -->
+
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>SUCESSO</situacao>
+  <conteudo>DEMONSTRATIVO_PROPRIETARIO</conteudo>
+ </resultado>
+
+ <informacoes_gerais>
+  <usuario><![CDATA[{USUARIO}]]></usuario>
+  <assessor_nome><![CDATA[{ASSESSOR_NOME}]]></assessor_nome>
+  <data_processamento>{DATA_ARQUIVO}</data_processamento>
+  <data_atual>{DATA_ATUAL}</data_atual>
+</informacoes_gerais>
+
+ <lancamentos>
+<!-- BEGIN DYNAMIC BLOCK: EXTRATO --> 
+  <lancamento>
+   <data>{DATA}</data>
+   <competencia>{COMPET}</competencia>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <debito>{DEBT}</debito>
+   <credito>{CRED}</credito>
+   <liquido>{LIQUIDO}</liquido>
+  </lancamento>
+<!-- END DYNAMIC BLOCK: EXTRATO -->
+ </lancamentos>
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_IMOVEIS -->
+ <imoveis>
+<!-- BEGIN DYNAMIC BLOCK: IMOVEL -->
+  <imovel>
+   <descricao><![CDATA[{DESCR}]]></descricao>
+<!-- BEGIN DYNAMIC BLOCK: IMOVEL_ITEM --> 
+   <lancamento>
+    <data>{DATA}</data>
+    <competencia>{COMPET}</competencia>
+    <descricao><![CDATA[{HIST}]]></descricao>
+    <debito>{DEBT}</debito>
+    <credito>{CRED}</credito>
+    <liquido>{LIQUIDO}</liquido>{IMAGENS_LANCTO}
+   </lancamento>
+<!-- END DYNAMIC BLOCK: IMOVEL_ITEM -->
+  </imovel>
+<!-- END DYNAMIC BLOCK: IMOVEL -->
+ </imoveis>
+<!-- END DYNAMIC BLOCK: EXIBE_IMOVEIS -->
+
+ <totais>
+<!-- BEGIN DYNAMIC BLOCK: TOTAIS --> 
+  <taxa>
+   <descricao><![CDATA[{HIST}]]></descricao>
+   <debito>{DEBT}</debito>
+   <credito>{CRED}</credito>
+   <liquido>{LIQUIDO}</liquido>
+  </taxa>
+<!-- END DYNAMIC BLOCK: TOTAIS -->
+ </totais>
+
+<!-- BEGIN DYNAMIC BLOCK: EXIBE_POR_DIA -->
+<pagamentos>
+<!-- BEGIN DYNAMIC BLOCK: POR_DIA -->
+  <pagamento>
+   <dia>{DIA}</dia>
+   <valor>{VALOR}</valor>
+   <situacao><![CDATA[{SITUACAO}]]></situacao>
+  </pagamento>
+<!-- END DYNAMIC BLOCK: POR_DIA -->
+ </pagamentos>
+<!-- END DYNAMIC BLOCK: EXIBE_POR_DIA -->
+
+</sessao>

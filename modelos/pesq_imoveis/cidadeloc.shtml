@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>imobili&aacute;ria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/javascript" src="modelos/pesq_imoveis/pesqImovUnif.js"></script>
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: rgb(255, 255, 255);" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="473" border="0" cellspacing="0" cellpadding="0" height="19" bgcolor="#dca001">
+  <tbody>
+	<tr>
+	  <td style="text-align: center; background-color: rgb(102, 102, 102);">
+	  <span style="color: rgb(255, 255, 102);">&nbsp;</span>
+	  <span style="font-weight: bold; color: rgb(255, 255, 102);">PESQUISA DE IM&Oacute;VEIS PARA LOCA&Ccedil;&Atilde;O</span><br>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+<table width="473" border="1" cellspacing="0" cellpadding="0" height="30" style="background-color: rgb(153, 153, 153);">
+  <tbody>
+	<tr>
+	  <td>
+	  <form name="" action="pesqImov.php" method="post">
+	  <input type="hidden" name="lv" value="L">
+		<table width="100%" border="0" cellspacing="10" cellpadding="5">
+		  <tbody>
+			<tr>
+			  <td>
+			  <div style="background-color: rgb(102, 102, 102);" align="center">
+			  <font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#ffffff">
+			  <font face="Arial, Helvetica, sans-serif">
+			  Selecione a cidade para a consulta e aperte o bot&atilde;o.</font></font></div>
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+		<table width="100%" border="0" cellspacing="10" cellpadding="5">
+		  <tbody>
+			<tr>
+			  <td width="36%">
+			  <div align="right">
+			  <b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">Cidade:</font></b></div>
+			  </td>
+			  <td width="64%">
+			  <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+			  <select name="selcidade">
+<!-- BEGIN DYNAMIC BLOCK: CIDADES -->
+			  <option {SELEC} value="{VALOR}">{OPCAO}</option>
+<!-- END DYNAMIC BLOCK: CIDADES -->
+			  </select>
+			  </font></td>
+			</tr>
+
+			<tr {EXIBE_RES_COM}>
+			  <td width="36%">
+			  <div align="right">
+			  <b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">
+			  Tipo:</font></b></div>
+			  </td>
+			  <td width="64%">
+			  <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+			  <input type="radio" name="seltipo" value="R" checked="checked">
+			  </font>
+			  <font face="Arial, Helvetica, sans-serif" size="2" color="#ffffff">
+			  Residencial </font>
+			  <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+			  <input type="radio" name="seltipo" value="C"> </font>
+			  <font face="Arial, Helvetica, sans-serif" size="2" color="#ffffff">
+			  Comercial</font>
+			  <font face="Arial, Helvetica, sans-serif" size="2" color="#ffffff"> </font>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td colspan="2" height="51">
+			  <div style="background-color: rgb(153, 153, 153);" align="center">
+			  <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+			  <input type="submit" value="  Pesquisar Im&oacute;veis   " name="Button"> </font></div>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td colspan=2><hr></td>
+			</tr>
+
+			<tr>
+			  <td width="36%">
+			  <div align="right">
+			  <b><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#ffffff">C&oacute;digo do Im&oacute;vel:</font></b></div>
+			  </td>
+			  <td width="64%">
+			  <font face="Verdana, Arial, Helvetica, sans-serif" size="1">
+			  <input type="text" name="codimovel" id="codimovel" maxlength="8" size="8">
+			  <input type="submit" value=" Exibir Im&oacute;vel " name="btnCod" onclick="return ExibeImovel('width=665,height=580,top=50,left=100,toolbar=no,resizable=yes,scrollbars=yes','LV')">
+			  </font></td>
+			</tr>
+
+		  </tbody>
+		</table>
+	  </form>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+</body>
+<!-- cidadeloc.shtml -->
+</html>

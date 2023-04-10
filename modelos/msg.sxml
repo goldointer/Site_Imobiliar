@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="{MODEL_CHARSET}" ?>
+<sessao id="{SESSID}">
+ <resultado>
+  <situacao>AVISO</situacao>
+  <conteudo>MENSAGEM</conteudo>
+  <dica><![CDATA[{DICA}]]></dica>
+ </resultado>
+ 
+ <mensagem>
+  <titulo><![CDATA[{TITULO}]]></titulo>
+  <texto><![CDATA[{MSG}]]></texto>
+ </mensagem>
+		 
+</sessao>

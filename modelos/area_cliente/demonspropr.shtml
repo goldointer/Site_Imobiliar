@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Demonstrativo de Propriet&aacute;rio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="JavaScript">
+<!--
+function Carga() {
+	if ("{TEM_IMOVEIS}" != "T")
+		document.getElementById("tem_imoveis").style.display = 'none';
+	if ("{TEM_PORDIA}" != "T")
+		document.getElementById("tem_pordia").style.display = 'none';
+}
+
+// Chamada que abre janela "pop-up" com imagem do lancamento.
+// A chamada window.open() deve ser parametrizada conforme o projeto visual.
+function wopen(cod)
+{
+	url = "exibeLancto.php?cod=" + cod + "&tipo=L";
+	window.open(url,"lancto","width=665,height=580,top=50,left=100,toolbar=no,resizable=yes,scrollbars=yes");
+	return false;
+}
+
+//-->
+</script>
+</head>
+
+<body onload="Carga();" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table style="background-color: rgb(102, 102, 102);" width="760" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	<tr valign="top">
+	  <td><br>
+	  <font face="Arial, Helvetica, sans-serif" size="1" color="#ffffff">
+	  USU&Aacute;RIO: <small>{USUARIO} </small>
+	  </font>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+<br>
+
+<table style="background-color: rgb(102, 102, 102);" width="700" border="0" cellspacing="0" cellpadding="0" height="19">
+  <tbody>
+	<tr>
+	  <td height="67">
+	  <div align="center"><br>
+	  <table width="98%" border="0" cellpadding="5" cellspacing="1" style="background-color: rgb(153, 153, 153);">
+		<tbody>
+		  <tr bgcolor="#ffffff">
+			<td align="left">
+			<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"> {DESCR}</font>
+			</td>
+			<td align="right">
+			<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			{DATA_ATUAL}</small></font>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	  <font face="Verdana, Arial, Helvetica, sans-serif" size="2"> </font></div>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+
+<table style="background-color: rgb(153, 153, 153);" width="700" border="0" cellspacing="0" cellpadding="0" height="30">
+  <tbody>
+	<tr>
+	  <td>
+		<span align="center">
+		<font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">
+		<b>&nbsp;&nbsp;&nbsp;&nbsp;Demonstrativo de Propriet&aacute;rio</b></font>
+		</span>
+
+		<div align="center">
+		<table bgcolor="#869cc6" width="98%" border="0" cellpadding="5" cellspacing="1">
+		  <tbody>
+			<tr style="background-color: rgb(102, 102, 102);">
+			  <td align="center" width="10%">
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>DATA</small></font>
+			  </td>
+			  <td align="center" width="7%">
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			  COMPET</small></font>
+			  </td>
+			  <td align="center" width="43%">
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			  HIST&Oacute;RICO</small></font>
+			  </td>
+			  <td align="center" width="13%">
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			  D&Eacute;BITO</small></font>
+			  </td>
+			  <td align="center" width="13%">
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			  CR&Eacute;DITO</small></font>
+			  </td>
+			  <td align="center" width="13%">
+			  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			  L&Iacute;QUIDO</small></font>
+			  </td>
+			</tr>
+<!-- BEGIN DYNAMIC BLOCK: EXTRATO --> 
+			<tr bgcolor="#ffffff">
+			  <td align="center" width="10%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{DATA}</small></font></td>
+			  <td align="left" width="7%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{COMPET}</small></font></td>
+			  <td align="left" width="43%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{HIST}</small></font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{DEBT}</font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{CRED}</font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{LIQUIDO}</font></td>
+			</tr>
+<!-- END DYNAMIC BLOCK: EXTRATO -->
+		  </tbody>
+		</table>
+		</div>
+
+		<div id="tem_imoveis">
+<!-- BEGIN DYNAMIC BLOCK: IMOVEL --> 
+		<div align="center">
+		<table width="98%" border="0" cellpadding="5" cellspacing="1" >
+		  <tbody>
+			<tr bgcolor="#ffffff">
+			  <td align="left" width="100%">
+			  </td>
+			</tr>
+			<tr bgcolor="#869cc6">
+			  <td align="left" width="100%">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			  {DESCR}
+			  </small></font>
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+		<table width="98%" border="0" cellpadding="5" cellspacing="1" bgcolor="#869cc6">
+		<tbody>
+<!-- BEGIN DYNAMIC BLOCK: IMOVEL_ITEM --> 
+			<tr bgcolor="#ffffff">
+			  <td align="center" width="10%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{DATA}</small></font></td>
+			  <td align="left" width="7%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{COMPET}</small></font></td>
+			  <td align="left" width="43%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{HIST}</small></font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{DEBT}</font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{CRED}</font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{LIQUIDO}</font></td>
+			</tr>
+<!-- END DYNAMIC BLOCK: IMOVEL_ITEM -->
+		  </tbody>
+		</table>
+		</div>
+<!-- END DYNAMIC BLOCK: IMOVEL --> 
+		</div>
+
+		<br>
+		<div align="center">
+		<table width="98%" border="0" cellpadding="5" cellspacing="1" bgcolor="#869cc6">
+		<tbody>
+<!-- BEGIN DYNAMIC BLOCK: TOTAIS --> 
+			<tr bgcolor="#ffffff">
+			  <td align="right" width="62%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{HIST}</small></font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{DEBT}</font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{CRED}</font></td>
+			  <td align="right" width="13%" height="20">
+			  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{LIQUIDO}</font></td>
+			</tr>
+<!-- END DYNAMIC BLOCK: TOTAIS -->
+		  </tbody>
+		</table>
+		</div>
+		<br>
+
+		<div id="tem_pordia" align="left">
+		<font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">
+		&nbsp;&nbsp;&nbsp;&nbsp;<b>Pagamento por Dia</b></font>
+		<table width="98%" border="0" cellpadding="0" cellspacing="0">
+		  <tbody>
+			<tr>
+			<td align="left" width="40%">
+			<table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#869cc6">
+			  <tbody>
+				<tr style="background-color: rgb(102, 102, 102);">
+				  <td align="center" width="20%">
+				  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>DIA</small></font></td>
+				  <td align="center" width="57%">
+				  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>VALOR</small></font></td>
+				  <td align="center" width="13%">
+				  <font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>SITUACAO</small></font></td>
+				</tr>
+	<!-- BEGIN DYNAMIC BLOCK: POR_DIA --> 
+				<tr bgcolor="#ffffff">
+				  <td align="center" width="20%" height="20">
+				  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{DIA}</small></font></td>
+				  <td align="left" width="57%" height="20">
+				  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{VALOR}</small></font></td>
+				  <td align="left" width="13%" height="20">
+				  <font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{SITUACAO}</small></font></td>
+				</tr>
+	<!-- END DYNAMIC BLOCK: POR_DIA -->
+			  </tbody>
+			</table>
+			</td>
+			<td width="60%">
+			&nbsp;
+			</td>
+			</tr>
+		  </tbody>
+		</table>
+		</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+		<br>
+		<span word-wrap="break-word">
+			<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  {MSG_RODAPE} 
+			</font>
+		</span>
+	  </td>
+	</tr>
+	<tr>
+	  <td align="right">
+		<br>
+		<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+		Informa&ccedil;&otilde;es atualizadas em {DATA_ARQUIVO}</small></font>
+		<br><br>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  <center>
+		  <form action="" method="get" onsubmit="javascript:return false">
+			<input type="button" class="NaoImprime" name="Fechar" value="Fechar" onclick="javascript:window.close()">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" class="NaoImprime" name="Imprimir" value="Imprimir" onclick="javascript:window.print()">
+		  </form>
+	  </center>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+</body>
+<!-- demonspropr.shtml -->
+</html>

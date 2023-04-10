@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Resumo de DOCs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="modelos/padrao.css" rel="stylesheet" type="text/css">
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<table width="700" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	<tr style="background-color: rgb(153, 153, 153);">
+	  <td colspan=3 align="center">
+		<font face="Verdana, Arial, Helvetica, sans-serif" size="3" color="#000000">
+		<b>Demonstrativo Resumido de Receitas e Despesas de Condom&iacute;nio</b></font>
+	  </td>
+	</tr>
+	<tr bgcolor="#ffffff">
+	  <td align="left">
+		<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">{COND_NOME}</font>
+	  </td>
+	  <td align="center">
+		<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">Per&iacute;odo: {PERIODO_INICIO} a {PERIODO_FIM}</font>
+	  </td>
+	  <td align="right">
+		<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>{DATA_ATUAL}</small></font>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+<br>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+	<tr>
+	  <td>
+
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_TABELA --> 
+		<table width="98%" border="1px" cellpadding="5" cellspacing="1" bgcolor="#ffffff">
+		  <tbody>
+			<tr style="background-color: rgb(102, 102, 102);">
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_CABEC -->
+			  <th align="center">
+				<font color="#ffffff" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+				<small>{COLUNA_ID}</small></font>
+			  </th>
+<!-- END DYNAMIC BLOCK: RESUMO_CABEC -->
+			</tr>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_LINHA --> 
+			<tr>
+			  <td align="left"><font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+				<small>{DESCRICAO}</small></font>
+			  </td>
+<!-- BEGIN DYNAMIC BLOCK: RESUMO_COLUNA -->
+			  <td align="left"><font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif">
+				<small>{COLUNA_VALOR}</small></font>
+			  </td>
+<!-- END DYNAMIC BLOCK: RESUMO_COLUNA -->
+			</tr>
+<!-- END DYNAMIC BLOCK: RESUMO_LINHA -->
+		  </tbody>
+		</table>
+		</br>
+<!-- END DYNAMIC BLOCK: RESUMO_TABELA --> 
+
+
+	  </td>
+	</tr>
+	<tr>
+	  <td align="right">
+		<hr>
+		<font color="#000000" size="1" face="Verdana, Arial, Helvetica, sans-serif"><small>
+			Informa&ccedil;&otilde;es atualizadas em {DATA_ARQUIVO}</small></font>
+		<br><br>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  <center>
+		  <form action="" method="get" onsubmit="javascript:return false">
+			<input type="button" class="NaoImprime" name="Fechar" value="Fechar" onclick="javascript:window.close()">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" class="NaoImprime" name="Imprimir" value="Imprimir" onclick="javascript:window.print()">
+		  </form>
+	  </center>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+
+</body>
+</html>

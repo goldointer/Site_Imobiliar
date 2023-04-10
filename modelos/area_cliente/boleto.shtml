@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\"><HTML>
+<head>
+<title>{TITULO}</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<style type="text/css">
+<!--
+.linhadig {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt;}
+.digbanco {  font-family: Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold}
+.nomebanco {  font-family: Arial, Helvetica, sans-serif; font-size: 7pt}
+.data {  font-family: Arial, Helvetica, sans-serif; font-size: 8pt }
+.ld2 {  font-family: Arial, Helvetica, sans-serif; font-size: 4mm}
+.header {  font-family: Verdana, sans-serif; font-size: 8pt}
+.th { padding-right: 3px; padding-left: 3px; font-size: 8pt; font-family: verdana, arial, sans-serif ; background-color: #A3A3A3; color: #FFFFFF }
+.descrtaxa {  font-family: Time New Roman; font-size: 7pt}
+.docloc {  font-family: Time New Roman; font-size: 8pt}
+@media print {
+	.NaoImprime { visibility:hidden; display: none }
+}
+-->
+</style>
+</head>
+<body bgColor=#ffffff onload="javascript:if({EXIBE_HTML})document.getElementById('exibe_html').style.display='inline';"> 
+
+<!-- CABECALHO -->
+<table cellpadding="0" align="center">
+<tr>
+	<td valign="top">
+		<table class="header" width="640" align="center" cellpadding="5" style="border: 1px solid black">
+			<tr>
+				<td><IMG SRC="../imagens/casanova.jpg" BORDER=0 ALT=""></td>
+				<td width="350"><b>{IsImob1}</b><br>{IsImob2}</td>
+				<td align="right">CNPJ:{IsImob3}</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- FIM CABECALHO -->
+
+<!-- MEIO -->
+<tr>
+	<td valign="top">
+		<table width="640" class="header" cellpadding="0" align="center" valign="top">
+			<tr>
+				<th class="th" colspan="3" >{IsTipoDoc}</th>
+			</tr>
+			<tr>
+				<td align="left">
+				<table class="docloc" cellpadding="0" align="left" width="500"> 
+					<tr>
+						<td align="left">{IsId1}</td>
+					</tr>
+					<tr>
+						<td align="left">{IsId2}</td>
+					</tr>
+					<tr>
+						<td align="left">{IsId3} </td>
+					</tr>
+					<tr>
+						<td align="left">{IsId4} </td>
+					</tr>
+					<tr>
+						<td align="left">{IsId5}</td>
+					</tr>
+				</table>
+
+				</td>
+				<td>
+				<table class="header" border="1" align="right" width="70%"> 
+					<tr>
+						<th class="th" >VENCIMENTO</th>
+					</tr>
+					<tr>
+						<td align="center"><b>{IsVencto}</b></td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<!-- FIM MEIO -->
+
+<!-- DESCRICAO DAS TAXAS -->
+<tr>
+	<td valign="top">
+	  <table class="descrtaxa" cellpadding="0" align="center" width="640" class="header">
+		<tr><th colspan=3 class="th" > DESCRI&Ccedil;&Atilde;O DAS TAXAS </th></tr>
+		<tr>
+		  <td width="49%">
+			<table class="descrtaxa" cellpadding="0" align="center" width="100%" style="border: 1pt outset"><!-- BEGIN DYNAMIC BLOCK: LINHA_DETALHE_A -->
+				<tr> <td nowrap>{IsDetLinA}</td></tr><!-- END DYNAMIC BLOCK: LINHA_DETALHE_A -->
+			</table>
+		  </td>
+		  <td>
+			<table class="descrtaxa" cellpadding="0" align="left" width="100%" style="border: 1pt outset"><!-- BEGIN DYNAMIC BLOCK: LINHA_DETALHE_B -->
+				<tr> <td nowrap>{IsDetLinB}</td></tr><!-- END DYNAMIC BLOCK: LINHA_DETALHE_B -->
+			</table>
+		  </td>
+		</tr>
+	  </table>
+	  <span class="descrtaxa">{OBSERVACOES}</span>
+	</td>
+</tr>
+<!-- FIM DESCRICAO DAS TAXAS -->
+
+<!-- RODAPE -->
+<tr>
+	<td>
+		<table cellpadding="0" align="center" width="640" class="header">
+		<tr>
+		<th class="th" width=340>Ap&oacute;s vencimento pag&aacute;vel conforme instru&ccedil;&otilde;es</th>
+		<td width=300 align="center" >
+			<table cellpadding="0" align="left" width="100%">
+				<tr>
+					<td ><hr></td>
+				</tr>
+				<tr>
+					<td align="right"><font size="-2" face="Arial, Helvetica, sans-serif" class="nomebanco">Autentica&ccedil;&atilde;o Mec&acirc;nica</font> <br>
+					  &nbsp;
+					</td>
+				</tr>
+			</table>
+		</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</center>
+
+<!-- INICIO BOLETO -->
+<center>
+	<img src="../imagens/corte.png" width="640" height="16"><br>
+</center>
+
+<div align=center> 
+	<table border=0 cellPadding=0 cellSpacing=0 width=640 bgcolor="#FFFFFF">
+	  <tbody> 
+	  <tr>
+		<td valign="bottom" width="210"> 
+		  <div align="left">
+		  <table width="100%"><tr>
+		  <td width=120><img src="{BANCOLOGO}"></td>
+		  <td nowrap>
+		  <font size="+2" face="Arial, Helvetica, sans-serif" class="digbanco"><strong><b> |{IsCodBanco}|</b></strong></font>
+		  </td>
+		  </tr></table>
+		  </div>
+		</td>
+		<td align="right" valign="bottom" nowrap> 
+		  <p align="right"><font class="linhadig">{IsLinDig}</font></p>
+		</td>
+	  </tr>
+	  </tbody> 
+	</table>
+
+	<table border=1 cellspacing=0 width=640 bordercolorlight="#000000" bordercolordark="#FFFFFF" bgcolor="#FFFFFF">
+	  <tbody> 
+	  <tr> 
+		<td valign="top" colspan=5><font face="Arial, Helvetica" size="-2" class="nomebanco">Local 
+		  de Pagamento</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsLocalPagto}</font></td>
+		<td align="left" valign="top" width=156><font face="Arial, Helvetica" size="-2" class="nomebanco">Vencimento</font><br>
+		  <font face="Arial, Helvetica" size="-1"><b class="data"> {IsVencto}</b></font></td>
+	  </tr>
+	  <tr> 
+		<td colspan=5 valign="top"><font face="Arial, Helvetica" size="-2" class="nomebanco">Benefici&aacute;rio</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsNomeCedente}</font></td>
+		<td width=156 valign="top" align="left"><font face="Arial, Helvetica" size="-2" class="nomebanco">Ag&ecirc;ncia 
+		  / C&oacute;digo Benefici&aacute;rio</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsAgeCodCedente}</font></td>
+	  </tr>
+	  <tr> 
+		<td valign="top" width=106><font face="Arial, Helvetica" size="-2" class="nomebanco">Data 
+		  Documento</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsDataDoc}</font></td>
+		<td valign="top" width=122><font face="Arial, Helvetica" size="-2" class="nomebanco">Num. 
+		  do Documento</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsNumeroDoc}</font></td>
+		<td valign="top" width=46><font face="Arial, Helvetica" size="-2" class="nomebanco">Esp&eacute;cie&nbsp;Doc.</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsEspecieDoc}</font></td>
+		<td valign="top" width=54><font face="Arial, Helvetica" size="-2" class="nomebanco">Aceite</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> &nbsp;{IsAceite}</font></td>
+		<td valign="top" width=125><font face="Arial, Helvetica" size="-2" class="nomebanco">Data Processamento</font><br>
+		  <font face="Arial, Helvetica"  size="-1" class="data"> {IsDataProc}</font></td>
+		<td align="left" valign="top" width=156><font face="Arial, Helvetica" size="-2" class="nomebanco">Nosso 
+		  Numero</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsNossoNumero}</font></td>
+	  </tr>
+	  <tr valign="top"> 
+		<td width=106><font face="Arial, Helvetica" size="-2" class="nomebanco">Uso 
+		  do Banco</font><br><font face="Arial, Helvetica" size="-1" class="data"> {IsUsoBanco}</font></td>
+		<td width=122><font face="Arial, Helvetica" size="-2" class="nomebanco">Carteira</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsCarteira}</font></td>
+		<td width=46><font face="Arial, Helvetica" size="-2" class="nomebanco">Esp&eacute;cie&nbsp;(Moeda)</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsMoeda}</font></td>
+		<td width=54><font face="Arial, Helvetica" size="-2" class="nomebanco">Quantidade</font><br><font face="Arial, Helvetica" size="-1" class="data"> 
+<!-- IsQnt -->&nbsp;</font></td>
+		<td width=125><font face="Arial, Helvetica" size="-2" class="nomebanco">Valor</font><br>&nbsp;</td>
+		<td align="left" width=156><font face="Arial, Helvetica" size="-2" class="nomebanco">Valor do Documento</font><br>
+		  <font face="Arial, Helvetica" size="-1"><b class="data">{IsValorDoc}</b></font></td>
+	  </tr>
+	  <tr> 
+		<td colspan=5 rowspan=5 valign="top"> 
+		  <div align="left"><font face="Arial, Helvetica" size="-2" class="nomebanco">Instru&ccedil;&otilde;es 
+			(Todas as Informa&ccedil;&otilde;es deste bloqueto s&atilde;o de exclusiva 
+			responsabilidade do benefici&aacute;rio)</font><br>
+			</div>
+			<table>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru1}</font></td></tr>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru2}</font></td></tr>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru3}</font></td></tr>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru4}</font></td></tr>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru5}</font></td></tr>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru6}</font></td></tr>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru7}</font></td></tr>
+			<tr><td><font face="Arial, Helvetica" size="-1" class="data">{IsInstru8}</font></td></tr>
+			</table> 
+		</td>
+		<td align="left" valign="top" width=156 style="border: 1pt outset">
+		  <font face="Arial, Helvetica" size="-2" class="nomebanco">(-) Desc./Abatimento</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsDesconto}</font>
+		</td>
+	  </tr>
+
+	  <tr> 
+		<td align="left" valign="top" width=156 style="border: 1pt outset">
+		  <font face="Arial, Helvetica" size="-2" class="nomebanco">(-) Outras Dedu&ccedil;&otilde;es</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsOutraDed}</font>
+		</td>
+	  </tr>
+
+	  <tr> 
+		<td align="left" valign="top" width=156 style="border: 1pt outset">
+		  <font face="Arial, Helvetica" size="-2" class="nomebanco">(+) Mora/Multa</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsMoraMulta}</font>
+		</td>
+	  </tr>
+
+	  <tr> 
+		<td align="left" valign="top" width=156 style="border: 1pt outset">
+		  <font face="Arial, Helvetica" size="-2" class="nomebanco">(+) Outros Acr&eacute;scimos</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsOutroAcres}</font>
+		</td>
+	  </tr>
+
+	  <tr> 
+		<td align="left" valign="top" width=156 style="border: 1pt outset">
+		  <font face="Arial, Helvetica" size="-2" class="nomebanco">(=) Valor Cobrado</font><br>
+		  <font face="Arial, Helvetica" size="-1" class="data"> {IsValorCobrado}</font>
+		</td>
+	  </tr>
+	  <tr> 
+		<td colspan=6 valign="top"> 
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+		  <tr>
+		  <td>
+		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+			  <td width="9%"><font face="Arial, Helvetica" size="-2" class="nomebanco">Pagador:</font></td>
+			  <td width="91%"><font face="Arial, Helvetica, sans-serif" size="-1" class="data"> {IsSacado1}</font></td>
+			</tr>
+			<tr> 
+			  <td width="9%"><font face="Arial, Helvetica" size="-2" class="nomebanco">&nbsp;</font></td>
+			  <td width="91%"><font face="Arial, Helvetica" size="-2" class="nomebanco">{IsSacado2}</font></td>
+			</tr>
+			<tr> 
+			  <td width="9%"><font face="Arial, Helvetica" size="-2" class="nomebanco">&nbsp;</font></td>
+			  <td width="91%"><font face="Arial, Helvetica" size="-2" class="nomebanco">{IsSacado3}</font></td>
+			</tr>
+		    </table>
+		  </td>
+		  </tr>
+		</table>
+		</td>
+	  </tr>
+	  </tbody> 
+	</table>
+	<table width="640" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+	  <tr> 
+		<td valign="top" align="left">{IsCodBarra1}</td>
+		<td valign="top" align="right" width=130> 
+		  <font face="Arial, Helvetica" size="-2" class="nomebanco">FICHA DE COMPENSA&Ccedil;&Atilde;O<br></font><font size="-2" face="Arial, Helvetica, sans-serif" class="nomebanco">Autentica&ccedil;&atilde;o Mec&acirc;nica</font>
+		</td>
+	  </tr>
+	</table>
+</div>
+
+
+<div id="exibe_html" align="center" style="display:none">
+	<table class="NaoImprime" border=0 cellpadding=0 cellspacing=0 width=640 bgcolor="#ffffff">
+		<tbody> 
+		<tr> 
+		<td align=center>
+			<img src="../imagens/corte.png" width="640" height="16">
+		</td>
+		</tr>
+		</tbody> 
+	</table>
+	<form action="" method="get" onsubmit="javascript:return false">
+		<input type="button" class="NaoImprime" name="Fechar" value="Fechar" onclick="javascript:window.close()">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="button" class="NaoImprime" name="Imprimir" value="Imprimir" onclick="javascript:window.print()">
+	</form>
+</div>
+
+</body>
+<!-- boleto.shtml -->
+</html>
+
