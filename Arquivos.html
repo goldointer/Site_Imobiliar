@@ -1,0 +1,1088 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+	
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	
+<title>Arquivos do Site do Imobiliar</title>
+
+	
+<meta name="generator" content="LibreOffice 6.0.7.3 (Linux)">
+
+	
+<meta name="created" content="00:00:00">
+
+	
+<meta name="changed" content="2020-11-03T16:33:11.282166078">
+
+</head>
+<body dir="ltr">
+<p style="margin-bottom: 0cm" align="center"><strong><font color="#006699"><font face="Helvetica">ARQUIVOS
+DE DADOS DO SITE DO IMOBILIAR</font></font></strong></p>
+
+<hr>
+
+<p>&nbsp;&nbsp; 
+</p>
+
+<p><strong><font color="#0000ff">1. INTRODUÇÃO</font></strong></p>
+
+<p><font color="#0000ff">O site do imobiliar está implementado em
+PHP utilizando páginas HTML em forma de "templates"
+conforme explanado em Instrucoes.html. O servidor da imobiliária
+envia, via FTP, os arquivos de dados e de imagens atualizados para o
+provedor do site automaticamente e em horários pré-estabelecidos.
+<br>
+<br>
+Com o objetivo de depender minimamente de recursos
+adicionais exigidos do provedor, os dados enviados e manipulados pelo
+PHP estão na forma de arquivos texto de UNIX, ou seja, cada linha
+encerrada com o caracter "line feed" (LF) cujo valor
+decimal é 10 (0x0A em hexadecimal). Em geral, cada linha representa
+um registro de informações e é composta de um ou mais campos de
+tamanho fixo.</font></p>
+
+<p><strong><font color="#0000ff">2. FORMATO DOS ARQUIVOS DE DADOS</font></strong></p>
+
+<p><font color="#0000ff">Os arquivos de dados são enviados para a
+pasta ".../dados" no site. Cada arquivo contém informações
+específicas, analogamente a tabelas em banco de dados. Assim,
+existem arquivos de cidades, bairros, imóveis de venda, usuários,
+etc., cada qual formado por campos pré-definidos como descrito a
+seguir.<br>
+&nbsp;</font></p>
+
+<p><strong><font color="#0000ff">2.1. CIDADES</font></strong></p>
+
+<p><font color="#0000ff">A lista de cidades para locação e vendas
+estão em arquivos separados, respectivamente "cidades.txt"
+e "cidadesvendas.txt". <br>
+Ambos arquivos possuem o mesmo
+formato de registro:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Nome da Cidade</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">40</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código da Cidade</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">6</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>UF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+As cidades que constam nestes arquivos
+são apenas aquelas que constam na carteira de imóveis da
+imobiliária.</font></p>
+
+<p><strong><font color="#0000ff">2.2. BAIRROS</font></strong></p>
+
+<p><font color="#0000ff">A lista de bairros para locação e vendas
+estão em arquivos separados, respectivamente "bairros_loc.txt"
+e "bairros_venda.txt". <br>
+Ambos arquivos possuem o mesmo
+formato de registro:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código do Bairro</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">5</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Nome do Bairro</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right"><font color="#330033">60</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código da Cidade</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">6</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Os bairros que constam nestes arquivos
+são apenas aqueles que constam na carteira de imóveis da
+imobiliária.</font></p>
+
+<p><strong><font color="#0000ff">2.3. TIPOS DE IMÓVEIS</font></strong></p>
+
+<p><font color="#0000ff">Os tipos de imóveis para locação e vendas
+estão em arquivos separados, respectivamente "tipo_loc.txt"
+e "tipo_venda.txt". <br>
+Ambos arquivos possuem o mesmo
+formato de registro:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código do Tipo de Imóvel</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">4</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Descrição do Tipo de Imóvel 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">30</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Comercial ou Residencial (C ou R)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Indicador de Dormitório (S ou N)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Devem ser apresentados ao usuário os
+registros de acordo com a opção de pesquisa de imóveis residencias
+ou comerciais. Também deve ser apresentada a opção de número de
+dormitórios quando o campo "Indicador de Dormitório"
+contiver o valor 'S'.</font></p>
+
+<p><strong><font color="#0000ff">2.4. LISTA DE IMÓVEIS<br>
+</font></strong><font color="#0000ff">A
+lista de imóveis para locação e vendas estão em arquivos
+separados, respectivamente "imov.txt" e "imovenda.txt".
+<br>
+Ambos arquivos possuem o mesmo formato de registro:</font></p>
+
+<table width="404" cellspacing="1" cellpadding="2">
+
+	<colgroup><col width="289">
+	<col width="102">
+	</colgroup><tbody><tr>
+		<th style="background: #cccccc" width="289" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="102" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Código do Imóvel</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Tipo do Imóvel 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Código da Cidade 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">6</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Nome do Bairro</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">60</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Reservado 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">3</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Endereço</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">85</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Imediação - parte 1 (Obs.3)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">30</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Quantidade de Dormitórios</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Nome do Prédio</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">30</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Valor (Obs.1)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">12</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Valor Condomínio (Obs.1)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">12</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Valor IPTU (Obs.1)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">12</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p><font color="#000000">Código da Situação do Imóvel</font></p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">3</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Comercial ou Residencial (C ou R) 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">1</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p><font color="#000000">Código da Lista de Características do
+			Imóvel </font>
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Área Útil (Obs.2)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Tamanho do tipo de logradouro no endereço</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Tamanho do logradouro no endereço</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Tamanho do número no endereço</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>CEP</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Vagas de estacionamento</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">3</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Área Total (Obs.2)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Imediação - parte 2 (Obs.3)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">110</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Latitude</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">16</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Longitude</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">16</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Data de Início da Comercialização</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">10</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Data da Última Alteração Manual</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">10</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Preço Sugerido</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">12</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>Destaque 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">1</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="289">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm" width="102">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+OBSERVAÇÕES:<br>
+(1) O formato dos
+valores é 999999999[,99] sem preencimendo de zeros não
+significativos e alinhado à esquerda.<br>
+(2) O formato da área é
+99999[.99] sem preencimendo de zeros não significativos e alinhado à
+esquerda.<br>
+(3) O campo Imediação foi ampliado e seu conteúdo
+completo é obtido com a concatenação da parte1 com a parte
+2.</font><br>
+<font color="#0000ff"><br>
+Estes arquivos possuem
+todos os imóveis da carteira da imobiliária que estejam
+disponibilizados para comercialização.</font></p>
+
+<p><br>
+<strong><font color="#0000ff">2.5. TABELA DE CARACTERÍSTICAS</font></strong></p>
+
+<p><font color="#0000ff">Os imóveis possuem características
+codificadas cuja lista completa se encontra no arquivo "carac.txt"
+com o seguinte formato de registro: </font>
+</p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código da Característica</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">4</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Descrição da Característica 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">25</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Reservado</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">11</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Este arquivo pode ser utilizado,
+opcionalmente, para o usuário restringir a pesquisa conforme algumas
+características desejadas. Se desejado, a lista que consta neste
+arquivo pode ser exibida na página e as opções marcadas deverão
+ser utilizadas na seleção dos imóveis.</font></p>
+
+<p><strong><font color="#0000ff">2.6. DESCRIÇÃO DOS IMÓVEIS</font></strong></p>
+
+<p><font color="#0000ff">Cada imóvel pode possuir uma descrição
+por extenso de suas características, a qual se encontra no arquivo
+"imovdescr.txt". Este arquivo possui um formato de registro
+diferente dos demais&nbsp; pois possui tamanho variável:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código do Imóvel</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Características por Extenso</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">variável</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Este arquivo é utilizado na exibição
+da tela detalhada do imóvel juntamente com as suas fotos. Se o
+imóvel em questão possuir uma descrição por extenso neste arquivo
+então a mesma deverá ser exibida.</font></p>
+
+<p><strong><font color="#0000ff">2.7. CARACTERÍSTICAS DOS IMÓVEIS</font></strong></p>
+
+<p><font color="#0000ff">Cada imóvel possui uma lista de
+características codificadas que se encontra no arquivo
+"caract_imo.txt". Este arquivo possui o seguinte formato de
+registro:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p><font color="#000000">Código da Lista de Características do
+			Imóvel </font>
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Quantidade (depende da característica, por exemplo nro de
+			dormitórios, área em m², etc.)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">6</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Complemento da Característica</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">10</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código da Característica 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">4</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Características por Extenso</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">25</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Indicador de Quantidade (S=usa campo Quantidade ou N=sem
+			Quantidade)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Unidade da Quantidade (m², etc.)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">10</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Tipo da Característica (INT=interna ou CON=infraestrutura do
+			condomínio)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">3</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Este arquivo pode ser utilizado em
+duas situações no site. A primeira na montagem da lista de
+características exibida na tela detalhada do imóvel juntamente com
+as suas fotos. Se o imóvel em questão não possuir uma descrição
+por extenso no arquivo "imovdescr.txt" então deverá ser
+montada uma descrição a partir da concatenação das
+características deste imóvel que constarem no "caract_imo.txt".<br>
+<br>
+A
+segunda possibilidade de utilização é opcional e só utilizada
+quando se disponibiliza a lista de características("carac.txt")
+como opção na tela de pesquisa. Neste caso, só se exibirá como
+resultado da pesquisa os imóveis que contiverem as características
+que foram selecionadas na tela de pesquisa.</font></p>
+
+<p><strong><font color="#0000ff">2.8. TABELA DE SITUAÇÕES DO IMÓVEL</font></strong></p>
+
+<p>&nbsp; <font color="#0000ff">Cada imóvel possui uma situação
+cujo código se refere à&nbsp; lista codificada de situações que
+se encontra no arquivo "situacaoimo.txt", o qual possui o
+seguinte formato de registro:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código da Situação do Imóvel 
+			</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">3</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Descrição da Situação do Imóvel</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">variável</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Este arquivo pode ser utilizado na
+montagem da descrição do imóvel ou na filtragem dos imóveis
+conforme sua situação.<br>
+</font><br>
+<br>
+
+</p>
+
+<p><strong><font color="#0000ff">2.9. TABELA DE IMÓVEIS EM DESTAQUE</font></strong></p>
+
+<p>&nbsp; <font color="#0000ff">Os imóveis que foram marcados no
+sistema para aparecerem no site como destaque serão relacionados no
+arquivo "destaques.txt", o qual possui o seguinte formato
+de registro:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Tipo de destaque (L para locação e V para venda)</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Código do Imóvel</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Este arquivo pode ser utilizado para
+montar a área dos imóveis destacados ou em oferta.<br>
+</font><br>
+<br>
+<br>
+
+</p>
+
+<p><strong><font color="#0000ff">2.10. TABELA DE DESCRIÇÕES DAS
+FOTOS</font></strong></p>
+
+<p>&nbsp; <font color="#0000ff">Os arquivos de fotos dos imóveis
+possuem a descrição da imagem embutido no próprio nome do arquivo.
+Um dos componentes do nome do arquivo é uma sigla que identifica o
+ambiente da foto, as quais estão relacionadas no arquivo
+"descrfoto.txt", o qual possui o seguinte formato de
+registro:</font></p>
+
+<table cellspacing="2" cellpadding="2">
+
+	<tbody><tr>
+		<th style="background: #cccccc" bgcolor="#cccccc">
+			<p align="center">CAMPO 
+			</p>
+		</th>
+		<th style="background: #cccccc" width="100" bgcolor="#cccccc">
+			<p align="center">TAMANHO</p>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Descrição do ambiente da foto</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">50</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>Sigla do ambiente da foto</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p>LF</p>
+		</td>
+		<td style="border-top: none; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: 1px double #808080; padding-top: 0cm; padding-bottom: 0.05cm; padding-left: 0.05cm; padding-right: 0.05cm">
+			<p align="right">1</p>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+<p><font color="#0000ff"><br>
+Este arquivo pode ser utilizado para
+montar a descrição de cada foto dos imóveis, como descrito no item
+3 a seguir.<br>
+</font><br>
+<font color="#0000ff"><br>
+<br>
+</font><strong><font color="#0000ff">3.
+FOTOS DOS IMÓVEIS<br>
+<br>
+</font></strong><font color="#0000ff">Os
+arquivos de imagens contendo as fotos dos imóveis são enviados para
+a pasta ".../Fotos" no site. Nesta pasta é criado um
+subdiretório para cada imóvel identificado pelo código do próprio
+imóvel. No subdiretório de cada imóvel são gravados os arquivos
+de fotos (formato JPEG) que possuem uma nomenclatura que obedece o
+formato descrito a seguir.</font></p>
+
+<blockquote><font color="#0000ff"><u>Nome do Arquivo</u></font><font color="#0000ff">:
+AAAAAAAASS_YY_Z.JPG</font><br>
+<font color="#0000ff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+ ou</font><br>
+<font color="#0000ff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+ AAAAAAAASS_YY_Z-CCCCC.JPG</font><br>
+<br>
+<font color="#0000ff"><u>Onde</u></font><font color="#0000ff">:</font><br>
+<font color="#0000ff">AAAAAAAA
+: Código do Imóvel com 8 digitos preenchidos com zeros a
+esquerda.</font><br>
+<br>
+<font color="#0000ff">SS:&nbsp; Código
+de ordenação da foto constando de 2 caracteres alfabéticos.</font><br>
+<br>
+<font color="#0000ff">YY:
+Sigla que identifica de qual ambiente é a imagem, podendo assumir os
+valores de siglas contidas no arquivo "descrfoto.txt",
+descrito no item 2.10.<br>
+<br>
+Z : Sequenciador de fotos em um
+mesmo ambiente composto de um dígito (apenas para uso interno do
+sistema).</font><br>
+<font color="#0000ff">&nbsp;</font><br>
+<font color="#0000ff">CCCCC
+:&nbsp; Complemento opcional da descrição que possui tamanho livre
+e que deve ser concatenado com a descrição da sigla.</font></blockquote>
+
+<p><font color="#0000ff">Este formato de nome permite a manipulação
+no site exatamente como efetuada no Imobiliar. <br>
+<br>
+Em
+primeiro lugar, para obter a ordenação das fotos determinada pelo
+usuário basta seguir a ordem alfabética dos nomes dos arquivos. Ou
+seja: 00000001AA_.... =&gt; primeira foto,&nbsp; 00000001AB_.... =&gt;
+segunda foto, 00000001AC_.... =&gt; terceira foto, 00000001AD_.... =&gt;
+quarta foto, etc.<br>
+<br>
+Em segundo lugar a descrição da foto é
+obtida pela concatenação dos campos YY e CCCCC da seguinte maneira:</font></p>
+
+<ol>
+
+	<li>
+<p style="margin-bottom: 0cm"><font color="#0000ff">Obtem-se a
+	descrição da sigla pesquisando a sigla YY no arquivo
+	"descrfoto.txt".</font> 
+	</p>
+	</li><li>
+<p><font color="#0000ff">Caso o nome do arquivo contenha o
+	campo CCCCC então concatena-se a descrição obtida com o
+	complemento. Exemplos: 00000001AA_fa_0.jpg =&gt; Fachada ;
+	00000001AA_su_0-principal.jpg =&gt; Suíte principal.</font></p>
+</li>
+</ol>
+
+<p><strong><font color="#0000ff">3.1.
+Lista de Siglas das Imagens<br>
+<br>
+</font></strong><font color="#0000ff">As siglas que identificam as imagens contidas nos arquivos seguem a seguinte tabela:<br>
+</font></p>
+
+<p><font color="#0000ff"><tt>&nbsp;&nbsp;&nbsp;&nbsp; SIGLA&nbsp;&nbsp;&nbsp;&nbsp; | DESCRIÇÃO</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; -----------+-----------------------</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ac&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Academia</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;an&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Andar</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Área de Serviço</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ba&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Banheiro Social</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;bi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Bicicletario</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;bn&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Banheiro</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;br&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Sala de Brinquedo</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;bs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Banheiro Suíte</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;bx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Box</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;cb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Cobertura</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Churrasqueira</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ci&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Circulação</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;cj&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Conjunto</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;cl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Closet</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;co&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Cozinha</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;cp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Copa</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ct&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Cobertura/Terraço</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;de&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Dependência</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;do&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Dormitório</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;dp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Depósito</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ec&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Escritório</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ei&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Estar Íntimo</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;el&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Elevador</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ep&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Entrada do Prédio</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;es&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Quadra de Esportes</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;et&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Estacionamento</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ex&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Externa</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;fa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Fachada</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;fo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Foto</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ga&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Garagem</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;gb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Gabinete</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;gv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Guarita de Vigilância</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Hall</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ie&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Infraestrutura</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;im&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Imediações</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Interna</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ja&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Sala de Jantar</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;jd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Jardim</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;la&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lavanderia</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;li&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Living</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;lo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Loja</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;lv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Lavabo</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Mezanino</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;pi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Planta do Imóvel</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;pl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Playground</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;po&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Portaria</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;ps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Piscina</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;pt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Patio</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;sa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Sala</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;sc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Sacada</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;sf&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Salão de Festas</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;sg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Sala de Ginástica</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;sj&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Sala de Jogos</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;su&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Suíte</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;to&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Tour do imovel</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;vd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Video do imovel</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;vi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Vista</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;wa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | WC Auxiliar</tt><tt><br>
+    </tt><tt>&nbsp;&nbsp;&nbsp; &nbsp;wc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | WC Cobertura</tt><tt><br>
+    </tt></font><font color="#0000ff"><br>
+  </font></p>
+
+<p><font color="#0000ff">
+  </font><strong><font color="#0000ff">4.
+ALTERAÇÃO DE FORMATO DOS ARQUIVOS<br>
+<br>
+</font></strong><font color="#0000ff">Com
+a evolução do Sistema Imobiliar em função de novas necessidades
+dos usuários, poderão existir alterações em alguns arquivos para
+agregar novas informações. A regra para estes casos, será a de não
+alterar os campos existentes e apenas complementar o registro ao
+final da linha existente. Ou seja, novos campos ou informações
+adicionais aos campos existentes serão posicionados após o último
+campo e antes do LF ("line feed") de cada linha.<br>
+<br>
+Assim,
+o tratamento destes arquivos deverá levar em conta esta
+possibilidade de alteração de formato. Mesmo que não venha a
+utilizar eventuais novos campos, o programa que tratar estes arquivos
+deverá aceitar registros maiores que os inicialmente
+implementados.<br>
+<br>
+</font><br>
+<br>
+
+</p>
+
+
+
+</body></html>

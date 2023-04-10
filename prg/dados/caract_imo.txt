@@ -1,0 +1,2586 @@
+12168   2.00            25  DORMITORIO               S          
+12168   0     .         30  SACADA                   N          
+12168   1.00            34  ELEVADOR                 S          
+12168   1.00  .         61  BANHEIRO                 S          
+12168   0               80  PISO PARQUET             N          
+12168   0     .         84  AREA DE SERV             N          
+12168   0               110 BANHEIRO DE EMPREGADA    N          
+12168   0               116 ALVENARIA                N          
+12168   1.00            122 SALA                     S          
+12168   0               129 RESIDENCIAL              N          
+12168   0               190 DORMITORIO DE EMPREGADA  N          
+12169   0               6   PLAYGROUND               N          
+12169   1.00            25  DORMITORIO               S          
+12169   0               56  SALA DE JANTAR           S          
+12169   1.00            60  COZINHA                  S          
+12169   1.00  .         61  BANHEIRO                 S          
+12169   0     .         72  AREA C/TANQUE            N          
+12169   0               82  ZELADOR                  N          
+12169   0     .         84  AREA DE SERV             N          
+12169   1.00            86  AR CONDICIONADO          N          
+12169   0               116 ALVENARIA                N          
+12169   0               124 LATERAL                  N          
+12169   0               129 RESIDENCIAL              N          
+12169   0               132 PISO TABUÃO              N          
+12169   0     TERCEIRO  162 ANDAR                    N          
+12176   2.00            34  ELEVADOR                 S          
+12176   1.00  .         61  BANHEIRO                 S          
+12176   0               77  MOBILIADO                N          
+12176   3.00            86  AR CONDICIONADO          N          
+12176   0               116 ALVENARIA                N          
+12176   0     CERÂMICO  119 PISO FRIO                N          
+12176   4.00            122 SALA                     S          
+12176   0               126 FRENTE                   N          
+12176   0               129 RESIDENCIAL              N          
+12176   0               153 PORTARIA                 N          
+12176   0     NONO      162 ANDAR                    N          
+12178   2.00            25  DORMITORIO               S          
+12178   1.00            34  ELEVADOR                 S          
+12178   0               56  SALA DE JANTAR           S          
+12178   1.00            60  COZINHA                  S          
+12178   1.00  .         61  BANHEIRO                 S          
+12178   0               69  PORTEIRO ELETRONICO      N          
+12178   0     .         72  AREA C/TANQUE            N          
+12178   0     .         80  PISO PARQUET             N          
+12178   0               82  ZELADOR                  N          
+12178   0     .         84  AREA DE SERV             N          
+12178   0               110 BANHEIRO DE EMPREGADA    N          
+12178   0               116 ALVENARIA                N          
+12178   0               125 FUNDOS                   N          
+12178   0               129 RESIDENCIAL              N          
+12178   0               153 PORTARIA                 N          
+12178   0     OITAVO    162 ANDAR                    N          
+12178   0               190 DORMITORIO DE EMPREGADA  N          
+12252   2.00            34  ELEVADOR                 S          
+12252   1.00            60  COZINHA                  S          
+12252   1.00  .         61  BANHEIRO                 S          
+12252   0               69  PORTEIRO ELETRONICO      N          
+12252   0               82  ZELADOR                  N          
+12252   0               116 ALVENARIA                N          
+12252   0               125 FUNDOS                   N          
+12252   0               129 RESIDENCIAL              N          
+12252   0               153 PORTARIA                 N          
+12252   0               180 DIVISORIA DE MADEIRA     N          
+12252   0     FRIO      228 PISO                     N          
+12253   0     .         211 LOJA                     N          
+12257   0               2   SALÃO DE FESTAS          N          
+12257   0               6   PLAYGROUND               N          
+12257   2.00            25  DORMITORIO               S          
+12257   1.00            34  ELEVADOR                 S          
+12257   0               56  SALA DE JANTAR           S          
+12257   1.00            60  COZINHA                  S          
+12257   1.00  .         61  BANHEIRO                 S          
+12257   0     .         72  AREA C/TANQUE            N          
+12257   0     NA SALA   75  PISO CARPETE             N          
+12257   0               82  ZELADOR                  N          
+12257   0     .         84  AREA DE SERV             N          
+12257   0               116 ALVENARIA                N          
+12257   0               124 LATERAL                  N          
+12257   0               129 RESIDENCIAL              N          
+12257   0               153 PORTARIA                 N          
+12257   0     SEXTO     162 ANDAR                    N          
+12257   0               231 ENTR.AUT.                N          
+12262   1.00  .         34  ELEVADOR                 S          
+12262   1.00  .         61  BANHEIRO                 S          
+12262   0     .         75  PISO CARPETE             N          
+12262   0     .         86  AR CONDICIONADO          N          
+12262   0               124 LATERAL                  N          
+12262   0     1         162 ANDAR                    N          
+12262   0               173 PISO DE CERÂMICA         N          
+12263   2.00  .         61  BANHEIRO                 S          
+12263   0     SALAS     80  PISO PARQUET             N          
+12263   0     .         84  AREA DE SERV             N          
+12263   0               116 ALVENARIA                N          
+12263   0               117 COMERCIAL                N          
+12263   4.00            122 SALA                     S          
+12263   0               125 FUNDOS                   N          
+12263   0     TERREO    162 ANDAR                    N          
+12267   0               2   SALÃO DE FESTAS          N          
+12267   0               6   PLAYGROUND               N          
+12267   3.00            25  DORMITORIO               S          
+12267   0     .         30  SACADA                   N          
+12267   0     DORMITORIO54  ARMÁRIOS EMBUTIDOS       N          
+12267   0               56  SALA DE JANTAR           S          
+12267   1.00            60  COZINHA                  S          
+12267   2.00  .         61  BANHEIRO                 S          
+12267   0     .         72  AREA C/TANQUE            N          
+12267   0     C/SYNTEKO 80  PISO PARQUET             N          
+12267   0               82  ZELADOR                  N          
+12267   0     .         84  AREA DE SERV             N          
+12267   0               116 ALVENARIA                N          
+12267   0               124 LATERAL                  N          
+12267   0     2         127 2º ANDAR                 N          
+12267   0               129 RESIDENCIAL              N          
+12267   0     SEGUNDO   162 ANDAR                    N          
+12267   0               190 DORMITORIO DE EMPREGADA  N          
+12271   1.00  .         61  BANHEIRO                 S          
+12271   0     GRANITO   119 PISO FRIO                N          
+12271   0               126 FRENTE                   N          
+12271   0     TERREO    162 ANDAR                    N          
+12275   1.00  NR. 10    53  BOX COBERTO              S          
+12276   0               6   PLAYGROUND               N          INT
+12276   0     ELÉTRICA  20  CHURRASQUEIRA            N          
+12276   0               22  LAREIRA                  N          
+12276   4.00            25  DORMITORIO               S          
+12276   0               32  PORTARIA-24 HS           N          
+12276   0               38  QUADRA ESPORTIVA         N          
+12276   0               49  LAVABO                   N          
+12276   0               50  GABINETE                 N          
+12276   0     SUITES    54  ARMÁRIOS EMBUTIDOS       N          
+12276   0               56  SALA DE JANTAR           S          
+12276   4.00  2 C/CLOSET58  SUÍTE                    S          
+12276   1.00  .         61  BANHEIRO                 S          
+12276   0               73  COPA                     N          
+12276   0               76  SEMI-MOBILIADO           N          
+12276   0     2 C/BOX   79  SUITE C/HIDRO            N          
+12276   0     .         84  AREA DE SERV             N          
+12276   5.00  SUITE/SALA86  AR CONDICIONADO          N          
+12276   0               88  CHURRASQUEIRA            N          
+12276   0               92  AGUA QUENTE              N          
+12276   0               93  SALA DE ESTAR            N          
+12276   0     .         95  JARDIM                   N          
+12276   0     C/PATIO   97  PISCINA                  N          
+12276   0     .         99  CASA CONDOMINIO FECHADO  N          
+12276   0     .         102 ALARME                   N          
+12276   0               110 BANHEIRO DE EMPREGADA    N          
+12276   0               116 ALVENARIA                N          
+12276   0               118 COZINHA C/ ARMÁRIO       N          
+12276   2.00  AMBIENTES 122 SALA                     S          
+12276   0               129 RESIDENCIAL              N          
+12276   0     DORM/ESCAD132 PISO TABUÃO              N          
+12276   0               143 VISTA PANORAMICA         N          
+12276   0     C/SEGREDO 164 COFRE                    N          
+12276   0               175 CLOSET                   N          
+12276   0     ARM.AEREO 176 GARAGEM P/ 2 CARROS      N          
+12276   5.00  SUITE/SALA179 VENTILADOR DE TETO       S          
+12276   0               190 DORMITORIO DE EMPREGADA  N          
+12276   0               192 DORMIT. C/ ARM. EMBUTIDO N          
+12276   0               218 LAVANDERIA               N          
+12276   0     .         230 JARDIM DE INVERNO        N          CON
+12276   0     C/PISCINA 244 CONDOMINIO FECHADO       N          CON
+12276   0     AMPLA     245 AREA VERDE               N          CON
+12276   0     c/lareira 246 SOTÃO                    N          
+12276   0     C/CHURRASQ248 AREA DE LAZER            N          
+12276   0     PISCNA/PAT249 VARANDA                  N          
+12276   0     BAR C/MOVE250 SALA CONJUG.C/SALA JANTARN          
+12276   0     IMPORTADO 251 PISO EM PORCELANATO      N          
+12276   0     BAIXO     252 VALOR CONDOMINIO         N          
+12276   0     .         253 LUMINÁRIAS               N          
+12276   0     .         257 TRANQUILO                N          
+12276   0     .         258 SEGURO                   N          
+12276   0     .         259 LUSTRES                  N          
+12276   0     LIGADA    260 LUZ                      N          
+12276   0     .         262 IMOVEL FINAMENTE ACABADO N          
+12594   2.00            25  DORMITORIO               S          
+12594   1.00  .         28  LIVING                   S          
+12594   0     .         52  DEPENDENCIA EMPREGADA    N          
+12594   1.00  .         60  COZINHA                  S          
+12594   0               69  PORTEIRO ELETRONICO      N          
+12594   0     .         72  AREA C/TANQUE            N          
+12594   0     .         80  PISO PARQUET             N          
+12594   0               83  W.C AUX                  N          
+12594   0               121 ESPERA P/ARCONDICIONADO  N          
+12594   0               126 FRENTE                   N          
+12594   0     4         162 ANDAR                    N          
+12594   0               184 BANHEIRO BOX ACRILICO    N          
+12599   2.00            25  DORMITORIO               S          
+12599   1.00  .         28  LIVING                   S          
+12599   0     .         52  DEPENDENCIA EMPREGADA    N          
+12599   1.00  .         53  BOX COBERTO              S          
+12599   1.00  .         60  COZINHA                  S          
+12599   0               67  JUNKERS                  N          
+12599   0               69  PORTEIRO ELETRONICO      N          
+12599   0     .         72  AREA C/TANQUE            N          
+12599   0     .         80  PISO PARQUET             N          
+12599   0               83  W.C AUX                  N          
+12599   0               121 ESPERA P/ARCONDICIONADO  N          
+12599   0               126 FRENTE                   N          
+12599   0     4         162 ANDAR                    N          
+12599   0               171 ESPERA PARA TELEFONE     N          
+12599   0               178 ENSOLARADO               N          
+12599   0               184 BANHEIRO BOX ACRILICO    N          
+12404   2.00            25  DORMITORIO               S          
+12404   1.00  .         28  LIVING                   S          
+12404   1.00  .         34  ELEVADOR                 S          
+12404   0     .         52  DEPENDENCIA EMPREGADA    N          
+12404   1.00            60  COZINHA                  S          
+12404   0               69  PORTEIRO ELETRONICO      N          
+12404   0     .         72  AREA C/TANQUE            N          
+12404   0     .         80  PISO PARQUET             N          
+12404   0               83  W.C AUX                  N          
+12404   0               125 FUNDOS                   N          
+12404   0     2         162 ANDAR                    N          
+12404   0               173 PISO DE CERÂMICA         N          
+12404   0               184 BANHEIRO BOX ACRILICO    N          
+12406   2.00            25  DORMITORIO               S          
+12406   1.00  .         28  LIVING                   S          
+12406   1.00  .         34  ELEVADOR                 S          
+12406   0     .         52  DEPENDENCIA EMPREGADA    N          
+12406   1.00            60  COZINHA                  S          
+12406   0               68  HALL                     N          
+12406   0               69  PORTEIRO ELETRONICO      N          
+12406   0     .         72  AREA C/TANQUE            N          
+12406   0               82  ZELADOR                  N          
+12406   0               83  W.C AUX                  N          
+12406   0               87  GAS CENTRAL              N          
+12406   0               126 FRENTE                   N          
+12406   0     .         139 BOX P/ CARRO             S          
+12406   0     2         162 ANDAR                    N          
+12406   0               178 ENSOLARADO               N          
+12342   2.00            25  DORMITORIO               S          
+12342   1.00  .         28  LIVING                   S          
+12342   1.00  .         34  ELEVADOR                 S          
+12342   0     .         52  DEPENDENCIA EMPREGADA    N          
+12342   0     .         54  ARMÁRIOS EMBUTIDOS       N          
+12342   1.00  .         60  COZINHA                  S          
+12342   0               69  PORTEIRO ELETRONICO      N          
+12342   0     .         72  AREA C/TANQUE            N          
+12342   0     .         80  PISO PARQUET             N          
+12342   0               83  W.C AUX                  N          
+12342   0     .         92  AGUA QUENTE              N          
+12342   0               126 FRENTE                   N          
+12342   0     7         162 ANDAR                    N          
+12342   0               173 PISO DE CERÂMICA         N          
+12342   0               184 BANHEIRO BOX ACRILICO    N          
+12284   2.00  .         34  ELEVADOR                 S          
+12284   1.00            60  COZINHA                  S          
+12284   0               68  HALL                     N          
+12284   0               69  PORTEIRO ELETRONICO      N          
+12284   0     .         72  AREA C/TANQUE            N          
+12284   0     .         80  PISO PARQUET             N          
+12284   0               87  GAS CENTRAL              N          
+12284   0               116 ALVENARIA                N          
+12284   0     .         119 PISO FRIO                N          
+12284   0               125 FUNDOS                   N          
+12284   0               129 RESIDENCIAL              N          
+12284   0               153 PORTARIA                 N          
+12284   0               171 ESPERA PARA TELEFONE     N          
+12284   0               173 PISO DE CERÂMICA         N          
+12284   1.00  .         183 BANHEIRO SOCIAL          S          
+12361   1.00            25  DORMITORIO               S          
+12361   1.00  .         28  LIVING                   S          
+12361   2.00  .         34  ELEVADOR                 S          
+12361   1.00  .         61  BANHEIRO                 S          
+12361   0               68  HALL                     N          
+12361   0               69  PORTEIRO ELETRONICO      N          
+12361   0     .         80  PISO PARQUET             N          
+12361   0               87  GAS CENTRAL              N          
+12361   0               126 FRENTE                   N          
+12361   0     2         162 ANDAR                    N          
+12361   0               169 COZINHA CONJUGADA C/ AREAN          
+12503   1.00  .         34  ELEVADOR                 S          
+12503   1.00  .         61  BANHEIRO                 S          
+12503   1.00            86  AR CONDICIONADO          N          
+12503   0               126 FRENTE                   N          
+12503   0               153 PORTARIA                 N          
+12503   0     3         162 ANDAR                    N          
+12503   0               174 PISO MULTIPISO           N          
+12431   1.00  .         34  ELEVADOR                 S          
+12431   1.00  .         61  BANHEIRO                 S          
+12431   0     .         80  PISO PARQUET             N          
+12431   0               124 LATERAL                  N          
+12431   0               153 PORTARIA                 N          
+12431   0     7         162 ANDAR                    N          
+12431   0               173 PISO DE CERÂMICA         N          
+12284   2.00  .         34  ELEVADOR                 S          
+12284   1.00            60  COZINHA                  S          
+12284   0               68  HALL                     N          
+12284   0               69  PORTEIRO ELETRONICO      N          
+12284   0     .         72  AREA C/TANQUE            N          
+12284   0     .         80  PISO PARQUET             N          
+12284   0               87  GAS CENTRAL              N          
+12284   0               116 ALVENARIA                N          
+12284   0     .         119 PISO FRIO                N          
+12284   0               125 FUNDOS                   N          
+12284   0               129 RESIDENCIAL              N          
+12284   0               153 PORTARIA                 N          
+12284   0               171 ESPERA PARA TELEFONE     N          
+12284   0               173 PISO DE CERÂMICA         N          
+12284   1.00  .         183 BANHEIRO SOCIAL          S          
+12531   2.00            25  DORMITORIO               S          
+12531   1.00  .         28  LIVING                   S          
+12531   2.00  .         34  ELEVADOR                 S          
+12531   0     .         52  DEPENDENCIA EMPREGADA    N          
+12531   1.00            60  COZINHA                  S          
+12531   0               69  PORTEIRO ELETRONICO      N          
+12531   0     .         72  AREA C/TANQUE            N          
+12531   0               83  W.C AUX                  N          
+12531   0               87  GAS CENTRAL              N          
+12531   0               98  VISTA                    N          
+12531   0               126 FRENTE                   N          
+12531   0               153 PORTARIA                 N          
+12531   0               173 PISO DE CERÂMICA         N          
+12531   0               174 PISO MULTIPISO           N          
+12531   0               184 BANHEIRO BOX ACRILICO    N          
+12650   2.00            25  DORMITORIO               S          
+12650   1.00  .         28  LIVING                   S          
+12650   1.00  .         60  COZINHA                  S          
+12650   1.00  .         61  BANHEIRO                 S          
+12650   0               63  DESPENSA                 N          
+12650   0               69  PORTEIRO ELETRONICO      N          
+12650   0     .         72  AREA C/TANQUE            N          
+12650   0               83  W.C AUX                  N          
+12650   0               126 FRENTE                   N          
+12650   1.00  .         139 BOX P/ CARRO             S          
+12650   0     3         162 ANDAR                    N          
+12650   0               173 PISO DE CERÂMICA         N          
+12650   0               174 PISO MULTIPISO           N          
+12654   2.00  .         34  ELEVADOR                 S          
+12654   0     .         80  PISO PARQUET             N          
+12654   0               116 ALVENARIA                N          
+12654   4.00  .         122 SALA                     S          
+12654   1.00  .         131 CONJUNTO                 S.         
+12654   0               153 PORTARIA                 N          
+12654   0               154 12º ANDAR                N          
+12654   0               177 CENTRAL                  N          
+12654   1.00  .         183 BANHEIRO SOCIAL          S          
+12643   2.00            25  DORMITORIO               S          
+12643   1.00  .         28  LIVING                   S          
+12643   0     .         52  DEPENDENCIA EMPREGADA    N          
+12643   1.00  .         60  COZINHA                  S          
+12643   0               67  JUNKERS                  N          
+12643   0               68  HALL                     N          
+12643   0               69  PORTEIRO ELETRONICO      N          
+12643   0     .         72  AREA C/TANQUE            N          
+12643   0     .         80  PISO PARQUET             N          
+12643   0               83  W.C AUX                  N          
+12643   0               121 ESPERA P/ARCONDICIONADO  N          
+12643   0               125 FUNDOS                   N          
+12643   1.00  .         139 BOX P/ CARRO             S          
+12643   0     3         162 ANDAR                    N          
+12643   0               171 ESPERA PARA TELEFONE     N          
+12643   0               173 PISO DE CERÂMICA         N          
+12643   0               184 BANHEIRO BOX ACRILICO    N          
+12433   0               68  HALL                     N          
+12433   0               69  PORTEIRO ELETRONICO      N          
+12433   0     .         80  PISO PARQUET             N          
+12433   0     .         84  AREA DE SERV             N          
+12433   0               116 ALVENARIA                N          
+12433   0     .         128 1º ANDAR                 N          
+12433   0               129 RESIDENCIAL              N          
+12433   0               169 COZINHA CONJUGADA C/ AREAN          
+12433   1.00  .         183 BANHEIRO SOCIAL          S          
+12483   0     1         54  ARMÁRIOS EMBUTIDOS       N          
+12483   1.00  .         61  BANHEIRO                 S          
+12483   0               69  PORTEIRO ELETRONICO      N          
+12483   0     .         72  AREA C/TANQUE            N          
+12483   0     .         80  PISO PARQUET             N          
+12483   0               124 LATERAL                  N          
+12483   0               133 COZINHA AMERICANA        N          
+12483   0     2         162 ANDAR                    N          
+12412   1.00  .         34  ELEVADOR                 S          
+12412   1.00            60  COZINHA                  S          
+12412   0               69  PORTEIRO ELETRONICO      N          
+12412   1.00            86  AR CONDICIONADO          N          
+12412   0               116 ALVENARIA                N          
+12412   0               126 FRENTE                   N          
+12412   0               153 PORTARIA                 N          
+12412   0               166 PISO FORRAÇÃO            N          
+12412   0               171 ESPERA PARA TELEFONE     N          
+12412   0               173 PISO DE CERÂMICA         N          
+12412   1.00  .         183 BANHEIRO SOCIAL          S          
+12413   1.00  .         34  ELEVADOR                 S          
+12413   1.00            60  COZINHA                  S          
+12413   0               69  PORTEIRO ELETRONICO      N          
+12413   1.00            86  AR CONDICIONADO          N          
+12413   0               116 ALVENARIA                N          
+12413   0               117 COMERCIAL                N          
+12413   0               125 FUNDOS                   N          
+12413   0               153 PORTARIA                 N          
+12413   0               166 PISO FORRAÇÃO            N          
+12413   0               171 ESPERA PARA TELEFONE     N          
+12413   0               173 PISO DE CERÂMICA         N          
+12413   1.00  .         183 BANHEIRO SOCIAL          S          
+12688   0     FECHADA   5   GARAGEM                  N          
+12688   1.00            34  ELEVADOR                 S          
+12688   0               56  SALA DE JANTAR           S          
+12688   1.00  .         58  SUÍTE                    S          
+12688   1.00            60  COZINHA                  S          
+12688   1.00  .         61  BANHEIRO                 S          
+12688   0               69  PORTEIRO ELETRONICO      N          
+12688   0     .         72  AREA C/TANQUE            N          
+12688   0               82  ZELADOR                  N          
+12688   0     .         84  AREA DE SERV             N          
+12688   0               91  PISO DECORFLEX           N          
+12688   0               110 BANHEIRO DE EMPREGADA    N          
+12688   0               116 ALVENARIA                N          
+12688   0               126 FRENTE                   N          
+12688   0               129 RESIDENCIAL              N          
+12688   0     TERCEIRO  162 ANDAR                    N          
+12688   0               190 DORMITORIO DE EMPREGADA  N          
+12688   0     BEM CONSER217 EDIFICIO                 N          
+12689   0               2   SALÃO DE FESTAS          N          
+12689   0               6   PLAYGROUND               N          
+12689   0               22  LAREIRA                  N          
+12689   2.00            25  DORMITORIO               S          
+12689   0               28  LIVING                   S          
+12689   0               32  PORTARIA-24 HS           N          
+12689   2.00  C/VIS.PANO34  ELEVADOR                 S          
+12689   0               49  LAVABO                   N          
+12689   0               50  GABINETE                 N          
+12689   0               56  SALA DE JANTAR           S          
+12689   2.00  .         58  SUÍTE                    S          
+12689   2.00            60  COZINHA                  S          
+12689   0               69  PORTEIRO ELETRONICO      N          
+12689   1.00  30 M2     71  DEPOSITO                 S          
+12689   0               76  SEMI-MOBILIADO           N          
+12689   0               88  CHURRASQUEIRA            N          
+12689   0               93  SALA DE ESTAR            N          
+12689   0     .         97  PISCINA                  N          
+12689   0     .         103 CIRCUITO INTERNO DE TV   N          
+12689   0               116 ALVENARIA                N          
+12689   0               118 COZINHA C/ ARMÁRIO       N          
+12689   0               129 RESIDENCIAL              N          
+12689   0               143 VISTA PANORAMICA         N          
+12689   0     1         155 BANHEIRO C/ HIDRO        N          
+12689   0     13 ANDAR  162 ANDAR                    N          
+12689   0               176 GARAGEM P/ 2 CARROS      N          
+12689   0               190 DORMITORIO DE EMPREGADA  N          
+12689   0     NA SALA   207 ESTAR INTIMO             N          
+12691   1.00            25  DORMITORIO               S          
+12691   1.00            60  COZINHA                  S          
+12691   1.00  .         61  BANHEIRO                 S          
+12691   0               69  PORTEIRO ELETRONICO      N          
+12691   0               82  ZELADOR                  N          
+12691   0     NA COZINHA84  AREA DE SERV             N          
+12691   0               116 ALVENARIA                N          
+12691   1.00            122 SALA                     S          
+12691   0               126 FRENTE                   N          
+12691   0               129 RESIDENCIAL              N          
+12691   0               132 PISO TABUÃO              N          
+12691   0               153 PORTARIA                 N          
+12691   0     TERCEIRO  162 ANDAR                    N          
+12692   6.00  03 LAVABUL61  BANHEIRO                 S          
+12692   0               69  PORTEIRO ELETRONICO      N          
+12692   0     .         70  MEZANINO                 N          
+12692   0               88  CHURRASQUEIRA            N          
+12692   0               116 ALVENARIA                N          
+12692   0               117 COMERCIAL                N          
+12692   0     CIMENTO   119 PISO FRIO                N          
+12692   0               164 COFRE                    N          
+12692   0     C/CONT.REM240 PORTÃO                   N          
+12692   0     .         241 GUARITA P/VIGILÂNCIA     N          
+12702   0     .         5   GARAGEM                  N          
+12702   3.00            25  DORMITORIO               S          
+12702   2.00  .         34  ELEVADOR                 S          
+12702   0               49  LAVABO                   N          
+12702   0               56  SALA DE JANTAR           S          
+12702   1.00            60  COZINHA                  S          
+12702   1.00  .         61  BANHEIRO                 S          
+12702   0               69  PORTEIRO ELETRONICO      N          
+12702   0     DORMIT    75  PISO CARPETE             N          
+12702   0     SALA      80  PISO PARQUET             N          
+12702   0     .         84  AREA DE SERV             N          
+12702   0               110 BANHEIRO DE EMPREGADA    N          
+12702   0               116 ALVENARIA                N          
+12702   0               129 RESIDENCIAL              N          
+12702   0               153 PORTARIA                 N          
+12702   0               190 DORMITORIO DE EMPREGADA  N          
+12704   3.00            25  DORMITORIO               S          
+12704   0               56  SALA DE JANTAR           S          
+12704   1.00            60  COZINHA                  S          
+12704   1.00  .         61  BANHEIRO                 S          
+12704   0               69  PORTEIRO ELETRONICO      N          
+12704   0     .         72  AREA C/TANQUE            N          
+12704   0     SL/DORMIT 80  PISO PARQUET             N          
+12704   0     .         84  AREA DE SERV             N          
+12704   0               110 BANHEIRO DE EMPREGADA    N          
+12704   0               116 ALVENARIA                N          
+12704   0               125 FUNDOS                   N          
+12704   0               129 RESIDENCIAL              N          
+12704   0     PRIMEIRO  162 ANDAR                    N          
+12704   0               190 DORMITORIO DE EMPREGADA  N          
+12705   3.00            25  DORMITORIO               S          
+12705   0               56  SALA DE JANTAR           S          
+12705   1.00            60  COZINHA                  S          
+12705   1.00  .         61  BANHEIRO                 S          
+12705   0               69  PORTEIRO ELETRONICO      N          
+12705   0     .         72  AREA C/TANQUE            N          
+12705   0     SL/DORMIT 80  PISO PARQUET             N          
+12705   0               82  ZELADOR                  N          
+12705   0     .         84  AREA DE SERV             N          
+12705   0               110 BANHEIRO DE EMPREGADA    N          
+12705   0               116 ALVENARIA                N          
+12705   0               125 FUNDOS                   N          
+12705   0               129 RESIDENCIAL              N          
+12705   0     TERCEIRO  162 ANDAR                    N          
+12705   0               190 DORMITORIO DE EMPREGADA  N          
+12706   3.00            25  DORMITORIO               S          
+12706   0               56  SALA DE JANTAR           S          
+12706   1.00            60  COZINHA                  S          
+12706   1.00  .         61  BANHEIRO                 S          
+12706   0               69  PORTEIRO ELETRONICO      N          
+12706   0     .         72  AREA C/TANQUE            N          
+12706   0     SL/DORMIT 80  PISO PARQUET             N          
+12706   0               82  ZELADOR                  N          
+12706   0     .         84  AREA DE SERV             N          
+12706   0               110 BANHEIRO DE EMPREGADA    N          
+12706   0               116 ALVENARIA                N          
+12706   0               125 FUNDOS                   N          
+12706   0               129 RESIDENCIAL              N          
+12706   0     SEGUNDO   162 ANDAR                    N          
+12706   0               190 DORMITORIO DE EMPREGADA  N          
+12707   3.00            25  DORMITORIO               S          
+12707   0               56  SALA DE JANTAR           S          
+12707   1.00            60  COZINHA                  S          
+12707   1.00  .         61  BANHEIRO                 S          
+12707   0               69  PORTEIRO ELETRONICO      N          
+12707   0     .         72  AREA C/TANQUE            N          
+12707   0     SL/DORMIT 80  PISO PARQUET             N          
+12707   0     .         84  AREA DE SERV             N          
+12707   0               110 BANHEIRO DE EMPREGADA    N          
+12707   0               116 ALVENARIA                N          
+12707   0               125 FUNDOS                   N          
+12707   0     TERCEIRO  162 ANDAR                    N          
+12707   0               190 DORMITORIO DE EMPREGADA  N          
+12708   0               2   SALÃO DE FESTAS          N          
+12708   0     .         5   GARAGEM                  N          
+12708   1.00            20  CHURRASQUEIRA            N          
+12708   2.00            25  DORMITORIO               S          
+12708   0     .         30  SACADA                   N          
+12708   2.00  .         34  ELEVADOR                 S          
+12708   0               56  SALA DE JANTAR           S          
+12708   1.00            60  COZINHA                  S          
+12708   2.00  .         61  BANHEIRO                 S          
+12708   0               69  PORTEIRO ELETRONICO      N          
+12708   0     .         72  AREA C/TANQUE            N          
+12708   0     .         84  AREA DE SERV             N          
+12708   0               92  AGUA QUENTE              N          
+12708   0               93  SALA DE ESTAR            N          
+12708   0               116 ALVENARIA                N          
+12708   0               126 FRENTE                   N          
+12708   0               129 RESIDENCIAL              N          
+12708   0               153 PORTARIA                 N          
+12708   0               160 ARMARIOS AEREOS          N          
+12708   0     SEGUNDO   162 ANDAR                    N          
+12714   1.00  .         61  BANHEIRO                 S          
+12714   0     .         70  MEZANINO                 N          
+12714   0               116 ALVENARIA                N          
+12714   0               117 COMERCIAL                N          
+12714   0               126 FRENTE                   N          
+12714   0               132 PISO TABUÃO              N          
+12717   0     .         30  SACADA                   N          
+12717   0     DORMIT    54  ARMÁRIOS EMBUTIDOS       N          
+12717   1.00            60  COZINHA                  S          
+12717   0               69  PORTEIRO ELETRONICO      N          
+12717   0     .         72  AREA C/TANQUE            N          
+12717   0     SALA      75  PISO CARPETE             N          
+12717   0     .         84  AREA DE SERV             N          
+12717   0               116 ALVENARIA                N          
+12717   0               126 FRENTE                   N          
+12717   0               129 RESIDENCIAL              N          
+12717   0     TERCEIRO  162 ANDAR                    N          
+12720   0               2   SALÃO DE FESTAS          N          
+12720   0     COBERTA   5   GARAGEM                  N          
+12720   0               6   PLAYGROUND               N          
+12720   1.00            25  DORMITORIO               S          
+12720   0     .         30  SACADA                   N          
+12720   2.00  .         34  ELEVADOR                 S          
+12720   0     COZINHA   54  ARMÁRIOS EMBUTIDOS       N          
+12720   0               56  SALA DE JANTAR           S          
+12720   1.00            60  COZINHA                  S          
+12720   1.00  .         61  BANHEIRO                 S          
+12720   0               69  PORTEIRO ELETRONICO      N          
+12720   0     .         72  AREA C/TANQUE            N          
+12720   0     DORM/SALA 75  PISO CARPETE             N          
+12720   0               82  ZELADOR                  N          
+12720   0     .         84  AREA DE SERV             N          
+12720   0     .         97  PISCINA                  N          
+12720   0               116 ALVENARIA                N          
+12720   0               125 FUNDOS                   N          
+12720   0               129 RESIDENCIAL              N          
+12720   0     TERCEIRO  162 ANDAR                    N          
+12725   1.00            60  COZINHA                  S          
+12725   1.00  .         61  BANHEIRO                 S          
+12725   0               77  MOBILIADO                N          
+12725   0               116 ALVENARIA                N          
+12725   0               125 FUNDOS                   N          
+12725   0               132 PISO TABUÃO              N          
+12725   0     DÉCIMO    162 ANDAR                    N          
+12736   0     .         30  SACADA                   N          
+12736   1.00            60  COZINHA                  S          
+12736   0               116 ALVENARIA                N          
+12736   0               125 FUNDOS                   N          
+12736   0     DÉCIMO    162 ANDAR                    N          
+12736   1.00  .         183 BANHEIRO SOCIAL          S          
+12741   1.00  .         28  LIVING                   S          
+12741   1.00            60  COZINHA                  S          
+12741   1.00  .         61  BANHEIRO                 S          
+12741   0     .         84  AREA DE SERV             N          
+12741   0               87  GAS CENTRAL              N          
+12741   0     47,94     106 AREA TOTAL               N          
+12741   0     42,47     107 AREA REAL                N          
+12741   0     .         147 3º ANDAR                 N          
+12742   0               2   SALÃO DE FESTAS          N          
+12742   0               6   PLAYGROUND               N          
+12742   2.00            25  DORMITORIO               S          
+12742   0               32  PORTARIA-24 HS           N          
+12742   0               38  QUADRA ESPORTIVA         N          
+12742   1.00            60  COZINHA                  S          
+12742   1.00  .         61  BANHEIRO                 S          
+12742   0     .         84  AREA DE SERV             N          
+12742   0               88  CHURRASQUEIRA            N          
+12742   0     62,51     106 AREA TOTAL               N          
+12742   0     52,60     107 AREA REAL                N          
+12743   2.00            25  DORMITORIO               S          
+12743   1.00            60  COZINHA                  S          
+12743   1.00  .         61  BANHEIRO                 S          
+12743   0     .         84  AREA DE SERV             N          
+12743   0               92  AGUA QUENTE              N          
+12743   0     59,44     107 AREA REAL                N          
+12743   0               125 FUNDOS                   N          
+12743   0     .         139 BOX P/ CARRO             S          
+12744   0     .         5   GARAGEM                  N          
+12744   3.00            25  DORMITORIO               S          
+12744   0     .         30  SACADA                   N          
+12744   0     .         52  DEPENDENCIA EMPREGADA    N          
+12744   1.00            60  COZINHA                  S          
+12744   1.00  .         61  BANHEIRO                 S          
+12744   0     .         84  AREA DE SERV             N          
+12744   0     180       106 AREA TOTAL               N          
+12744   0     146       107 AREA REAL                N          
+12744   0               126 FRENTE                   N          
+12744   0               181 LIVING C/ SACADA         N          
+12745   1.00            25  DORMITORIO               S          
+12745   1.00            60  COZINHA                  S          
+12745   1.00  .         61  BANHEIRO                 S          
+12745   0     .         84  AREA DE SERV             N          
+12745   0     61,03     106 AREA TOTAL               N          
+12745   0     49,88     107 AREA REAL                N          
+12749   2.00  .         34  ELEVADOR                 S          
+12749   1.00            60  COZINHA                  S          
+12749   1.00  .         61  BANHEIRO                 S          
+12749   1.00            86  AR CONDICIONADO          N          
+12749   0               116 ALVENARIA                N          
+12749   4.00            122 SALA                     S          
+12749   0               153 PORTARIA                 N          
+12749   0     11 ANDAR  162 ANDAR                    N          
+12749   0               177 CENTRAL                  N          
+12749   0               180 DIVISORIA DE MADEIRA     N          
+12754   4.00  .         34  ELEVADOR                 S          
+12754   1.00  .         61  BANHEIRO                 S          
+12754   0               116 ALVENARIA                N          
+12754   4.00            122 SALA                     S          
+12754   0               125 FUNDOS                   N          
+12754   0               130 RECEPÇÃO                 N          
+12754   0               144 SALA DE ESPERA           N          
+12754   0               153 PORTARIA                 N          
+12754   0     SEXTO     162 ANDAR                    N          
+12754   0               178 ENSOLARADO               N          
+12755   3.00  .         34  ELEVADOR                 S          
+12755   1.00  .         61  BANHEIRO                 S          
+12755   0               116 ALVENARIA                N          
+12755   0               117 COMERCIAL                N          
+12755   0               121 ESPERA P/ARCONDICIONADO  N          
+12755   3.00            122 SALA                     S          
+12755   0               124 LATERAL                  N          
+12755   0               130 RECEPÇÃO                 N          
+12755   0               153 PORTARIA                 N          
+12755   0     SETIMO    162 ANDAR                    N          
+12755   0               178 ENSOLARADO               N          
+12755   0               186 PISO PAVIFLEX            N          
+12755   0     .         242 CIRCULAÇÃO               N          
+12758   0     .         5   GARAGEM                  N          
+12758   0               6   PLAYGROUND               N          
+12758   0     .         30  SACADA                   N          
+12758   0               31  OTIMA ILUMINAÇÃO         N          
+12758   0               41  ESTACIONAMENTO VISITANTESN          
+12758   0     C/BANHO   52  DEPENDENCIA EMPREGADA    N          
+12758   1.00  .         56  SALA DE JANTAR           S          
+12758   1.00  .         60  COZINHA                  S          
+12758   3.00  .         61  BANHEIRO                 S          
+12758   0               67  JUNKERS                  N          
+12758   0     .         72  AREA C/TANQUE            N          
+12758   0     DORMIT    75  PISO CARPETE             N          
+12758   0     DORMI     86  AR CONDICIONADO          N          
+12758   0               88  CHURRASQUEIRA            N          
+12758   0               93  SALA DE ESTAR            N          
+12758   0     .         95  JARDIM                   N          
+12758   0               116 ALVENARIA                N          
+12758   0     SL/COZINH 119 PISO FRIO                N          
+12758   0               129 RESIDENCIAL              N          
+12758   0               153 PORTARIA                 N          
+12758   0               160 ARMARIOS AEREOS          N          
+12758   0     .         248 AREA DE LAZER            N          
+12758   0     .         256 IMÓVEL REFORMADO         N          
+12760   3.00            25  DORMITORIO               S          
+12760   2.00  .         28  LIVING                   S          
+12760   0     .         30  SACADA                   N          
+12760   0     .         52  DEPENDENCIA EMPREGADA    N          
+12760   1.00            60  COZINHA                  S          
+12760   0               68  HALL                     N          
+12760   0     .         72  AREA C/TANQUE            N          
+12760   0     ABERTA    84  AREA DE SERV             N          
+12760   0               116 ALVENARIA                N          
+12760   0               141 BANHEIRO AUXILIAR        N          
+12760   0     SEGUNDO   162 ANDAR                    N          
+12760   1.00  C/BANHEIRA183 BANHEIRO SOCIAL          S          
+12763   2.00  .         34  ELEVADOR                 S          
+12763   1.00  .         61  BANHEIRO                 S          
+12763   0               116 ALVENARIA                N          
+12763   2.00  C/DIVISORI122 SALA                     S          
+12763   0               153 PORTARIA                 N          
+12763   0     QUINTO    162 ANDAR                    N          
+12768   0     FECHADA   5   GARAGEM                  N          
+12768   0               126 FRENTE                   N          
+12770   2.00            25  DORMITORIO               S          
+12770   0     1         30  SACADA                   N          
+12770   1.00  SOCIAL    34  ELEVADOR                 S          
+12770   0               49  LAVABO                   N          
+12770   1.00  P/1 CARRO 53  BOX COBERTO              S          
+12770   0               56  SALA DE JANTAR           S          
+12770   1.00  .         61  BANHEIRO                 S          
+12770   0               69  PORTEIRO ELETRONICO      N          
+12770   0     1         72  AREA C/TANQUE            N          
+12770   0     DORMITORIO75  PISO CARPETE             N          
+12770   0               79  SUITE C/HIDRO            N          
+12770   0               93  SALA DE ESTAR            N          
+12770   0               96  PISO LAMINADO            N          
+12770   0               110 BANHEIRO DE EMPREGADA    N          
+12770   0               116 ALVENARIA                N          
+12770   0               118 COZINHA C/ ARMÁRIO       N          
+12770   0               121 ESPERA P/ARCONDICIONADO  N          
+12770   0               126 FRENTE                   N          
+12770   0               129 RESIDENCIAL              N          
+12770   0     4         162 ANDAR                    N          
+12770   0               190 DORMITORIO DE EMPREGADA  N          
+12770   0               192 DORMIT. C/ ARM. EMBUTIDO N          
+12779   1.00            25  DORMITORIO               S          
+12779   0     DORMIT    54  ARMÁRIOS EMBUTIDOS       N          
+12779   1.00            60  COZINHA                  S          
+12779   1.00  .         61  BANHEIRO                 S          
+12779   0               69  PORTEIRO ELETRONICO      N          
+12779   0     .         72  AREA C/TANQUE            N          
+12779   0               82  ZELADOR                  N          
+12779   0     .         84  AREA DE SERV             N          
+12779   2.00            86  AR CONDICIONADO          N          
+12779   0               93  SALA DE ESTAR            N          
+12779   0               96  PISO LAMINADO            N          
+12779   0               116 ALVENARIA                N          
+12779   0               125 FUNDOS                   N          
+12779   0               129 RESIDENCIAL              N          
+12779   0     TERCEIRO  162 ANDAR                    N          
+12788   2.00            25  DORMITORIO               S          
+12788   1.00            60  COZINHA                  S          
+12788   1.00  .         61  BANHEIRO                 S          
+12788   0     .         72  AREA C/TANQUE            N          
+12788   0               77  MOBILIADO                N          
+12788   0     SL/DORMIT 80  PISO PARQUET             N          
+12788   0     .         84  AREA DE SERV             N          
+12788   0               116 ALVENARIA                N          
+12788   0               124 LATERAL                  N          
+12788   0     PRIMEIRO  162 ANDAR                    N          
+12791   1.00  .         61  BANHEIRO                 S          
+12791   0     .         80  PISO PARQUET             N          
+12791   4.00            122 SALA                     S          
+12791   0               125 FUNDOS                   N          
+12791   0               130 RECEPÇÃO                 N          
+12791   0     8         162 ANDAR                    N          
+12793   2.00  .         61  BANHEIRO                 S          
+12793   0               116 ALVENARIA                N          
+12793   0               117 COMERCIAL                N          
+12793   0               126 FRENTE                   N          
+12795   0               2   SALÃO DE FESTAS          N          
+12795   2.00            25  DORMITORIO               S          
+12795   1.00  .         34  ELEVADOR                 S          
+12795   0               56  SALA DE JANTAR           S          
+12795   1.00            60  COZINHA                  S          
+12795   1.00  .         61  BANHEIRO                 S          
+12795   0               69  PORTEIRO ELETRONICO      N          
+12795   0     .         72  AREA C/TANQUE            N          
+12795   0     SL/DORMIT 80  PISO PARQUET             N          
+12795   0               82  ZELADOR                  N          
+12795   0     .         84  AREA DE SERV             N          
+12795   0               93  SALA DE ESTAR            N          
+12795   0               116 ALVENARIA                N          
+12795   0               126 FRENTE                   N          
+12795   0               129 RESIDENCIAL              N          
+12795   0               153 PORTARIA                 N          
+12795   0     15 ANDAR  162 ANDAR                    N          
+12798   1.00  .         61  BANHEIRO                 S          
+12798   0               91  PISO DECORFLEX           N          
+12798   0               116 ALVENARIA                N          
+12798   0     PRIMEIRO  162 ANDAR                    N          
+12798   1.00  VIDRO     243 DIVISORIA                N          
+12799   1.00            20  CHURRASQUEIRA            N          
+12799   0     .         30  SACADA                   N          
+12799   0               116 ALVENARIA                N          
+12799   0     COBERTURA 162 ANDAR                    N          
+12800   1.00  .         61  BANHEIRO                 S          
+12800   0               116 ALVENARIA                N          
+12800   0     TERREA    162 ANDAR                    N          
+12803   1.00            20  CHURRASQUEIRA            N          
+12803   1.00            25  DORMITORIO               S          
+12803   1.00  .         28  LIVING                   S          
+12803   1.00  .         53  BOX COBERTO              S          
+12803   1.00            60  COZINHA                  S          
+12803   0               69  PORTEIRO ELETRONICO      N          
+12803   0     .         72  AREA C/TANQUE            N          
+12803   0     FECHADA   84  AREA DE SERV             N          
+12803   0               116 ALVENARIA                N          
+12803   0               126 FRENTE                   N          
+12803   0     SEGUNDO   162 ANDAR                    N          
+12803   1.00  .         183 BANHEIRO SOCIAL          S          
+12811   0               2   SALÃO DE FESTAS          N          
+12811   0               6   PLAYGROUND               N          
+12811   1.00            25  DORMITORIO               S          
+12811   1.00  .         28  LIVING                   S          
+12811   0               32  PORTARIA-24 HS           N          
+12811   2.00  .         34  ELEVADOR                 S          
+12811   0               38  QUADRA ESPORTIVA         N          
+12811   0               65  VESTIARIO                N          
+12811   0               69  PORTEIRO ELETRONICO      N          
+12811   0     .         72  AREA C/TANQUE            N          
+12811   0     FECHADA   84  AREA DE SERV             N          
+12811   0               87  GAS CENTRAL              N          
+12811   0               88  CHURRASQUEIRA            N          
+12811   0     .         97  PISCINA                  N          
+12811   0               100 ESTACIONAMENTO COLETIVO  N          
+12811   0               116 ALVENARIA                N          
+12811   0               126 FRENTE                   N          
+12811   0     QUARTO    162 ANDAR                    N          
+12811   0               166 PISO FORRAÇÃO            N          
+12811   0               169 COZINHA CONJUGADA C/ AREAN          
+12811   1.00  C/BOX     183 BANHEIRO SOCIAL          S          
+12813   1.00  .         34  ELEVADOR                 S          
+12813   1.00  .         61  BANHEIRO                 S          
+12813   0               69  PORTEIRO ELETRONICO      N          
+12813   0               116 ALVENARIA                N          
+12813   0               117 COMERCIAL                N          
+12813   0               125 FUNDOS                   N          
+12813   0               153 PORTARIA                 N          
+12813   0     QUARTO    162 ANDAR                    N          
+12816   0     .         30  SACADA                   N          
+12816   1.00  .         34  ELEVADOR                 S          
+12816   0     1         54  ARMÁRIOS EMBUTIDOS       N          
+12816   1.00  .         61  BANHEIRO                 S          
+12816   0               69  PORTEIRO ELETRONICO      N          
+12816   0               96  PISO LAMINADO            N          
+12816   0               125 FUNDOS                   N          
+12816   0     3         162 ANDAR                    N          
+12818   1.00            25  DORMITORIO               S          
+12818   1.00            60  COZINHA                  S          
+12818   1.00  .         61  BANHEIRO                 S          
+12818   0               69  PORTEIRO ELETRONICO      N          
+12818   0     .         72  AREA C/TANQUE            N          
+12818   0               82  ZELADOR                  N          
+12818   0     .         84  AREA DE SERV             N          
+12818   0               116 ALVENARIA                N          
+12818   1.00            122 SALA                     S          
+12818   0               124 LATERAL                  N          
+12818   0               129 RESIDENCIAL              N          
+12818   0               153 PORTARIA                 N          
+12818   0     TERCEIRO  162 ANDAR                    N          
+12819   1.00            25  DORMITORIO               S          
+12819   1.00            60  COZINHA                  S          
+12819   1.00  .         61  BANHEIRO                 S          
+12819   0               69  PORTEIRO ELETRONICO      N          
+12819   0     .         72  AREA C/TANQUE            N          
+12819   0               82  ZELADOR                  N          
+12819   0     .         84  AREA DE SERV             N          
+12819   0               116 ALVENARIA                N          
+12819   1.00            122 SALA                     S          
+12819   0               124 LATERAL                  N          
+12819   0               129 RESIDENCIAL              N          
+12819   0     SEGUNDO   162 ANDAR                    N          
+12822   0               134 TERREO                   N          
+12823   1.00  .         61  BANHEIRO                 S          
+12823   0               116 ALVENARIA                N          
+12823   0               117 COMERCIAL                N          
+12823   0     SUBSOLO   162 ANDAR                    N          
+12824   0     01        5   GARAGEM                  N          
+12824   1.00            20  CHURRASQUEIRA            N          
+12824   0               22  LAREIRA                  N          
+12824   1.00  P/2 AMBIEN28  LIVING                   S          
+12824   0               56  SALA DE JANTAR           S          
+12824   1.00  .         58  SUÍTE                    S          
+12824   1.00            60  COZINHA                  S          
+12824   1.00  C/BANHEIRO71  DEPOSITO                 S          
+12824   0     .         72  AREA C/TANQUE            N          
+12824   0     FECHADA   84  AREA DE SERV             N          
+12824   1.00            86  AR CONDICIONADO          N          
+12824   0     ARBORIZADO90  PATIO                    N          
+12824   0               93  SALA DE ESTAR            N          
+12824   0               116 ALVENARIA                N          
+12824   1.00  C/BOX     183 BANHEIRO SOCIAL          S          
+12826   0               116 ALVENARIA                N          
+12826   0               117 COMERCIAL                N          
+12826   0     LJ E SOBRE162 ANDAR                    N          
+12827   0     P/5 CARROS5   GARAGEM                  N          
+12827   1.00            60  COZINHA                  S          
+12827   1.00  .         61  BANHEIRO                 S          
+12827   0               116 ALVENARIA                N          
+12827   0               117 COMERCIAL                N          
+12827   0     LAJOTA    119 PISO FRIO                N          
+12827   10.00           122 SALA                     S          
+12827   0               130 RECEPÇÃO                 N          
+12828   1.00            60  COZINHA                  S          
+12828   1.00  C/BOX     61  BANHEIRO                 S          
+12828   0     .         72  AREA C/TANQUE            N          
+12828   0               76  SEMI-MOBILIADO           N          
+12828   0     SL/DORMIT 80  PISO PARQUET             N          
+12828   0     .         84  AREA DE SERV             N          
+12828   1.00            86  AR CONDICIONADO          N          
+12828   0               116 ALVENARIA                N          
+12828   0               126 FRENTE                   N          
+12828   0     TERCEIRO  162 ANDAR                    N          
+12838   0               22  LAREIRA                  N          
+12838   3.00            25  DORMITORIO               S          
+12838   0               49  LAVABO                   N          
+12838   0               50  GABINETE                 N          
+12838   0               56  SALA DE JANTAR           S          
+12838   1.00  .         58  SUÍTE                    S          
+12838   1.00            60  COZINHA                  S          
+12838   1.00  .         61  BANHEIRO                 S          
+12838   0     EM 02 DORM75  PISO CARPETE             N          
+12838   0     SL/DORMIT 80  PISO PARQUET             N          
+12838   1.00            86  AR CONDICIONADO          N          
+12838   0               92  AGUA QUENTE              N          
+12838   0               93  SALA DE ESTAR            N          
+12838   0               114 QUINTAL                  N          
+12838   0               116 ALVENARIA                N          
+12838   0               117 COMERCIAL                N          
+12838   0               126 FRENTE                   N          
+12838   0               129 RESIDENCIAL              N          
+12838   0     TERREO    162 ANDAR                    N          
+12838   0               175 CLOSET                   N          
+12838   0               176 GARAGEM P/ 2 CARROS      N          
+12838   0               179 VENTILADOR DE TETO       S          
+12838   0               206 TANQUE                   N          
+12838   0     SALA      207 ESTAR INTIMO             N          
+12838   0               218 LAVANDERIA               N          
+12839   0               2   SALÃO DE FESTAS          N          
+12839   0     67        5   GARAGEM                  N          
+12839   0               6   PLAYGROUND               N          
+12839   2.00            25  DORMITORIO               S          
+12839   2.00            34  ELEVADOR                 S          
+12839   0               38  QUADRA ESPORTIVA         N          
+12839   0               56  SALA DE JANTAR           S          
+12839   1.00  .         61  BANHEIRO                 S          
+12839   0               69  PORTEIRO ELETRONICO      N          
+12839   0     .         72  AREA C/TANQUE            N          
+12839   0               82  ZELADOR                  N          
+12839   0     .         84  AREA DE SERV             N          
+12839   0               88  CHURRASQUEIRA            N          
+12839   0               96  PISO LAMINADO            N          
+12839   0     02        97  PISCINA                  N          
+12839   0               116 ALVENARIA                N          
+12839   0               120 SACADA FECHADA  C/ CHURQ N          
+12839   0               121 ESPERA P/ARCONDICIONADO  N          
+12839   0               124 LATERAL                  N          
+12839   0               129 RESIDENCIAL              N          
+12839   0               133 COZINHA AMERICANA        N          
+12839   0               153 PORTARIA                 N          
+12841   0     NR. 19    5   GARAGEM                  N          
+12841   1.00            25  DORMITORIO               S          
+12841   1.00  .         34  ELEVADOR                 S          
+12841   0     COZ       54  ARMÁRIOS EMBUTIDOS       N          
+12841   0               56  SALA DE JANTAR           S          
+12841   1.00            60  COZINHA                  S          
+12841   1.00  .         61  BANHEIRO                 S          
+12841   0               69  PORTEIRO ELETRONICO      N          
+12841   0     .         72  AREA C/TANQUE            N          
+12841   0               82  ZELADOR                  N          
+12841   0     .         84  AREA DE SERV             N          
+12841   0               116 ALVENARIA                N          
+12841   0               124 LATERAL                  N          
+12841   0               129 RESIDENCIAL              N          
+12841   0               132 PISO TABUÃO              N          
+12841   0               153 PORTARIA                 N          
+12841   0     SEGUNDO   162 ANDAR                    N          
+12845   0               32  PORTARIA-24 HS           N          
+12845   3.00  .         34  ELEVADOR                 S          
+12845   1.00  .         61  BANHEIRO                 S          
+12845   0               76  SEMI-MOBILIADO           N          
+12845   0               82  ZELADOR                  N          
+12845   0               116 ALVENARIA                N          
+12845   0               117 COMERCIAL                N          
+12845   0               125 FUNDOS                   N          
+12845   0               153 PORTARIA                 N          
+12845   0     9         162 ANDAR                    N          
+12845   0     1         217 EDIFICIO                 N          
+12848   0     COLETIVO  57  TERRAÇO                  N          
+12848   1.00  .         61  BANHEIRO                 S          
+12848   0               88  CHURRASQUEIRA            N          
+12848   0               116 ALVENARIA                N          
+12848   0               117 COMERCIAL                N          
+12848   1.00  .         122 SALA                     S          
+12848   0               126 FRENTE                   N          
+12848   0     4         162 ANDAR                    N          
+12848   0               166 PISO FORRAÇÃO            N          
+12853   2.00            25  DORMITORIO               S          
+12853   1.00  C/2 AMBIEN28  LIVING                   S          
+12853   0     C/BANHO   52  DEPENDENCIA EMPREGADA    N          
+12853   1.00            60  COZINHA                  S          
+12853   1.00  C/BOX     61  BANHEIRO                 S          
+12853   0               68  HALL                     N          
+12853   0     .         72  AREA C/TANQUE            N          
+12853   0     FECHADA   84  AREA DE SERV             N          
+12853   0               92  AGUA QUENTE              N          
+12853   0               116 ALVENARIA                N          
+12853   0     PRIMEIRO  162 ANDAR                    N          
+12853   0     .         242 CIRCULAÇÃO               N          
+12857   2.00            25  DORMITORIO               S          
+12857   0     DORM.     54  ARMÁRIOS EMBUTIDOS       N          
+12857   1.00            60  COZINHA                  S          
+12857   1.00  C/BOX     61  BANHEIRO                 S          
+12857   0               69  PORTEIRO ELETRONICO      N          
+12857   0     .         72  AREA C/TANQUE            N          
+12857   0     FECHADA   84  AREA DE SERV             N          
+12857   0               116 ALVENARIA                N          
+12857   1.00  .         122 SALA                     S          
+12857   0               126 FRENTE                   N          
+12857   0     TERCEIRO  162 ANDAR                    N          
+12857   0     .         242 CIRCULAÇÃO               N          
+12860   0     17        139 BOX P/ CARRO             S          
+12862   3.00            25  DORMITORIO               S          
+12862   0               49  LAVABO                   N          
+12862   0               56  SALA DE JANTAR           S          
+12862   1.00  .         61  BANHEIRO                 S          
+12862   0               63  DESPENSA                 N          
+12862   0               68  HALL                     N          
+12862   0     .         72  AREA C/TANQUE            N          
+12862   0               73  COPA                     N          
+12862   0     SL/DORMIT 80  PISO PARQUET             N          
+12862   0     .         84  AREA DE SERV             N          
+12862   1.00            86  AR CONDICIONADO          N          
+12862   0               93  SALA DE ESTAR            N          
+12862   0               110 BANHEIRO DE EMPREGADA    N          
+12862   0               116 ALVENARIA                N          
+12862   0               118 COZINHA C/ ARMÁRIO       N          
+12862   0               126 FRENTE                   N          
+12862   0               129 RESIDENCIAL              N          
+12862   0               143 VISTA PANORAMICA         N          
+12862   0               153 PORTARIA                 N          
+12862   0               160 ARMARIOS AEREOS          N          
+12862   0     SETIMO    162 ANDAR                    N          
+12862   0               175 CLOSET                   N          
+12862   0               178 ENSOLARADO               N          
+12862   0               190 DORMITORIO DE EMPREGADA  N          
+12864   2.00            25  DORMITORIO               S          
+12864   0               56  SALA DE JANTAR           S          
+12864   1.00            60  COZINHA                  S          
+12864   0               69  PORTEIRO ELETRONICO      N          
+12864   0     .         72  AREA C/TANQUE            N          
+12864   0     .         84  AREA DE SERV             N          
+12864   0               92  AGUA QUENTE              N          
+12864   0               93  SALA DE ESTAR            N          
+12864   0               96  PISO LAMINADO            N          
+12864   0               110 BANHEIRO DE EMPREGADA    N          
+12864   0               116 ALVENARIA                N          
+12864   0               118 COZINHA C/ ARMÁRIO       N          
+12864   0               121 ESPERA P/ARCONDICIONADO  N          
+12864   0               126 FRENTE                   N          
+12864   0               129 RESIDENCIAL              N          
+12864   0     08 P/DOIS 139 BOX P/ CARRO             S          
+12864   0     .         155 BANHEIRO C/ HIDRO        N          
+12864   0     PRIMEIRO  162 ANDAR                    N          
+12864   0               176 GARAGEM P/ 2 CARROS      N          
+12865   0               22  LAREIRA                  N          
+12865   2.00            25  DORMITORIO               S          
+12865   2.00  .         34  ELEVADOR                 S          
+12865   0               56  SALA DE JANTAR           S          
+12865   0     .         57  TERRAÇO                  N          
+12865   1.00  .         58  SUÍTE                    S          
+12865   1.00            60  COZINHA                  S          
+12865   1.00  .         61  BANHEIRO                 S          
+12865   0     .         72  AREA C/TANQUE            N          
+12865   0               82  ZELADOR                  N          
+12865   0     .         84  AREA DE SERV             N          
+12865   1.00            86  AR CONDICIONADO          N          
+12865   0               88  CHURRASQUEIRA            N          
+12865   0               93  SALA DE ESTAR            N          
+12865   0               116 ALVENARIA                N          
+12865   1.00  .         122 SALA                     S          
+12865   0               126 FRENTE                   N          
+12865   0               129 RESIDENCIAL              N          
+12865   0               132 PISO TABUÃO              N          
+12865   0               153 PORTARIA                 N          
+12865   0     NONO      162 ANDAR                    N          
+12866   0               116 ALVENARIA                N          
+12867   2.00            25  DORMITORIO               S          
+12867   0               56  SALA DE JANTAR           S          
+12867   1.00            60  COZINHA                  S          
+12867   1.00  .         61  BANHEIRO                 S          
+12867   0               69  PORTEIRO ELETRONICO      N          
+12867   0     .         72  AREA C/TANQUE            N          
+12867   0               82  ZELADOR                  N          
+12867   0     .         84  AREA DE SERV             N          
+12867   0               100 ESTACIONAMENTO COLETIVO  N          
+12867   0               116 ALVENARIA                N          
+12867   0               124 LATERAL                  N          
+12867   0               129 RESIDENCIAL              N          
+12867   0               132 PISO TABUÃO              N          
+12867   0     TERREO    162 ANDAR                    N          
+12867   0               218 LAVANDERIA               N          
+12870   1.00            25  DORMITORIO               S          
+12870   1.00  .         28  LIVING                   S          
+12870   1.00  .         60  COZINHA                  S          
+12870   1.00  .         61  BANHEIRO                 S          
+12870   0     .         72  AREA C/TANQUE            N          
+12870   0               126 FRENTE                   N          
+12870   0     2         162 ANDAR                    N          
+12870   0               173 PISO DE CERÂMICA         N          
+12870   0               174 PISO MULTIPISO           N          
+12872   0     1         5   GARAGEM                  N          
+12872   3.00            25  DORMITORIO               S          
+12872   0               31  OTIMA ILUMINAÇÃO         N          
+12872   2.00  .         34  ELEVADOR                 S          
+12872   0               56  SALA DE JANTAR           S          
+12872   1.00  .         58  SUÍTE                    S          
+12872   1.00  .         61  BANHEIRO                 S          
+12872   0               68  HALL                     N          
+12872   0               69  PORTEIRO ELETRONICO      N          
+12872   0     1         72  AREA C/TANQUE            N          
+12872   0               73  COPA                     N          
+12872   0               76  SEMI-MOBILIADO           N          
+12872   0     sala/dormt80  PISO PARQUET             N          
+12872   0               82  ZELADOR                  N          
+12872   4.00            86  AR CONDICIONADO          N          
+12872   0               110 BANHEIRO DE EMPREGADA    N          
+12872   0               116 ALVENARIA                N          
+12872   0               118 COZINHA C/ ARMÁRIO       N          
+12872   0               126 FRENTE                   N          
+12872   0               129 RESIDENCIAL              N          
+12872   0     2         162 ANDAR                    N          
+12872   0               192 DORMIT. C/ ARM. EMBUTIDO N          
+12872   0               224 IMOVEL NOVO              N          
+12876   1.00            25  DORMITORIO               S          
+12876   1.00  .         61  BANHEIRO                 S          
+12876   0     1         84  AREA DE SERV             N          
+12876   0     46,09     106 AREA TOTAL               N          
+12876   0     42,44     107 AREA REAL                N          
+12877   0     .         5   GARAGEM                  N          
+12877   2.00            25  DORMITORIO               S          
+12877   0     .         52  DEPENDENCIA EMPREGADA    N          
+12877   1.00            60  COZINHA                  S          
+12877   1.00  .         61  BANHEIRO                 S          
+12877   0     .         84  AREA DE SERV             N          
+12877   0               92  AGUA QUENTE              N          
+12877   0     160       106 AREA TOTAL               N          
+12877   0     117       107 AREA REAL                N          
+12877   0               140 8º ANDAR                 N          
+12877   0               190 DORMITORIO DE EMPREGADA  N          
+12879   1.00  .         28  LIVING                   S          
+12879   1.00            60  COZINHA                  S          
+12879   1.00  .         61  BANHEIRO                 S          
+12879   0     .         84  AREA DE SERV             N          
+12879   0     .         90  PATIO                    N          
+12879   0     85,88     106 AREA TOTAL               N          
+12879   0     79,69     107 AREA REAL                N          
+12879   0               190 DORMITORIO DE EMPREGADA  N          
+12884   1.00  FECHADO   71  DEPOSITO                 S          
+12884   0     NOS FUNDOS90  PATIO                    N          
+12884   6.00  C/BANHO   122 SALA                     S          
+12891   1.00  BOX 156   5   GARAGEM                  N          
+12891   0               6   PLAYGROUND               N          
+12891   1.00            20  CHURRASQUEIRA            N          
+12891   2.00            25  DORMITORIO               S          
+12891   0               30  SACADA                   N          
+12891   0               32  PORTARIA-24 HS           N          
+12891   0               34  ELEVADOR                 S          
+12891   0               55  LIVING C/ TABUÃO         N          
+12891   0               56  SALA DE JANTAR           S          
+12891   0               60  COZINHA                  S          
+12891   1.00            61  BANHEIRO                 S          
+12891   0               82  ZELADOR                  N          
+12891   0               84  AREA DE SERV             N          
+12895   3.00  .         34  ELEVADOR                 S          
+12895   1.00  .         61  BANHEIRO                 S          
+12895   0               116 ALVENARIA                N          
+12895   1.00  C/BANHO   122 SALA                     S          
+12895   0               126 FRENTE                   N          
+12895   0               153 PORTARIA                 N          
+12895   0     NONO      162 ANDAR                    N          
+12906   1.00  .         28  LIVING                   S          
+12906   0     .         30  SACADA                   N          
+12906   1.00  .         34  ELEVADOR                 S          
+12906   0     .         52  DEPENDENCIA EMPREGADA    N          
+12906   1.00            60  COZINHA                  S          
+12906   1.00  .         61  BANHEIRO                 S          
+12906   0     .         72  AREA C/TANQUE            N          
+12906   0     .         80  PISO PARQUET             N          
+12906   0               83  W.C AUX                  N          
+12906   0               126 FRENTE                   N          
+12906   0     6         162 ANDAR                    N          
+12906   0               178 ENSOLARADO               N          
+12918   0               2   SALÃO DE FESTAS          N          
+12918   2.00            25  DORMITORIO               S          
+12918   0     .         30  SACADA                   N          
+12918   1.00  .         34  ELEVADOR                 S          
+12918   0               56  SALA DE JANTAR           S          
+12918   1.00            60  COZINHA                  S          
+12918   1.00  .         61  BANHEIRO                 S          
+12918   0               63  DESPENSA                 N          
+12918   0               68  HALL                     N          
+12918   0               69  PORTEIRO ELETRONICO      N          
+12918   0     .         72  AREA C/TANQUE            N          
+12918   0     .         84  AREA DE SERV             N          
+12918   0               110 BANHEIRO DE EMPREGADA    N          
+12918   0               116 ALVENARIA                N          
+12918   0               121 ESPERA P/ARCONDICIONADO  N          
+12918   0               125 FUNDOS                   N          
+12918   0               129 RESIDENCIAL              N          
+12918   0               132 PISO TABUÃO              N          
+12918   0     QUARTO    162 ANDAR                    N          
+12923   0     NR. 03    139 BOX P/ CARRO             S          
+12951   0               6   PLAYGROUND               N          
+12951   1.00            25  DORMITORIO               S          
+12951   0               32  PORTARIA-24 HS           N          
+12951   0               56  SALA DE JANTAR           S          
+12951   1.00  .         58  SUÍTE                    S          
+12951   1.00            60  COZINHA                  S          
+12951   0     .         72  AREA C/TANQUE            N          
+12951   0     SL/DORMI  80  PISO PARQUET             N          
+12951   0     .         84  AREA DE SERV             N          
+12951   0               116 ALVENARIA                N          
+12951   0               125 FUNDOS                   N          
+12951   0               129 RESIDENCIAL              N          
+12951   0     TERREO    162 ANDAR                    N          
+12953   0               22  LAREIRA                  N          
+12953   3.00            25  DORMITORIO               S          
+12953   0               45  LAVANDERIA               N          
+12953   0               50  GABINETE                 N          
+12953   0               56  SALA DE JANTAR           S          
+12953   0     .         57  TERRAÇO                  N          
+12953   1.00  .         58  SUÍTE                    S          
+12953   1.00            60  COZINHA                  S          
+12953   2.00  .         61  BANHEIRO                 S          
+12953   0     .         72  AREA C/TANQUE            N          
+12953   0               73  COPA                     N          
+12953   0     DORMIT    75  PISO CARPETE             N          
+12953   0     .         84  AREA DE SERV             N          
+12953   0               88  CHURRASQUEIRA            N          
+12953   0               93  SALA DE ESTAR            N          
+12953   0     .         95  JARDIM                   N          
+12953   0               110 BANHEIRO DE EMPREGADA    N          
+12953   0               114 QUINTAL                  N          
+12953   0               116 ALVENARIA                N          
+12953   0     .         119 PISO FRIO                N          
+12953   1.00  .         122 SALA                     S          
+12953   0               126 FRENTE                   N          
+12953   0               129 RESIDENCIAL              N          
+12953   0               176 GARAGEM P/ 2 CARROS      N          
+12953   0               190 DORMITORIO DE EMPREGADA  N          
+12953   0     .         230 JARDIM DE INVERNO        N          
+12966   1.00  .         61  BANHEIRO                 S          
+12966   0               116 ALVENARIA                N          
+12966   0               126 FRENTE                   N          
+12977   1.00  .         61  BANHEIRO                 S          
+12977   0               116 ALVENARIA                N          
+12977   0               134 TERREO                   N          
+12978   1.00  .         61  BANHEIRO                 S          
+12978   0               69  PORTEIRO ELETRONICO      N          
+12978   0               116 ALVENARIA                N          
+12978   0               117 COMERCIAL                N          
+12978   0               126 FRENTE                   N          
+12978   0     PRIMEIRO  162 ANDAR                    N          
+12981   1.00  .         61  BANHEIRO                 S          
+12981   0               69  PORTEIRO ELETRONICO      N          
+12981   0               116 ALVENARIA                N          
+12981   0               117 COMERCIAL                N          
+12981   0               126 FRENTE                   N          
+12982   1.00  .         61  BANHEIRO                 S          
+12982   0               69  PORTEIRO ELETRONICO      N          
+12982   0               116 ALVENARIA                N          
+12982   0               117 COMERCIAL                N          
+12982   0               126 FRENTE                   N          
+12983   0               2   SALÃO DE FESTAS          N          
+12983   0               6   PLAYGROUND               N          
+12983   0               22  LAREIRA                  N          
+12983   3.00            25  DORMITORIO               S          
+12983   2.00  .         34  ELEVADOR                 S          
+12983   0               49  LAVABO                   N          
+12983   0               56  SALA DE JANTAR           S          
+12983   0     .         57  TERRAÇO                  N          
+12983   1.00  .         58  SUÍTE                    S          
+12983   1.00            60  COZINHA                  S          
+12983   1.00  .         61  BANHEIRO                 S          
+12983   0               69  PORTEIRO ELETRONICO      N          
+12983   0     .         72  AREA C/TANQUE            N          
+12983   0     SL/DORMIT 80  PISO PARQUET             N          
+12983   0               82  ZELADOR                  N          
+12983   0     .         84  AREA DE SERV             N          
+12983   0               88  CHURRASQUEIRA            N          
+12983   0               93  SALA DE ESTAR            N          
+12983   0     .         97  PISCINA                  N          
+12983   0     368M2     106 AREA TOTAL               N          
+12983   0     280M2     107 AREA REAL                N          
+12983   0               110 BANHEIRO DE EMPREGADA    N          
+12983   0               116 ALVENARIA                N          
+12983   0               125 FUNDOS                   N          
+12983   0               129 RESIDENCIAL              N          
+12983   0               132 PISO TABUÃO              N          
+12983   0               153 PORTARIA                 N          
+12983   0     DECIMO    162 ANDAR                    N          
+12983   0               175 CLOSET                   N          
+12983   0               176 GARAGEM P/ 2 CARROS      N          
+12983   0               190 DORMITORIO DE EMPREGADA  N          
+12983   0     SL/LAVABO 203 COBERTURA                N          
+12987   1.00  .         61  BANHEIRO                 S          
+12987   0               116 ALVENARIA                N          
+12987   0               117 COMERCIAL                N          
+12987   1.00  .         122 SALA                     S          
+12987   0               124 LATERAL                  N          
+12987   0     SUB-SOLO  139 BOX P/ CARRO             S          
+12987   0               153 PORTARIA                 N          
+12987   0     TERCEIRO  162 ANDAR                    N          
+12991   1.00  .         61  BANHEIRO                 S          
+12991   0     68,14     106 AREA TOTAL               N          
+12991   0     51,44     107 AREA REAL                N          
+12992   1.00            25  DORMITORIO               S          
+12992   1.00  amplo     28  LIVING                   S          
+12992   1.00  .         34  ELEVADOR                 S          
+12992   1.00  .         61  BANHEIRO                 S          
+12992   0               67  JUNKERS                  N          
+12992   0               68  HALL                     N          
+12992   0     .         84  AREA DE SERV             N          
+12992   0     68,10     106 AREA TOTAL               N          
+12992   0     52,70     107 AREA REAL                N          
+12992   0               118 COZINHA C/ ARMÁRIO       N          
+12992   0               178 ENSOLARADO               N          
+12995   2.00            25  DORMITORIO               S          
+12995   0               116 ALVENARIA                N          
+12996   3.00            25  DORMITORIO               S          
+12996   2.00  .         34  ELEVADOR                 S          
+12996   0               49  LAVABO                   N          
+12996   0               56  SALA DE JANTAR           S          
+12996   1.00  .         58  SUÍTE                    S          
+12996   1.00            60  COZINHA                  S          
+12996   1.00  .         61  BANHEIRO                 S          
+12996   0               116 ALVENARIA                N          
+12996   0               129 RESIDENCIAL              N          
+12996   0               134 TERREO                   N          
+12997   0               2   SALÃO DE FESTAS          N          
+12997   2.00  .         34  ELEVADOR                 S          
+12997   1.00            60  COZINHA                  S          
+12997   1.00  .         61  BANHEIRO                 S          
+12997   0               69  PORTEIRO ELETRONICO      N          
+12997   0     DORMIT    75  PISO CARPETE             N          
+12997   0               77  MOBILIADO                N          
+12997   0               82  ZELADOR                  N          
+12997   0               116 ALVENARIA                N          
+12997   0               126 FRENTE                   N          
+12997   0               129 RESIDENCIAL              N          
+12997   0               153 PORTARIA                 N          
+12997   0     OITAVO    162 ANDAR                    N          
+12998   1.00            25  DORMITORIO               S          
+12998   0               56  SALA DE JANTAR           S          
+12998   1.00            60  COZINHA                  S          
+12998   1.00  .         61  BANHEIRO                 S          
+12998   0               69  PORTEIRO ELETRONICO      N          
+12998   0     .         72  AREA C/TANQUE            N          
+12998   0     SL/DORMIT 80  PISO PARQUET             N          
+12998   0     .         84  AREA DE SERV             N          
+12998   0               116 ALVENARIA                N          
+12998   0               121 ESPERA P/ARCONDICIONADO  N          
+12998   0               124 LATERAL                  N          
+12998   0               129 RESIDENCIAL              N          
+12998   0     PRIMEIRO  162 ANDAR                    N          
+12998   0               178 ENSOLARADO               N          
+12999   2.00            25  DORMITORIO               S          
+12999   1.00  NR. 28    53  BOX COBERTO              S          
+12999   0               56  SALA DE JANTAR           S          
+12999   1.00            60  COZINHA                  S          
+12999   1.00  .         61  BANHEIRO                 S          
+12999   0               69  PORTEIRO ELETRONICO      N          
+12999   0     .         72  AREA C/TANQUE            N          
+12999   0     DORMIT    75  PISO CARPETE             N          
+12999   0               82  ZELADOR                  N          
+12999   0     .         84  AREA DE SERV             N          
+12999   1.00            86  AR CONDICIONADO          N          
+12999   0               116 ALVENARIA                N          
+12999   0               125 FUNDOS                   N          
+12999   0               129 RESIDENCIAL              N          
+12999   0               132 PISO TABUÃO              N          
+12999   0               153 PORTARIA                 N          
+12999   0     SEGUNDO   162 ANDAR                    N          
+12999   0               178 ENSOLARADO               N          
+12999   0               179 VENTILADOR DE TETO       S          
+13006   2.00            25  DORMITORIO               S          
+13006   0     .         52  DEPENDENCIA EMPREGADA    N          
+13006   0               116 ALVENARIA                N          
+13007   2.00            25  DORMITORIO               S          
+13007   0     .         52  DEPENDENCIA EMPREGADA    N          
+13007   0               116 ALVENARIA                N          
+13007   0     SUBSOLO   162 ANDAR                    N          
+13016   1.00            25  DORMITORIO               S          
+13016   1.00  .         28  LIVING                   S          
+13016   1.00  .         61  BANHEIRO                 S          
+13016   0               77  MOBILIADO                N          
+13016   0     .         84  AREA DE SERV             N          
+13016   0               118 COZINHA C/ ARMÁRIO       N          
+13017   1.00            25  DORMITORIO               S          
+13017   1.00  .         28  LIVING                   S          
+13017   1.00            60  COZINHA                  S          
+13017   1.00  .         61  BANHEIRO                 S          
+13017   0     .         84  AREA DE SERV             N          
+13017   0               178 ENSOLARADO               N          
+13018   2.00            25  DORMITORIO               S          
+13018   1.00  .         28  LIVING                   S          
+13018   1.00            60  COZINHA                  S          
+13018   1.00  .         61  BANHEIRO                 S          
+13018   0     .         84  AREA DE SERV             N          
+13019   1.00            20  CHURRASQUEIRA            N          
+13019   3.00            25  DORMITORIO               S          
+13019   1.00  .         58  SUÍTE                    S          
+13019   1.00            60  COZINHA                  S          
+13019   0     .         84  AREA DE SERV             N          
+13019   0     100       107 AREA REAL                N          
+13020   0               28  LIVING                   S          
+13020   0     .         30  SACADA                   N          
+13020   0     .         60  COZINHA                  S          
+13020   0               69  PORTEIRO ELETRONICO      N          
+13020   0     .         72  AREA C/TANQUE            N          
+13020   0               80  PISO PARQUET             N          
+13020   0               126 FRENTE                   N          
+13020   0     1º        162 ANDAR                    N          
+13020   0               183 BANHEIRO SOCIAL          S          
+13026   1.00            25  DORMITORIO               S          
+13026   0               28  LIVING                   S          
+13026   1.00            60  COZINHA                  S          
+13026   1.00            61  BANHEIRO                 S          
+13026   0               69  PORTEIRO ELETRONICO      N          
+13026   0     .         72  AREA C/TANQUE            N          
+13026   0               124 LATERAL                  N          
+13026   0     30        139 BOX P/ CARRO             S          
+13026   0     3         162 ANDAR                    N          
+13026   0               186 PISO PAVIFLEX            N          
+13026   0               210 PISO GRANITINA           N          
+13037   2.00            25  DORMITORIO               S          
+13037   1.00  .         28  LIVING                   S          
+13037   0     .         52  DEPENDENCIA EMPREGADA    N          
+13037   1.00            60  COZINHA                  S          
+13037   1.00  .         61  BANHEIRO                 S          
+13037   0     .         84  AREA DE SERV             N          
+13037   0     83,65     106 AREA TOTAL               N          
+13037   0     68,00     107 AREA REAL                N          
+13040   0               116 ALVENARIA                N          
+13047   0     .         5   GARAGEM                  N          
+13047   2.00            25  DORMITORIO               S          
+13047   0     .         30  SACADA                   N          
+13047   1.00  .         34  ELEVADOR                 S          
+13047   1.00            60  COZINHA                  S          
+13047   1.00  .         61  BANHEIRO                 S          
+13047   0               69  PORTEIRO ELETRONICO      N          
+13047   0     .         72  AREA C/TANQUE            N          
+13047   0     DORMIT    75  PISO CARPETE             N          
+13047   0               82  ZELADOR                  N          
+13047   0     .         84  AREA DE SERV             N          
+13047   0               110 BANHEIRO DE EMPREGADA    N          
+13047   0               116 ALVENARIA                N          
+13047   1.00  .         122 SALA                     S          
+13047   0               124 LATERAL                  N          
+13047   0               129 RESIDENCIAL              N          
+13047   0               132 PISO TABUÃO              N          
+13047   0               153 PORTARIA                 N          
+13047   0     SEGUNDO   162 ANDAR                    N          
+13047   0               190 DORMITORIO DE EMPREGADA  N          
+13051   0               2   SALÃO DE FESTAS          N          
+13051   0     COBERTA   5   GARAGEM                  N          
+13051   2.00            25  DORMITORIO               S          
+13051   0               32  PORTARIA-24 HS           N          
+13051   2.00  .         34  ELEVADOR                 S          
+13051   0               56  SALA DE JANTAR           S          
+13051   0     AMPLO     57  TERRAÇO                  N          
+13051   1.00            60  COZINHA                  S          
+13051   1.00  .         61  BANHEIRO                 S          
+13051   0               69  PORTEIRO ELETRONICO      N          
+13051   0     .         72  AREA C/TANQUE            N          
+13051   0     SL/DORMIT 80  PISO PARQUET             N          
+13051   0               82  ZELADOR                  N          
+13051   0     .         84  AREA DE SERV             N          
+13051   0               88  CHURRASQUEIRA            N          
+13051   0               92  AGUA QUENTE              N          
+13051   0               110 BANHEIRO DE EMPREGADA    N          
+13051   0               116 ALVENARIA                N          
+13051   0               121 ESPERA P/ARCONDICIONADO  N          
+13051   1.00  .         122 SALA                     S          
+13051   0               129 RESIDENCIAL              N          
+13051   0               143 VISTA PANORAMICA         N          
+13051   0               153 PORTARIA                 N          
+13051   0     NONO      162 ANDAR                    N          
+13051   0               190 DORMITORIO DE EMPREGADA  N          
+13051   0     SL/LAVABO 203 COBERTURA                N          
+13053   3.00            25  DORMITORIO               S          
+13053   3.00  .         34  ELEVADOR                 S          
+13053   0               49  LAVABO                   N          
+13053   0     DORMIT    54  ARMÁRIOS EMBUTIDOS       N          
+13053   0               56  SALA DE JANTAR           S          
+13053   1.00            60  COZINHA                  S          
+13053   1.00  .         61  BANHEIRO                 S          
+13053   0     .         72  AREA C/TANQUE            N          
+13053   0               73  COPA                     N          
+13053   0               82  ZELADOR                  N          
+13053   0     .         84  AREA DE SERV             N          
+13053   0               110 BANHEIRO DE EMPREGADA    N          
+13053   0               116 ALVENARIA                N          
+13053   0               126 FRENTE                   N          
+13053   0               129 RESIDENCIAL              N          
+13053   0               153 PORTARIA                 N          
+13053   0     DECIMO    162 ANDAR                    N          
+13053   0               190 DORMITORIO DE EMPREGADA  N          
+13054   1.00            60  COZINHA                  S          
+13054   2.00  .         61  BANHEIRO                 S          
+13054   0     SALAS     80  PISO PARQUET             N          
+13054   0               116 ALVENARIA                N          
+13054   0               117 COMERCIAL                N          
+13054   0     .         119 PISO FRIO                N          
+13054   4.00  .         122 SALA                     S          
+13054   0               125 FUNDOS                   N          
+13055   0     .         30  SACADA                   N          
+13055   1.00  .         34  ELEVADOR                 S          
+13055   0     .         57  TERRAÇO                  N          
+13055   1.00            60  COZINHA                  S          
+13055   2.00  .         61  BANHEIRO                 S          
+13055   0               69  PORTEIRO ELETRONICO      N          
+13055   0     .         72  AREA C/TANQUE            N          
+13055   0     SL/DORMIT.75  PISO CARPETE             N          
+13055   0               82  ZELADOR                  N          
+13055   0     .         84  AREA DE SERV             N          
+13055   0               88  CHURRASQUEIRA            N          
+13055   0               93  SALA DE ESTAR            N          
+13055   0               116 ALVENARIA                N          
+13055   1.00  .         122 SALA                     S          
+13055   0               129 RESIDENCIAL              N          
+13055   0               153 PORTARIA                 N          
+13055   0     QUARTO    162 ANDAR                    N          
+13055   0               177 CENTRAL                  N          
+13083   0               2   SALÃO DE FESTAS          N          
+13083   3.00            25  DORMITORIO               S          
+13083   1.00  .         34  ELEVADOR                 S          
+13083   0               56  SALA DE JANTAR           S          
+13083   1.00  .         58  SUÍTE                    S          
+13083   1.00            60  COZINHA                  S          
+13083   1.00  .         61  BANHEIRO                 S          
+13083   0               69  PORTEIRO ELETRONICO      N          
+13083   0     .         72  AREA C/TANQUE            N          
+13083   0               82  ZELADOR                  N          
+13083   0     .         84  AREA DE SERV             N          
+13083   0               88  CHURRASQUEIRA            N          
+13083   0               92  AGUA QUENTE              N          
+13083   0               93  SALA DE ESTAR            N          
+13083   0               116 ALVENARIA                N          
+13083   0     CERAMICO  119 PISO FRIO                N          
+13083   0               121 ESPERA P/ARCONDICIONADO  N          
+13083   0               126 FRENTE                   N          
+13083   0               129 RESIDENCIAL              N          
+13083   0     02 CARROS 139 BOX P/ CARRO             S          
+13083   0     QUINTO    162 ANDAR                    N          
+13083   0               178 ENSOLARADO               N          
+13085   1.00            25  DORMITORIO               S          
+13085   0     .         30  SACADA                   N          
+13085   2.00  .         34  ELEVADOR                 S          
+13085   1.00            60  COZINHA                  S          
+13085   1.00  .         61  BANHEIRO                 S          
+13085   0               69  PORTEIRO ELETRONICO      N          
+13085   0     SL/DORMIT 75  PISO CARPETE             N          
+13085   0               82  ZELADOR                  N          
+13085   0     .         84  AREA DE SERV             N          
+13085   0               116 ALVENARIA                N          
+13085   1.00  .         122 SALA                     S          
+13085   0               125 FUNDOS                   N          
+13085   0               129 RESIDENCIAL              N          
+13085   0               153 PORTARIA                 N          
+13085   0     SEXTO     162 ANDAR                    N          
+13087   2.00            25  DORMITORIO               S          
+13087   0     .         30  SACADA                   N          
+13087   2.00  .         34  ELEVADOR                 S          
+13087   1.00  .         58  SUÍTE                    S          
+13087   1.00            60  COZINHA                  S          
+13087   1.00  .         61  BANHEIRO                 S          
+13087   0     .         72  AREA C/TANQUE            N          
+13087   0               82  ZELADOR                  N          
+13087   0     .         84  AREA DE SERV             N          
+13087   0               88  CHURRASQUEIRA            N          
+13087   0               92  AGUA QUENTE              N          
+13087   0               96  PISO LAMINADO            N          
+13087   0               116 ALVENARIA                N          
+13087   1.00  .         122 SALA                     S          
+13087   0               125 FUNDOS                   N          
+13087   0               129 RESIDENCIAL              N          
+13087   0               132 PISO TABUÃO              N          
+13087   0               153 PORTARIA                 N          
+13087   0     QUINTO    162 ANDAR                    N          
+13087   0               176 GARAGEM P/ 2 CARROS      N          
+13087   0               224 IMOVEL NOVO              N          
+13095   1.00            25  DORMITORIO               S          
+13095   1.00  .         34  ELEVADOR                 S          
+13095   0               56  SALA DE JANTAR           S          
+13095   1.00            60  COZINHA                  S          
+13095   1.00  .         61  BANHEIRO                 S          
+13095   0               69  PORTEIRO ELETRONICO      N          
+13095   0     .         72  AREA C/TANQUE            N          
+13095   0               82  ZELADOR                  N          
+13095   0     .         84  AREA DE SERV             N          
+13095   0               116 ALVENARIA                N          
+13095   0               126 FRENTE                   N          
+13095   0               129 RESIDENCIAL              N          
+13095   0               132 PISO TABUÃO              N          
+13095   0     NR. 33    139 BOX P/ CARRO             S          
+13095   0     TERCEIRO  162 ANDAR                    N          
+13105   0     .         5   GARAGEM                  N          
+13105   3.00            25  DORMITORIO               S          
+13105   0     .         30  SACADA                   N          
+13105   0               45  LAVANDERIA               N          
+13105   0               50  GABINETE                 N          
+13105   0     COZINHA   54  ARMÁRIOS EMBUTIDOS       N          
+13105   0               56  SALA DE JANTAR           S          
+13105   0     .         57  TERRAÇO                  N          
+13105   1.00  .         58  SUÍTE                    S          
+13105   1.00            60  COZINHA                  S          
+13105   3.00  .         61  BANHEIRO                 S          
+13105   0     .         72  AREA C/TANQUE            N          
+13105   0     .         84  AREA DE SERV             N          
+13105   0               88  CHURRASQUEIRA            N          
+13105   0               92  AGUA QUENTE              N          
+13105   0     .         95  JARDIM                   N          
+13105   0     .         97  PISCINA                  N          
+13105   0               110 BANHEIRO DE EMPREGADA    N          
+13105   0               114 QUINTAL                  N          
+13105   0               116 ALVENARIA                N          
+13105   1.00  .         122 SALA                     S          
+13105   0               126 FRENTE                   N          
+13105   0               129 RESIDENCIAL              N          
+13105   0               132 PISO TABUÃO              N          
+13105   0     2 ANDARES 162 ANDAR                    N          
+13105   0               190 DORMITORIO DE EMPREGADA  N          
+13129   1.00  box 15    5   GARAGEM                  N          
+13129   1.00            25  DORMITORIO               S          
+13129   0               56  SALA DE JANTAR           S          
+13129   0               60  COZINHA                  S          
+13129   1.00  .         61  BANHEIRO                 S          
+13129   0               84  AREA DE SERV             N          
+13130   2.00  .         34  ELEVADOR                 S          
+13130   0               49  LAVABO                   N          
+13130   2.00  .         61  BANHEIRO                 S          
+13130   0               82  ZELADOR                  N          
+13130   0     02        86  AR CONDICIONADO          N          
+13130   0               116 ALVENARIA                N          
+13130   0               117 COMERCIAL                N          
+13130   0     .         119 PISO FRIO                N          
+13130   0               126 FRENTE                   N          
+13130   0               143 VISTA PANORAMICA         N          
+13130   0               153 PORTARIA                 N          
+13130   0     11º       162 ANDAR                    N          
+13130   0               178 ENSOLARADO               N          
+13130   0     .         256 IMÓVEL REFORMADO         N          
+13131   1.00  .         53  BOX COBERTO              S          
+13132   0     .         5   GARAGEM                  N          
+13132   2.00            25  DORMITORIO               S          
+13132   0     COZ/BANHO 54  ARMÁRIOS EMBUTIDOS       N          
+13132   2.00  .         58  SUÍTE                    S          
+13132   1.00            60  COZINHA                  S          
+13132   0     .         72  AREA C/TANQUE            N          
+13132   0     .         84  AREA DE SERV             N          
+13132   0               88  CHURRASQUEIRA            N          
+13132   0               116 ALVENARIA                N          
+13132   1.00  .         122 SALA                     S          
+13132   0               124 LATERAL                  N          
+13132   0               129 RESIDENCIAL              N          
+13132   0               153 PORTARIA                 N          
+13133   0     .         5   GARAGEM                  N          
+13133   2.00            25  DORMITORIO               S          
+13133   0     .         30  SACADA                   N          
+13133   0               45  LAVANDERIA               N          
+13133   0     COZ/BANHO 54  ARMÁRIOS EMBUTIDOS       N          
+13133   0     .         57  TERRAÇO                  N          
+13133   1.00  .         58  SUÍTE                    S          
+13133   1.00            60  COZINHA                  S          
+13133   1.00  .         61  BANHEIRO                 S          
+13133   0     .         72  AREA C/TANQUE            N          
+13133   0     .         84  AREA DE SERV             N          
+13133   0               88  CHURRASQUEIRA            N          
+13133   0               93  SALA DE ESTAR            N          
+13133   0     .         95  JARDIM                   N          
+13133   0               116 ALVENARIA                N          
+13133   1.00  .         122 SALA                     S          
+13133   0               126 FRENTE                   N          
+13133   0               129 RESIDENCIAL              N          
+13133   0               132 PISO TABUÃO              N          
+13134   0     03        5   GARAGEM                  N          
+13134   1.00  .         34  ELEVADOR                 S          
+13134   1.00            60  COZINHA                  S          
+13134   3.00  .         61  BANHEIRO                 S          
+13134   0               82  ZELADOR                  N          
+13134   0               116 ALVENARIA                N          
+13134   0               117 COMERCIAL                N          
+13134   0               126 FRENTE                   N          
+13134   0               153 PORTARIA                 N          
+13134   0     SEGUNDO   162 ANDAR                    N          
+13135   1.00            25  DORMITORIO               S          
+13135   1.00            60  COZINHA                  S          
+13135   1.00  .         61  BANHEIRO                 S          
+13135   0               69  PORTEIRO ELETRONICO      N          
+13135   0     .         72  AREA C/TANQUE            N          
+13135   0               82  ZELADOR                  N          
+13135   0     .         84  AREA DE SERV             N          
+13135   0               93  SALA DE ESTAR            N          
+13135   0               116 ALVENARIA                N          
+13135   0               124 LATERAL                  N          
+13135   0               129 RESIDENCIAL              N          
+13135   0               153 PORTARIA                 N          
+13135   0     TERCEIRO  162 ANDAR                    N          
+13135   0               173 PISO DE CERÂMICA         N          
+13136   1.00            25  DORMITORIO               S          
+13136   0               56  SALA DE JANTAR           S          
+13136   1.00            60  COZINHA                  S          
+13136   1.00  .         61  BANHEIRO                 S          
+13136   0               69  PORTEIRO ELETRONICO      N          
+13136   0     .         72  AREA C/TANQUE            N          
+13136   0               82  ZELADOR                  N          
+13136   0     .         84  AREA DE SERV             N          
+13136   0               116 ALVENARIA                N          
+13136   0               124 LATERAL                  N          
+13136   0               129 RESIDENCIAL              N          
+13136   0               153 PORTARIA                 N          
+13136   0     TERCEIRO  162 ANDAR                    N          
+13136   0               173 PISO DE CERÂMICA         N          
+13137   0               26  AR CENTRAL               N          
+13137   0     .         52  DEPENDENCIA EMPREGADA    N          
+13137   4.00  .         58  SUÍTE                    S          
+13137   0               88  CHURRASQUEIRA            N          
+13137   0               116 ALVENARIA                N          
+13137   1.00  .         122 SALA                     S          
+13137   0     PISCINA IN203 COBERTURA                N          
+13138   0               26  AR CENTRAL               N          
+13138   0     .         52  DEPENDENCIA EMPREGADA    N          
+13138   0               88  CHURRASQUEIRA            N          
+13138   0               116 ALVENARIA                N          
+13138   1.00  .         122 SALA                     S          
+13138   0     PISCINA IN203 COBERTURA                N          
+13139   0               26  AR CENTRAL               N          
+13139   2.00  .         34  ELEVADOR                 S          
+13139   0     DECIMO    162 ANDAR                    N          
+13140   0               116 ALVENARIA                N          
+13140   0     C/SOBRELOJ211 LOJA                     N          
+13144   2.00            25  DORMITORIO               S          
+13144   0               32  PORTARIA-24 HS           N          
+13144   2.00  .         34  ELEVADOR                 S          
+13144   1.00  .         56  SALA DE JANTAR           S          
+13144   1.00            60  COZINHA                  S          
+13144   1.00  .         61  BANHEIRO                 S          
+13144   0               69  PORTEIRO ELETRONICO      N          
+13144   0     .         72  AREA C/TANQUE            N          
+13144   0     .         80  PISO PARQUET             N          
+13144   0               82  ZELADOR                  N          
+13144   0     .         84  AREA DE SERV             N          
+13144   0               110 BANHEIRO DE EMPREGADA    N          
+13144   0               116 ALVENARIA                N          
+13144   0               125 FUNDOS                   N          
+13144   0               129 RESIDENCIAL              N          
+13144   0     OITAVO    162 ANDAR                    N          
+13144   0               190 DORMITORIO DE EMPREGADA  N          
+13145   2.00            25  DORMITORIO               S          
+13145   0               32  PORTARIA-24 HS           N          
+13145   2.00  ;         34  ELEVADOR                 S          
+13145   1.00  .         56  SALA DE JANTAR           S          
+13145   1.00            60  COZINHA                  S          
+13145   1.00  .         61  BANHEIRO                 S          
+13145   0               69  PORTEIRO ELETRONICO      N          
+13145   0     .         72  AREA C/TANQUE            N          
+13145   0     .         80  PISO PARQUET             N          
+13145   0               82  ZELADOR                  N          
+13145   0     .         84  AREA DE SERV             N          
+13145   0               110 BANHEIRO DE EMPREGADA    N          
+13145   0               116 ALVENARIA                N          
+13145   0               125 FUNDOS                   N          
+13145   0               129 RESIDENCIAL              N          
+13145   0     NONO      162 ANDAR                    N          
+13145   0               190 DORMITORIO DE EMPREGADA  N          
+13146   0               26  AR CENTRAL               N          
+13146   1.00  .         34  ELEVADOR                 S          
+13146   0     PISO CERAM70  MEZANINO                 N          
+13146   0     SAIDAS EMB86  AR CONDICIONADO          N          
+13146   0     388,14    106 AREA TOTAL               N          
+13146   0               116 ALVENARIA                N          
+13146   0     LJ = 1º AD162 ANDAR                    N          
+13146   0               194 FORRO DE GESSO           N          
+13146   0     MARMORE   228 PISO                     N          
+13146   0     .         253 LUMINÁRIAS               N          
+13147   0               26  AR CENTRAL               N          
+13147   1.00  .         34  ELEVADOR                 S          
+13147   1.00  2º ANDAR  60  COZINHA                  S          
+13147   2.00  P/ANDAR   61  BANHEIRO                 S          
+13147   0     LOJA      70  MEZANINO                 N          
+13147   0     .         75  PISO CARPETE             N          
+13147   0     SAIDAS EMB86  AR CONDICIONADO          N          
+13147   0     808,14    106 AREA TOTAL               N          
+13147   0               116 ALVENARIA                N          
+13147   0               173 PISO DE CERÂMICA         N          
+13147   0               180 DIVISORIA DE MADEIRA     N          
+13147   0               194 FORRO DE GESSO           N          
+13147   0               210 PISO GRANITINA           N          
+13147   0     .         253 LUMINÁRIAS               N          
+13148   0               26  AR CENTRAL               N          
+13148   1.00  P/ANDAR   60  COZINHA                  S          
+13148   2.00  C/HALL ENT61  BANHEIRO                 S          
+13148   0     424,62M2  106 AREA TOTAL               N          
+13148   0               116 ALVENARIA                N          
+13148   0               173 PISO DE CERÂMICA         N          
+13148   0               180 DIVISORIA DE MADEIRA     N          
+13148   0     EUCATEX   243 DIVISORIA                N          
+13148   0     LAMBRI    254 FORRO.                   N          
+13149   0               26  AR CENTRAL               N          
+13149   1.00  .         34  ELEVADOR                 S          
+13149   2.00  4º E 5º   60  COZINHA                  S          
+13149   5.00  3º 4º 5º  61  BANHEIRO                 S          
+13149   0     3º ANDAR  75  PISO CARPETE             N          
+13149   0     4º ANDAR  109 PREDIO INTERLIGADO       N          
+13149   0               116 ALVENARIA                N          
+13149   0               194 FORRO DE GESSO           N          
+13149   0     .         253 LUMINÁRIAS               N          
+13149   0     LAMBRI    254 FORRO.                   N          
+13150   0               26  AR CENTRAL               N          
+13150   1.00  .         34  ELEVADOR                 S          
+13150   1.00  P/CERAMICO60  COZINHA                  S          
+13150   2.00  P/CERAMICO61  BANHEIRO                 S          
+13150   0               73  COPA                     N          
+13150   0     .         86  AR CONDICIONADO          N          
+13150   0     195M2     106 AREA TOTAL               N          
+13150   0     4º ANDAR  109 PREDIO INTERLIGADO       N          
+13150   0               116 ALVENARIA                N          
+13150   0               152 PISO MADEIRA             N          
+13150   0               180 DIVISORIA DE MADEIRA     N          
+13150   0               194 FORRO DE GESSO           N          
+13153   0               26  AR CENTRAL               N          
+13153   2.00  1 P/ ANDAR60  COZINHA                  S          
+13153   5.00  PISO CERAM61  BANHEIRO                 S          
+13153   0     5º ANDAR  75  PISO CARPETE             N          
+13153   0     6º ANDAR  80  PISO PARQUET             N          
+13153   0     .         86  AR CONDICIONADO          N          
+13153   0     409,62M2  106 AREA TOTAL               N          
+13153   0               116 ALVENARIA                N          
+13153   0     5º e 6º   162 ANDAR                    N          
+13153   0               180 DIVISORIA DE MADEIRA     N          
+13153   0               194 FORRO DE GESSO           N          
+13153   0     EUCATEX   243 DIVISORIA                N          
+13154   0               26  AR CENTRAL               N          
+13154   1.00  .         34  ELEVADOR                 S          
+13154   4.00  2/4/5/6º A60  COZINHA                  S          
+13154   13.00 2 P/ANDAR 61  BANHEIRO                 S          
+13154   0     LOJA      70  MEZANINO                 N          
+13154   0     1º 2º 3º 575  PISO CARPETE             N          
+13154   0     SAIDAS EMB86  AR CONDICIONADO          N          
+13154   0     2270,86M2 106 AREA TOTAL               N          
+13154   0     1736,29M2 107 AREA REAL                N          
+13154   0               116 ALVENARIA                N          
+13154   0     LOJA ATÉ 6162 ANDAR                    N          
+13154   0               164 COFRE                    N          
+13154   0               171 ESPERA PARA TELEFONE     N          
+13154   0               173 PISO DE CERÂMICA         N          
+13154   0               180 DIVISORIA DE MADEIRA     N          
+13154   0               194 FORRO DE GESSO           N          
+13154   0     HALL/COFRE213 SUBSOLO                  N          
+13154   0     EUCATEX   243 DIVISORIA                N          
+13154   0     .         253 LUMINÁRIAS               N          
+13156   2.00            25  DORMITORIO               S          
+13156   1.00  .         28  LIVING                   S          
+13156   1.00  .         60  COZINHA                  S          
+13156   1.00  .         61  BANHEIRO                 S          
+13156   0     .         84  AREA DE SERV             N          
+13156   0     61,96     106 AREA TOTAL               N          
+13156   0     48,62     107 AREA REAL                N          
+13156   0               114 QUINTAL                  N          
+13157   1.00            20  CHURRASQUEIRA            N          
+13157   0               22  LAREIRA                  N          
+13157   3.00            25  DORMITORIO               S          
+13157   1.00  .         28  LIVING                   S          
+13157   0     .         52  DEPENDENCIA EMPREGADA    N          
+13157   3.00  .         53  BOX COBERTO              S          
+13157   2.00  .         58  SUÍTE                    S          
+13157   1.00  .         60  COZINHA                  S          
+13157   2.00  .         61  BANHEIRO                 S          
+13157   0               73  COPA                     N          
+13157   0     .         84  AREA DE SERV             N          
+13157   0               89  DUPLEX                   N          
+13157   0     .         97  PISCINA                  N          
+13157   0     273       106 AREA TOTAL               N          
+13157   0     245       107 AREA REAL                N          
+13157   0               125 FUNDOS                   N          
+13157   0               141 BANHEIRO AUXILIAR        N          
+13157   0     .         230 JARDIM DE INVERNO        N          
+13157   0     .         247 BAR                      N          
+13161   1.00  .         60  COZINHA                  S          
+13161   1.00  .         61  BANHEIRO                 S          
+13161   0               69  PORTEIRO ELETRONICO      N          
+13161   0     SALA      80  PISO PARQUET             N          
+13161   0               116 ALVENARIA                N          
+13161   0               125 FUNDOS                   N          
+13161   0               129 RESIDENCIAL              N          
+13161   0     SEGUNDO   162 ANDAR                    N          
+13163   3.00            25  DORMITORIO               S          
+13163   0     C/BANHO   52  DEPENDENCIA EMPREGADA    N          
+13163   0     DORMIT    54  ARMÁRIOS EMBUTIDOS       N          
+13163   1.00  .         56  SALA DE JANTAR           S          
+13163   1.00  .         60  COZINHA                  S          
+13163   1.00  .         61  BANHEIRO                 S          
+13163   0               69  PORTEIRO ELETRONICO      N          
+13163   0     .         72  AREA C/TANQUE            N          
+13163   0     .         84  AREA DE SERV             N          
+13163   0               116 ALVENARIA                N          
+13163   0               125 FUNDOS                   N          
+13163   0               129 RESIDENCIAL              N          
+13163   0     PRIMEIRO  162 ANDAR                    N          
+13163   0               164 COFRE                    N          
+13165   1.00            25  DORMITORIO               S          
+13165   1.00  .         56  SALA DE JANTAR           S          
+13165   1.00  .         60  COZINHA                  S          
+13165   1.00  .         61  BANHEIRO                 S          
+13165   0               69  PORTEIRO ELETRONICO      N          
+13165   0     .         72  AREA C/TANQUE            N          
+13165   0     SL/DORMIT 75  PISO CARPETE             N          
+13165   0     .         84  AREA DE SERV             N          
+13165   0     .         90  PATIO                    N          
+13165   0               92  AGUA QUENTE              N          
+13165   0               116 ALVENARIA                N          
+13165   0               124 LATERAL                  N          
+13165   0               129 RESIDENCIAL              N          
+13165   0               134 TERREO                   N          
+13165   0     TERREO    162 ANDAR                    N          
+13166   0               6   PLAYGROUND               N          
+13166   1.00            25  DORMITORIO               S          
+13166   0     .         30  SACADA                   N          
+13166   1.00  .         34  ELEVADOR                 S          
+13166   1.00  .         60  COZINHA                  S          
+13166   1.00  .         61  BANHEIRO                 S          
+13166   0               69  PORTEIRO ELETRONICO      N          
+13166   0     .         72  AREA C/TANQUE            N          
+13166   0               82  ZELADOR                  N          
+13166   0     .         84  AREA DE SERV             N          
+13166   0               88  CHURRASQUEIRA            N          
+13166   0     01        97  PISCINA                  N          
+13166   0               116 ALVENARIA                N          
+13166   0     .         119 PISO FRIO                N          
+13166   1.00  .         122 SALA                     S          
+13166   0               124 LATERAL                  N          
+13166   0               129 RESIDENCIAL              N          
+13166   0     NR. 99    139 BOX P/ CARRO             S          
+13166   0     TERCEIRO  162 ANDAR                    N          
+13167   2.00            25  DORMITORIO               S          
+13167   0     .         30  SACADA                   N          
+13167   0     CIRCULAÇÃO54  ARMÁRIOS EMBUTIDOS       N          
+13167   1.00  .         60  COZINHA                  S          
+13167   1.00  C/BOX     61  BANHEIRO                 S          
+13167   0               69  PORTEIRO ELETRONICO      N          
+13167   0     .         72  AREA C/TANQUE            N          
+13167   0     DORM./SL  75  PISO CARPETE             N          
+13167   0     .         84  AREA DE SERV             N          
+13167   0               93  SALA DE ESTAR            N          
+13167   0               116 ALVENARIA                N          
+13167   0               121 ESPERA P/ARCONDICIONADO  N          
+13167   0               126 FRENTE                   N          
+13167   0               129 RESIDENCIAL              N          
+13167   0     PRIMEIRO  162 ANDAR                    N          
+13167   0               178 ENSOLARADO               N          
+13167   1.00  DORMT.    179 VENTILADOR DE TETO       S          
+13170   0     P/03 CARRO5   GARAGEM                  N          
+13170   1.00  .         34  ELEVADOR                 S          
+13170   1.00  .         60  COZINHA                  S          
+13170   3.00  .         61  BANHEIRO                 S          
+13170   0               82  ZELADOR                  N          
+13170   0               116 ALVENARIA                N          
+13170   0               117 COMERCIAL                N          
+13170   0               126 FRENTE                   N          
+13170   0               153 PORTARIA                 N          
+13170   0     SEGUNDO   162 ANDAR                    N          
+13171   2.00            25  DORMITORIO               S          
+13171   1.00  .         56  SALA DE JANTAR           S          
+13171   1.00  .         60  COZINHA                  S          
+13171   1.00  C/BOX     61  BANHEIRO                 S          
+13171   0               69  PORTEIRO ELETRONICO      N          
+13171   0     .         72  AREA C/TANQUE            N          
+13171   0     SL/DORMIT 80  PISO PARQUET             N          
+13171   0     .         84  AREA DE SERV             N          
+13171   0               116 ALVENARIA                N          
+13171   0               124 LATERAL                  N          
+13171   0               129 RESIDENCIAL              N          
+13171   0               134 TERREO                   N          
+13171   0               178 ENSOLARADO               N          
+13172   0               2   SALÃO DE FESTAS          N          
+13172   0               6   PLAYGROUND               N          
+13172   2.00            25  DORMITORIO               S          
+13172   1.00  .         34  ELEVADOR                 S          
+13172   1.00  .         60  COZINHA                  S          
+13172   1.00  .         61  BANHEIRO                 S          
+13172   0               82  ZELADOR                  N          
+13172   0     .         84  AREA DE SERV             N          
+13172   0               91  PISO DECORFLEX           N          
+13172   0     .         97  PISCINA                  N          
+13172   0               116 ALVENARIA                N          
+13172   1.00  .         122 SALA                     S          
+13172   0               124 LATERAL                  N          
+13172   0               129 RESIDENCIAL              N          
+13172   0               153 PORTARIA                 N          
+13172   0     SEGUNDO   162 ANDAR                    N          
+13173   1.00            25  DORMITORIO               S          
+13173   2.00  .         34  ELEVADOR                 S          
+13173   1.00  .         56  SALA DE JANTAR           S          
+13173   1.00  .         60  COZINHA                  S          
+13173   1.00  .         61  BANHEIRO                 S          
+13173   0               69  PORTEIRO ELETRONICO      N          
+13173   0     SL/DORMIT 80  PISO PARQUET             N          
+13173   0               82  ZELADOR                  N          
+13173   0               116 ALVENARIA                N          
+13173   0               126 FRENTE                   N          
+13173   0               129 RESIDENCIAL              N          
+13173   0     SETIMO    162 ANDAR                    N          
+13173   0               178 ENSOLARADO               N          
+13175   1.00  .         60  COZINHA                  S          
+13175   1.00  .         61  BANHEIRO                 S          
+13175   0     SL/DORMIT 80  PISO PARQUET             N          
+13175   0     .         84  AREA DE SERV             N          
+13175   0               116 ALVENARIA                N          
+13175   0               126 FRENTE                   N          
+13175   0     TÉRREO    162 ANDAR                    N          
+13176   1.00  .         61  BANHEIRO                 S          
+13176   0               116 ALVENARIA                N          
+13176   0     QUINTO    162 ANDAR                    N          
+13177   0               2   SALÃO DE FESTAS          N          
+13177   0               6   PLAYGROUND               N          
+13177   2.00            25  DORMITORIO               S          
+13177   0     .         30  SACADA                   N          
+13177   2.00  .         34  ELEVADOR                 S          
+13177   0               38  QUADRA ESPORTIVA         N          
+13177   1.00  .         56  SALA DE JANTAR           S          
+13177   1.00  .         58  SUÍTE                    S          
+13177   1.00  .         60  COZINHA                  S          
+13177   1.00  .         61  BANHEIRO                 S          
+13177   0               68  HALL                     N          
+13177   0               69  PORTEIRO ELETRONICO      N          
+13177   0     .         72  AREA C/TANQUE            N          
+13177   0     SL/DORMIT 75  PISO CARPETE             N          
+13177   0               82  ZELADOR                  N          
+13177   0     .         84  AREA DE SERV             N          
+13177   0               92  AGUA QUENTE              N          
+13177   0               93  SALA DE ESTAR            N          
+13177   0     .         97  PISCINA                  N          
+13177   0               110 BANHEIRO DE EMPREGADA    N          
+13177   0               116 ALVENARIA                N          
+13177   0               121 ESPERA P/ARCONDICIONADO  N          
+13177   0               126 FRENTE                   N          
+13177   0               153 PORTARIA                 N          
+13177   0     TERCEIRO  162 ANDAR                    N          
+13177   0               178 ENSOLARADO               N          
+13177   0               190 DORMITORIO DE EMPREGADA  N          
+13177   0     CLUBE PRIV244 CONDOMINIO FECHADO       N          
+13180   1.00            25  DORMITORIO               S          
+13180   2.00  .         34  ELEVADOR                 S          
+13180   1.00  .         56  SALA DE JANTAR           S          
+13180   1.00  .         60  COZINHA                  S          
+13180   1.00  .         61  BANHEIRO                 S          
+13180   0               69  PORTEIRO ELETRONICO      N          
+13180   0     .         72  AREA C/TANQUE            N          
+13180   0     .         84  AREA DE SERV             N          
+13180   0               116 ALVENARIA                N          
+13180   0               125 FUNDOS                   N          
+13180   0               129 RESIDENCIAL              N          
+13180   0     .         132 PISO TABUÃO              N          
+13180   0               160 ARMARIOS AEREOS          N          
+13180   0     SEGUNDO   162 ANDAR                    N          
+13181   2.00  .         34  ELEVADOR                 S          
+13181   1.00  C/FOGAO   60  COZINHA                  S          
+13181   1.00  .         61  BANHEIRO                 S          
+13181   0               69  PORTEIRO ELETRONICO      N          
+13181   0     SALA/DORM 80  PISO PARQUET             N          
+13181   0               82  ZELADOR                  N          
+13181   0               116 ALVENARIA                N          
+13181   0               125 FUNDOS                   N          
+13181   0               129 RESIDENCIAL              N          
+13181   0               138 COZINHA C/ TANQUE        N          
+13181   0               153 PORTARIA                 N          
+13181   0     SEGUNDO   162 ANDAR                    N          
+13182   0               2   SALÃO DE FESTAS          N          
+13182   0               6   PLAYGROUND               N          
+13182   2.00            25  DORMITORIO               S          
+13182   0               32  PORTARIA-24 HS           N          
+13182   1.00  .         34  ELEVADOR                 S          
+13182   1.00  .         56  SALA DE JANTAR           S          
+13182   1.00  .         58  SUÍTE                    S          
+13182   1.00  .         60  COZINHA                  S          
+13182   0               69  PORTEIRO ELETRONICO      N          
+13182   0     .         72  AREA C/TANQUE            N          
+13182   0               76  SEMI-MOBILIADO           N          
+13182   0               82  ZELADOR                  N          
+13182   0     .         84  AREA DE SERV             N          
+13182   0               92  AGUA QUENTE              N          
+13182   0               96  PISO LAMINADO            N          
+13182   0     .         97  PISCINA                  N          
+13182   0               116 ALVENARIA                N          
+13182   0               121 ESPERA P/ARCONDICIONADO  N          
+13182   0               126 FRENTE                   N          
+13182   0               129 RESIDENCIAL              N          
+13182   0     .         132 PISO TABUÃO              N          
+13182   0     NR. 61    139 BOX P/ CARRO             S          
+13182   0               160 ARMARIOS AEREOS          N          
+13182   0     QUINTO    162 ANDAR                    N          
+13183   0               2   SALÃO DE FESTAS          N          
+13183   1.00            20  CHURRASQUEIRA            N          
+13183   2.00            25  DORMITORIO               S          
+13183   0     .         30  SACADA                   N          
+13183   1.00  .         34  ELEVADOR                 S          
+13183   0     COZINHA   54  ARMÁRIOS EMBUTIDOS       N          
+13183   1.00  .         56  SALA DE JANTAR           S          
+13183   1.00  .         61  BANHEIRO                 S          
+13183   0               69  PORTEIRO ELETRONICO      N          
+13183   0     .         72  AREA C/TANQUE            N          
+13183   0               82  ZELADOR                  N          
+13183   0     .         84  AREA DE SERV             N          
+13183   0               96  PISO LAMINADO            N          
+13183   0               110 BANHEIRO DE EMPREGADA    N          
+13183   0               116 ALVENARIA                N          
+13183   0               118 COZINHA C/ ARMÁRIO       N          
+13183   0               124 LATERAL                  N          
+13183   0               129 RESIDENCIAL              N          
+13183   0               153 PORTARIA                 N          
+13183   0     TERCEIRO  162 ANDAR                    N          
+13183   0               165 BOX DESCOBERTO           N          
+13183   0               178 ENSOLARADO               N          
+13184   2.00  .         34  ELEVADOR                 S          
+13184   1.00  C/EXAUSTOR60  COZINHA                  S          
+13184   1.00  .         61  BANHEIRO                 S          
+13184   0               69  PORTEIRO ELETRONICO      N          
+13184   0     SALA/DORM 80  PISO PARQUET             N          
+13184   0               82  ZELADOR                  N          
+13184   0               116 ALVENARIA                N          
+13184   0               124 LATERAL                  N          
+13184   0               129 RESIDENCIAL              N          
+13184   0     SEGUNDO   162 ANDAR                    N          
+13185   1.00            25  DORMITORIO               S          
+13185   1.00  .         34  ELEVADOR                 S          
+13185   1.00  .         56  SALA DE JANTAR           S          
+13185   1.00  .         60  COZINHA                  S          
+13185   1.00  .         61  BANHEIRO                 S          
+13185   0               69  PORTEIRO ELETRONICO      N          
+13185   0     .         72  AREA C/TANQUE            N          
+13185   0               82  ZELADOR                  N          
+13185   0     .         84  AREA DE SERV             N          
+13185   0               96  PISO LAMINADO            N          
+13185   0               116 ALVENARIA                N          
+13185   0               121 ESPERA P/ARCONDICIONADO  N          
+13185   0               125 FUNDOS                   N          
+13185   0               129 RESIDENCIAL              N          
+13185   0     SEGUNDO   162 ANDAR                    N          
+13185   0               178 ENSOLARADO               N          
+13185   0     CONSERVADO217 EDIFICIO                 N          
+13186   0               2   SALÃO DE FESTAS          N          
+13186   0     03 vagas  5   GARAGEM                  N          
+13186   1.00            20  CHURRASQUEIRA            N          
+13186   0               22  LAREIRA                  N          
+13186   2.00            25  DORMITORIO               S          
+13186   0               31  OTIMA ILUMINAÇÃO         N          
+13186   0               49  LAVABO                   N          
+13186   0     01        57  TERRAÇO                  N          
+13186   1.00  casal     58  SUÍTE                    S          
+13186   1.00  .         61  BANHEIRO                 S          
+13186   0               68  HALL                     N          
+13186   0               69  PORTEIRO ELETRONICO      N          
+13186   0     .         72  AREA C/TANQUE            N          
+13186   0     dormitorio75  PISO CARPETE             N          
+13186   0               77  MOBILIADO                N          
+13186   0     .         79  SUITE C/HIDRO            N          
+13186   0     .         90  PATIO                    N          
+13186   0               96  PISO LAMINADO            N          
+13186   0     1         97  PISCINA                  N          
+13186   0     .         109 PREDIO INTERLIGADO       N          
+13186   0               110 BANHEIRO DE EMPREGADA    N          
+13186   0               115 PREDIO CLASSE A          N          
+13186   0               116 ALVENARIA                N          
+13186   0               129 RESIDENCIAL              N          
+13186   0               143 VISTA PANORAMICA         N          
+13186   0               145 SALA GRANDE              N          
+13186   0               173 PISO DE CERÂMICA         N          
+13186   0               175 CLOSET                   N          
+13186   0               190 DORMITORIO DE EMPREGADA  N          
+13186   0               194 FORRO DE GESSO           N          
+13186   3.00            220 PAVIMENTOS               S          
+13186   0               237 ANDAR: ALTOS BAIXOS      N          
+13186   0     .         244 CONDOMINIO FECHADO       N          
+13186   0     .         250 SALA CONJUG.C/SALA JANTARN          
+13187   1.00            25  DORMITORIO               S          
+13187   1.00  .         60  COZINHA                  S          
+13187   1.00  .         61  BANHEIRO                 S          
+13187   0               77  MOBILIADO                N          
+13187   0               116 ALVENARIA                N          
+13187   1.00  .         122 SALA                     S          
+13189   0               2   SALÃO DE FESTAS          N          
+13189   0     3 VAGAS   5   GARAGEM                  N          
+13189   1.00            20  CHURRASQUEIRA            N          
+13189   0               22  LAREIRA                  N          
+13189   0     1         30  SACADA                   N          
+13189   0               31  OTIMA ILUMINAÇÃO         N          
+13189   0               49  LAVABO                   N          
+13189   0     .         57  TERRAÇO                  N          
+13189   1.00  .         61  BANHEIRO                 S          
+13189   0               68  HALL                     N          
+13189   0               69  PORTEIRO ELETRONICO      N          
+13189   0     01        72  AREA C/TANQUE            N          
+13189   0     DORMITORIO75  PISO CARPETE             N          
+13189   0               77  MOBILIADO                N          
+13189   0     CASAL     79  SUITE C/HIDRO            N          
+13189   0     .         90  PATIO                    N          
+13189   0               96  PISO LAMINADO            N          
+13189   0     .         97  PISCINA                  N          
+13189   0               98  VISTA                    N          
+13189   0     .         109 PREDIO INTERLIGADO       N          
+13189   0               110 BANHEIRO DE EMPREGADA    N          
+13189   0               115 PREDIO CLASSE A          N          
+13189   0               116 ALVENARIA                N          
+13189   0               129 RESIDENCIAL              N          
+13189   0               145 SALA GRANDE              N          
+13189   0               173 PISO DE CERÂMICA         N          
+13189   0               194 FORRO DE GESSO           N          
+13189   3.00            220 PAVIMENTOS               S          
+13189   0               224 IMOVEL NOVO              N          
+13189   0               237 ANDAR: ALTOS BAIXOS      N          
+13189   0     .         244 CONDOMINIO FECHADO       N          
+13189   0     .         250 SALA CONJUG.C/SALA JANTARN          
+13190   0               2   SALÃO DE FESTAS          N          
+13190   0     3 VAGAS   5   GARAGEM                  N          
+13190   1.00            20  CHURRASQUEIRA            N          
+13190   2.00            25  DORMITORIO               S          
+13190   0     .         30  SACADA                   N          
+13190   0               31  OTIMA ILUMINAÇÃO         N          
+13190   0               49  LAVABO                   N          
+13190   0     .         57  TERRAÇO                  N          
+13190   1.00  .         61  BANHEIRO                 S          
+13190   0               68  HALL                     N          
+13190   0               69  PORTEIRO ELETRONICO      N          
+13190   0     .         72  AREA C/TANQUE            N          
+13190   0     DORMITORIO75  PISO CARPETE             N          
+13190   0               77  MOBILIADO                N          
+13190   0     .         79  SUITE C/HIDRO            N          
+13190   0     1         97  PISCINA                  N          
+13190   0               98  VISTA                    N          
+13190   0               110 BANHEIRO DE EMPREGADA    N          
+13190   0               115 PREDIO CLASSE A          N          
+13190   0               116 ALVENARIA                N          
+13190   0               124 LATERAL                  N          
+13190   0               129 RESIDENCIAL              N          
+13190   0               142 LAMINADO                 N          
+13190   0               145 SALA GRANDE              N          
+13190   0               169 COZINHA CONJUGADA C/ AREAN          
+13190   0               173 PISO DE CERÂMICA         N          
+13190   0               175 CLOSET                   N          
+13190   0               178 ENSOLARADO               N          
+13190   0               190 DORMITORIO DE EMPREGADA  N          
+13190   0               194 FORRO DE GESSO           N          
+13190   3.00            220 PAVIMENTOS               S          
+13190   0               224 IMOVEL NOVO              N          
+13190   0               237 ANDAR: ALTOS BAIXOS      N          
+13190   0     .         244 CONDOMINIO FECHADO       N          
+13190   0     .         250 SALA CONJUG.C/SALA JANTARN          
+13192   0               32  PORTARIA-24 HS           N          
+13192   4.00  .         61  BANHEIRO                 S          
+13192   0     .         75  PISO CARPETE             N          
+13192   0     .         86  AR CONDICIONADO          N          
+13192   0               100 ESTACIONAMENTO COLETIVO  N          
+13192   0               116 ALVENARIA                N          
+13192   0     QUINTO    162 ANDAR                    N          
+13192   0               194 FORRO DE GESSO           N          
+13192   0     .         203 COBERTURA                N          
+13193   0               41  ESTACIONAMENTO VISITANTESN          
+13193   0     C/ESCADA  70  MEZANINO                 N          
+13193   0     .         75  PISO CARPETE             N          
+13193   0     INSTALADO 86  AR CONDICIONADO          N          
+13193   0               116 ALVENARIA                N          
+13193   4.00  20,21,23,2139 BOX P/ CARRO             S          
+13193   0               186 PISO PAVIFLEX            N          
+13193   0               194 FORRO DE GESSO           N          
+13193   0     DE ESQUINA211 LOJA                     N          
+13194   0               32  PORTARIA-24 HS           N          
+13194   0               41  ESTACIONAMENTO VISITANTESN          
+13194   3.00  .         61  BANHEIRO                 S          
+13194   0               73  COPA                     N          
+13194   0     INSTALADO 86  AR CONDICIONADO          N          
+13194   0               116 ALVENARIA                N          
+13194   6.00  .         139 BOX P/ CARRO             S          
+13194   0               143 VISTA PANORAMICA         N          
+13194   0     MEIO ANDAR162 ANDAR                    N          
+13194   0               194 FORRO DE GESSO           N          
+13194   0               196 AUDITORIO                N          
+13194   0     VINILICO  228 PISO                     N          
+13194   0     .         253 LUMINÁRIAS               N          
+13198   0               117 COMERCIAL                N          
+13198   0               134 TERREO                   N          
+13198   1.00            220 PAVIMENTOS               S          
+13200   2.00  .         34  ELEVADOR                 S          
+13200   1.00  .         61  BANHEIRO                 S          
+13200   0     SALA      75  PISO CARPETE             N          
+13200   0               82  ZELADOR                  N          
+13200   0               116 ALVENARIA                N          
+13200   0               117 COMERCIAL                N          
+13200   1.00  .         122 SALA                     S          
+13200   0               125 FUNDOS                   N          
+13200   0               153 PORTARIA                 N          
+13200   0     SÉTIMO    162 ANDAR                    N          
+13201   2.00  .         34  ELEVADOR                 S          
+13201   1.00  .         61  BANHEIRO                 S          
+13201   0     SALA      75  PISO CARPETE             N          
+13201   0               116 ALVENARIA                N          
+13201   0               117 COMERCIAL                N          
+13201   1.00  .         122 SALA                     S          
+13201   0               125 FUNDOS                   N          
+13201   0     SÉTIMO    162 ANDAR                    N          
+13202   0     S/HIDRO   4   BANHEIRA                 N          
+13202   2.00            25  DORMITORIO               S          
+13202   1.00  .         56  SALA DE JANTAR           S          
+13202   1.00  .         60  COZINHA                  S          
+13202   0               69  PORTEIRO ELETRONICO      N          
+13202   0     .         72  AREA C/TANQUE            N          
+13202   0     DORMIT    80  PISO PARQUET             N          
+13202   0     .         84  AREA DE SERV             N          
+13202   0     .         90  PATIO                    N          
+13202   0               116 ALVENARIA                N          
+13202   0               124 LATERAL                  N          
+13202   0     .         132 PISO TABUÃO              N          
+13202   0     TÉRREO    162 ANDAR                    N          
+13202   0               168 BANHEIRO C/ BOX VIDRO    N          
+13202   0               178 ENSOLARADO               N          
+13202   0               187 EXAUSTOR                 N          
+13203   1.00  .         60  COZINHA                  S          
+13203   1.00  C/BOX     61  BANHEIRO                 S          
+13203   0     .         72  AREA C/TANQUE            N          
+13203   0     SALA      80  PISO PARQUET             N          
+13203   0               82  ZELADOR                  N          
+13203   0     .         84  AREA DE SERV             N          
+13203   0               116 ALVENARIA                N          
+13203   0               121 ESPERA P/ARCONDICIONADO  N          
+13203   0               124 LATERAL                  N          
+13203   0               129 RESIDENCIAL              N          
+13203   0               153 PORTARIA                 N          
+13203   0     TERCEIRO  162 ANDAR                    N          
+13203   0               178 ENSOLARADO               N          
+13203   1.00  SALA      179 VENTILADOR DE TETO       S          
+13205   5.00            25  DORMITORIO               S          
+13205   0               45  LAVANDERIA               N          
+13205   0     DORMIT    54  ARMÁRIOS EMBUTIDOS       N          
+13205   1.00  .         56  SALA DE JANTAR           S          
+13205   1.00  .         60  COZINHA                  S          
+13205   3.00  .         61  BANHEIRO                 S          
+13205   0               63  DESPENSA                 N          
+13205   0               73  COPA                     N          
+13205   0     SL/DORMIT 80  PISO PARQUET             N          
+13205   0               88  CHURRASQUEIRA            N          
+13205   0               93  SALA DE ESTAR            N          
+13205   0     .         95  JARDIM                   N          
+13205   0               116 ALVENARIA                N          
+13205   1.00  .         122 SALA                     S          
+13205   0               126 FRENTE                   N          
+13205   0     TERREO    162 ANDAR                    N          
+13205   0               164 COFRE                    N          
+13205   0     .         176 GARAGEM P/ 2 CARROS      N          
+13205   0               206 TANQUE                   N          
+13205   0               218 LAVANDERIA               N          
+13205   0     .         230 JARDIM DE INVERNO        N          
+13205   0               231 ENTR.AUT.                N          
+13208   1.00            25  DORMITORIO               S          
+13208   2.00  .         34  ELEVADOR                 S          
+13208   1.00  .         56  SALA DE JANTAR           S          
+13208   1.00  .         60  COZINHA                  S          
+13208   1.00  .         61  BANHEIRO                 S          
+13208   0               69  PORTEIRO ELETRONICO      N          
+13208   0     .         72  AREA C/TANQUE            N          
+13208   0     SL/DORMIT 75  PISO CARPETE             N          
+13208   0     .         84  AREA DE SERV             N          
+13208   0     ESPERA    92  AGUA QUENTE              N          
+13208   0               93  SALA DE ESTAR            N          
+13208   0               116 ALVENARIA                N          
+13208   0               121 ESPERA P/ARCONDICIONADO  N          
+13208   0               126 FRENTE                   N          
+13208   0               129 RESIDENCIAL              N          
+13208   0     TERCEIRO  162 ANDAR                    N          
+13208   0               178 ENSOLARADO               N          
+13208   0     CONSERVADO217 EDIFICIO                 N          
+13222   0     DUAS      5   GARAGEM                  N          
+13222   3.00            25  DORMITORIO               S          
+13222   0     .         30  SACADA                   N          
+13222   2.00  .         34  ELEVADOR                 S          
+13222   0     COZ/BANHO 54  ARMÁRIOS EMBUTIDOS       N          
+13222   1.00  .         56  SALA DE JANTAR           S          
+13222   1.00  .         58  SUÍTE                    S          
+13222   1.00  .         60  COZINHA                  S          
+13222   1.00  .         61  BANHEIRO                 S          
+13222   0               69  PORTEIRO ELETRONICO      N          
+13222   0     .         72  AREA C/TANQUE            N          
+13222   0               82  ZELADOR                  N          
+13222   0     .         84  AREA DE SERV             N          
+13222   0               110 BANHEIRO DE EMPREGADA    N          
+13222   0               116 ALVENARIA                N          
+13222   0     .         119 PISO FRIO                N          
+13222   0               129 RESIDENCIAL              N          
+13222   0               153 PORTARIA                 N          
+13222   0     TERCEIRO  162 ANDAR                    N          
+13222   0               190 DORMITORIO DE EMPREGADA  N          
+13223   2.00            25  DORMITORIO               S          
+13223   1.00  .         34  ELEVADOR                 S          
+13223   0     COZ/DORMIT54  ARMÁRIOS EMBUTIDOS       N          
+13223   1.00  .         56  SALA DE JANTAR           S          
+13223   1.00  .         60  COZINHA                  S          
+13223   1.00  .         61  BANHEIRO                 S          
+13223   0     .         72  AREA C/TANQUE            N          
+13223   0               77  MOBILIADO                N          
+13223   0     SL/DORMIT 80  PISO PARQUET             N          
+13223   0     .         84  AREA DE SERV             N          
+13223   0               93  SALA DE ESTAR            N          
+13223   0               110 BANHEIRO DE EMPREGADA    N          
+13223   0               116 ALVENARIA                N          
+13223   0               126 FRENTE                   N          
+13223   0               190 DORMITORIO DE EMPREGADA  N          
+13224   0     .         5   GARAGEM                  N          
+13224   4.00            25  DORMITORIO               S          
+13224   0     .         30  SACADA                   N          
+13224   0               45  LAVANDERIA               N          
+13224   0               49  LAVABO                   N          
+13224   0               50  GABINETE                 N          
+13224   1.00  .         56  SALA DE JANTAR           S          
+13224   1.00  .         61  BANHEIRO                 S          
+13224   0               88  CHURRASQUEIRA            N          
+13224   0               93  SALA DE ESTAR            N          
+13224   0               114 QUINTAL                  N          
+13224   0               116 ALVENARIA                N          
+13224   0               117 COMERCIAL                N          
+13224   0               126 FRENTE                   N          
+13224   0               129 RESIDENCIAL              N          
+13224   0               160 ARMARIOS AEREOS          N          
+13224   0               231 ENTR.AUT.                N          
+13225   2.00  .         34  ELEVADOR                 S          
+13225   1.00  .         60  COZINHA                  S          
+13225   1.00  .         61  BANHEIRO                 S          
+13225   0               69  PORTEIRO ELETRONICO      N          
+13225   0     SALA      75  PISO CARPETE             N          
+13225   0               77  MOBILIADO                N          
+13225   0               82  ZELADOR                  N          
+13225   0               116 ALVENARIA                N          
+13225   1.00  .         122 SALA                     S          
+13225   0               126 FRENTE                   N          
+13225   0               129 RESIDENCIAL              N          
+13225   0               153 PORTARIA                 N          
+13226   0     .         4   BANHEIRA                 N          
+13226   2.00            25  DORMITORIO               S          
+13226   1.00  .         56  SALA DE JANTAR           S          
+13226   1.00  .         60  COZINHA                  S          
+13226   0     .         72  AREA C/TANQUE            N          
+13226   0     SL/DORMIT 80  PISO PARQUET             N          
+13226   0     .         84  AREA DE SERV             N          
+13226   0               116 ALVENARIA                N          
+13226   0               126 FRENTE                   N          
+13226   0               129 RESIDENCIAL              N          
+13226   0     TERREO    162 ANDAR                    N          
+13230   2.00  .         61  BANHEIRO                 S          
+13230   0               116 ALVENARIA                N          
+13230   0               117 COMERCIAL                N          
+13230   0     .         119 PISO FRIO                N          
+13230   0               126 FRENTE                   N          
+13230   0     ÓTIMA     211 LOJA                     N          
+13231   0               116 ALVENARIA                N          
+13238   1.00            25  DORMITORIO               S          
+13238   1.00  .         28  LIVING                   S          
+13238   1.00  .         60  COZINHA                  S          
+13238   0     .         84  AREA DE SERV             N          
+13238   0               87  GAS CENTRAL              N          
+13238   0     74,18     106 AREA TOTAL               N          
+13238   0     51,31     107 AREA REAL                N          
+13238   0               125 FUNDOS                   N          
+13238   1.00  .         183 BANHEIRO SOCIAL          S          
+13238   0     .         256 IMÓVEL REFORMADO         N          
+13239   4.00            25  DORMITORIO               S          
+13239   1.00  .         28  LIVING                   S          
+13239   0               49  LAVABO                   N          
+13239   0               50  GABINETE                 N          
+13239   1.00  .         56  SALA DE JANTAR           S          
+13239   1.00  .         58  SUÍTE                    S          
+13239   1.00  .         60  COZINHA                  S          
+13239   1.00  .         61  BANHEIRO                 S          
+13239   0               83  W.C AUX                  N          
+13239   0     .         84  AREA DE SERV             N          
+13239   0               87  GAS CENTRAL              N          
+13239   0     .         92  AGUA QUENTE              N          
+13239   0               93  SALA DE ESTAR            N          
+13239   0               141 BANHEIRO AUXILIAR        N          
+13239   0               143 VISTA PANORAMICA         N          
+13239   0     .         176 GARAGEM P/ 2 CARROS      N          
+13239   0               178 ENSOLARADO               N          
+13239   0     .         207 ESTAR INTIMO             N          
+13240   0     .         84  AREA DE SERV             N          
+13240   0     52,08     106 AREA TOTAL               N          
+13240   0     36,85     107 AREA REAL                N          
+13241   0     1         20  CHURRASQUEIRA            N          
+13241   3.00            25  DORMITORIO               S          
+13241   1.00  .         28  LIVING                   S          
+13241   0     .         57  TERRAÇO                  N          
+13241   1.00  .         60  COZINHA                  S          
+13241   2.00  .         61  BANHEIRO                 S          
+13241   0               73  COPA                     N          
+13241   0     .         84  AREA DE SERV             N          
+13241   0     90,57     106 AREA TOTAL               N          
+13241   0     79,48     107 AREA REAL                N          
+13241   0               157 ANTENA COLETIVA          N          
+13241   0               218 LAVANDERIA               N          
+13242   0               6   PLAYGROUND               N          
+13242   1.00  .         28  LIVING                   S          
+13242   1.00  .         60  COZINHA                  S          
+13242   0     .         84  AREA DE SERV             N          
+13242   0               87  GAS CENTRAL              N          
+13242   0     126,17    106 AREA TOTAL               N          
+13242   0     73,48     107 AREA REAL                N          
+13242   0               126 FRENTE                   N          
+13242   0     .         147 3º ANDAR                 N          
+13242   0     .         176 GARAGEM P/ 2 CARROS      N          
+13242   1.00  .         183 BANHEIRO SOCIAL          S          
+13242   0               224 IMOVEL NOVO              N          
+13243   0               2   SALÃO DE FESTAS          N          
+13243   0               6   PLAYGROUND               N          
+13243   2.00  .         28  LIVING                   S          
+13243   1.00  .         53  BOX COBERTO              S          
+13243   1.00  .         60  COZINHA                  S          
+13243   2.00  .         61  BANHEIRO                 S          
+13243   0     .         84  AREA DE SERV             N          
+13243   0     L         90  PATIO                    N          
+13243   0     122       106 AREA TOTAL               N          
+13243   0     75        107 AREA REAL                N          
+13243   0               125 FUNDOS                   N          
+13243   0               218 LAVANDERIA               N          
+13244   1.00  .         61  BANHEIRO                 S          
+13244   0     .         84  AREA DE SERV             N          
+13244   0     50,52     106 AREA TOTAL               N          
+13244   0     43,90     107 AREA REAL                N          
+13245   0     12,80     107 AREA REAL                N          
+13245   0     .         135 4º ANDAR                 N          
+13247   0               32  PORTARIA-24 HS           N          
+13247   0               45  LAVANDERIA               N          
+13247   0               77  MOBILIADO                N          
+13247   0               82  ZELADOR                  N          
+13247   0     27,04     107 AREA REAL                N          
+13247   0               149 11º ANDAR                N          
+13247   0               224 IMOVEL NOVO              N          
+13248   2.00            25  DORMITORIO               S          
+13248   0               116 ALVENARIA                N          
+13249   1.00            25  DORMITORIO               S          
+13249   1.00  .         34  ELEVADOR                 S          
+13249   1.00  .         56  SALA DE JANTAR           S          
+13249   1.00  .         60  COZINHA                  S          
+13249   1.00  C/BOX     61  BANHEIRO                 S          
+13249   0               69  PORTEIRO ELETRONICO      N          
+13249   0     .         72  AREA C/TANQUE            N          
+13249   0     SL/DORMIT 80  PISO PARQUET             N          
+13249   0     .         84  AREA DE SERV             N          
+13249   0               116 ALVENARIA                N          
+13249   0               124 LATERAL                  N          
+13249   0               129 RESIDENCIAL              N          
+13249   0     SETIMO    162 ANDAR                    N          
+13249   0               178 ENSOLARADO               N          
+13251   2.00            25  DORMITORIO               S          
+13251   0     .         30  SACADA                   N          
+13251   1.00  .         56  SALA DE JANTAR           S          
+13251   1.00  .         60  COZINHA                  S          
+13251   1.00  C/BOX     61  BANHEIRO                 S          
+13251   0               69  PORTEIRO ELETRONICO      N          
+13251   0     .         72  AREA C/TANQUE            N          
+13251   0     SL/DORMIT 80  PISO PARQUET             N          
+13251   0     .         84  AREA DE SERV             N          
+13251   0               116 ALVENARIA                N          
+13251   0               126 FRENTE                   N          
+13251   0               129 RESIDENCIAL              N          
+13251   0               134 TERREO                   N          
+13251   0     TÉRREO    162 ANDAR                    N          

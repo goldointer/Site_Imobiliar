@@ -1,0 +1,21 @@
+C0108  0108-CENTRO EMPRESARIAL XXX                                 UNC08JOSEONILD                     000601
+BUNCLA FONTAINE    0006R CASTRO ALVES, 1100                              MARISA MARTINELLI MERUVIA                         
+E201                                155427 - PAULO ROBERTO DE FARIA                             51 96638432                   
+DECORR CASTRO ALVES, 1100 201                                              PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+DECOBR CASTRO ALVES, 1100 201                                              PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+E202 GAR 4                          174259 - FERNANDO RODRIGUES DA COSTA                                                      
+DECORR CASTRO ALVES, 1100 202 GAR 4                                        PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+DECOBR CASTRO ALVES, 1100 202 GAR 4                                        PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+E301                                155429 - RUI RUBEN RUSCHEL                                                                
+DECORR CASTRO ALVES, 1100 301                                              PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+DECOBR CASTRO ALVES, 1100 301                                              PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+E302 BOX 05                         155431 - ANTONIO CARLOS L CARNEIRO                                                        
+DECORR CASTRO ALVES, 1100 302 BOX 05                                       PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+DECOBR LIBERDADE, 227                                                      PORTO ALEGRE - RS                       90420090  RIO BRANCO                                                                                          
+E401 GAR 03                         155432 - RICARDO RAUPP RUSCHEL                              51 99591508                   
+DECORR CASTRO ALVES, 1100 401 GAR 03                                       PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+DECOBR CASTRO ALVES, 1100 401 GAR 03                                       PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+E402                                166561 - MARISA MARTINELLI MERUVIA                          9807-1282                     
+DECORR CASTRO ALVES, 1100 402                                              PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+DECOBR CASTRO ALVES, 1100 402                                              PORTO ALEGRE - RS                       90430130  RIO BRANCO                                                                                          
+IEMAImarisameruvia@terra.com.br                                                                                              

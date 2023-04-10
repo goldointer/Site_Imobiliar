@@ -1,0 +1,35 @@
+13464AUXILIADORA                                                 7994  
+13465AZENHA                                                      7994  
+13466BELA VISTA                                                  7994  
+13470BOM FIM                                                     7994  
+13473CASCATA                                                     7994  
+13474CAVALHADA                                                   7994  
+13127CENTRO                                                      7533  
+13239CENTRO                                                      7697  
+13475CENTRO                                                      7994  
+13767CENTRO                                                      8294  
+13476CHACARA DAS PEDRAS                                          7994  
+13478CIDADE BAIXA                                                7994  
+13480CRISTAL                                                     7994  
+13487GUARUJA                                                     7994  
+13488HIGIENOPOLIS                                                7994  
+13489HIPICA                                                      7994  
+13491INDEPENDENCIA                                               7994  
+13496JARDIM FLORESTA                                             7994  
+13501LAMI                                                        7994  
+13504MEDIANEIRA                                                  7994  
+13505MENINO DEUS                                                 7994  
+13506MOINHOS DE VENTO                                            7994  
+13507MONT SERRAT                                                 7994  
+13508NAVEGANTES                                                  7994  
+13509NONOAI                                                      7994  
+13511PARTENON                                                    7994  
+13514PEDRA REDONDA                                               7994  
+13515PETROPOLIS                                                  7994  
+13517PRAIA DE BELAS                                              7994  
+13136RIO BRANCO                                                  7533  
+13520RIO BRANCO                                                  7994  
+13524SANTA TEREZA                                                7994  
+13526SANTO ANTONIO                                               7994  
+13527SAO GERALDO                                                 7994  
+13533TERESOPOLIS                                                 7994  

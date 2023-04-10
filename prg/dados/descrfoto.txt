@@ -1,0 +1,41 @@
+                                                  xx                  
+Área de Serviço                                   ar                  
+Banheiro Social                                   ba                  
+Banheiro Suíte                                    bs                  
+Churrasqueira                                     ch                  
+Circulação                                        ci                  
+Closet                                            cl                  
+Cobertura                                         cb                  
+Cobertura/Terraço                                 ct                  
+Copa                                              cp                  
+Cozinha                                           co                  
+Dependência                                       de                  
+Depósito                                          dp                  
+Dormitório                                        do                  
+Estar Íntimo                                      ei                  
+Externa                                           ex                  
+Fachada                                           fa                  
+Foto                                              fo                  
+Gabinete                                          gb                  
+Garagem                                           ga                  
+Hall                                              ha                  
+Interna                                           in                  
+Lavabo                                            lv                  
+Lavanderia                                        la                  
+Living                                            li                  
+Loja                                              lo                  
+Piscina                                           ps                  
+Playground                                        pl                  
+Quadra de Esportes                                es                  
+Sacada                                            sc                  
+Sala                                              sa                  
+Sala de Brinquedo                                 br                  
+Sala de Ginática                                  sg                  
+Sala de Jantar                                    ja                  
+Sala de Jogos                                     sj                  
+Salão de Festas                                   sf                  
+Suíte                                             su                  
+Tour                                              to                  
+Vista                                             vi                  
+WC Auxiliar                                       wa                  
+WC Cobertura                                      wc                  

@@ -1,0 +1,19 @@
+E05/09/2004CPMF NO MES                                                                             3,45        0,0010/2002
+E          86 - R ANDRADAS,1234 - BL B 1624-1625                                                                          
+E05/09/2004ALUGUEL                                                                                 0,00      670,7310/2002
+E05/09/2004TAXA DE ADMINISTRACAO                                                                  44,62        0,0010/2002
+E05/09/2004DESCONTO ALUGUEL                                                                      110,73        0,0010/2002
+E04/09/2004CHAMADA  EXTRA                                                                         54,00        0,0009/2004
+E          1327 - AV INDEPENDENCIA,605 - E SUBSOLO                                                                        
+E11/09/2004CONDOMINIO                                                                            154,60        0,0009/2004
+E11/09/2004CHAMADA  EXTRA                                                                         51,10        0,0009/2004
+E          Total de Lançamentos                                                                              252,23       
+T          ALUGUEL                                                                                 0,00      670,73       
+T          TAXA DE ADMINISTRACAO                                                                  44,62        0,00       
+T          CONDOMINIO                                                                            154,60        0,00       
+T          DESCONTO ALUGUEL                                                                      110,73        0,00       
+T          CHAMADA  EXTRA                                                                        105,10        0,00       
+T          CPMF NO MES                                                                             3,45        0,00       
+T          Total de Taxas                                                                        418,50      670,73       
+T          Saldo Anterior                                                                        711,99                   
+T          Saldo Final                                                                           459,76                   

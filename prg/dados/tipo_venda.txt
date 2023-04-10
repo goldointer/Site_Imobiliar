@@ -1,0 +1,13 @@
+26  Andar                         CNS
+1   Apartamento                   RSS
+7   Box                           RNS
+12  Casa Comer.                   CNS
+4   Casa Resid.                   RSS
+5   Cobertura                     RSS
+9   Conjunto                      CNS
+3   Flat                          RNS
+2   JK                            RNS
+10  Loja                          CNS
+17  Prédio                        CNS
+8   Sala                          CNS
+18  Terreno                       RNN

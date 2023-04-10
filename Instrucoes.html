@@ -1,0 +1,1482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+
+
+
+
+
+<title></title>
+
+
+
+
+
+</head><body>
+<center><strong><font face="Helvetica" color="#006699">
+INSTRUÇÕES PARA INSTALAR, CONFIGURAR E ALTERAR O SITE DO IMOBILIAR</font></strong></center>
+
+
+
+
+
+
+<hr id="null">
+&nbsp;&nbsp;
+<p><font color="#0000ff"><strong>1. INSTALAÇÃO</strong></font></p>
+
+
+
+
+
+
+
+<p><font color="#0000ff">O conteúdo do arquivo
+Site_Imobiliar.zip deve ser descompactado no subdiretório
+desejado dentro da área de acesso do "web server" sendo
+utilizado. A estrutura obtida será a seguinte:</font></p>
+
+
+
+
+
+<ul>
+
+
+
+
+
+  <li><font color="#0000ff"><span style="font-style: italic; font-weight: bold;">Subdiretório "Fotos"</span>: Utilizado para
+armazenar as fotos dos imóveis para venda e
+locação no formato Jpeg. É atualizado automaticamente</font><font color="#0000ff"><font color="#0000ff">
+por FTP</font> pelo Sistema
+Imobiliar, não necessitando qualquer alteração
+manual. </font></li>
+<li><font color="#0000ff"><span style="font-style: italic; font-weight: bold;">Subdiretório "Lanctos"</span>: Utilizado para
+armazenar as imagens digitalizadas </font><font color="#0000ff"><font color="#0000ff"> no formato Jpeg </font>dos documentos de lançamentos. É atualizado automaticamente</font><font color="#0000ff"><font color="#0000ff">
+por FTP</font> pelo Sistema
+Imobiliar, não necessitando qualquer alteração
+manual.</font></li>
+
+  <li><font color="#0000ff"><span style="font-weight: bold; font-style: italic;">Subdiretório "imagens"</span>: Possui os
+arquivos de imagens das páginas. Pode ser modificado e
+acrescentado arquivos pelo designer, com exceção dos arquivos
+"p.png" e "b.png" que devem permanecer inalterados e neste nome de
+subdiretório (são utilizados para gerar o código
+de barra nos DOCs). </font> </li>
+  <li><font color="#0000ff"><span style="font-weight: bold; font-style: italic;">Subdiretório "imagens/logos"</span>: Possui
+os logotipos dos bancos para geração dos DOCs. Pode ser
+alterado desde que se mantenham as dimensões das figuras para
+evitar que o DOC gerado fique desproporcional. </font> </li>
+  <li><font color="#0000ff"><span style="font-weight: bold; font-style: italic;">Subdiretório "prg"</span>: Contém
+todos os módulos PHP com a lógica de acesso aos dados
+exportados pelo Sistema Imobiliar. Nenhum arquivo&nbsp;pode ser
+alterado sob risco de perder compatibilidade com os dados. </font> </li>
+  <li><font color="#0000ff"><span style="font-weight: bold; font-style: italic;">Subdiretório "prg/dados"</span>:
+Contém as diversas bases de dados atualizadas automaticamente
+por FTP pelo Sistema Imobiliar, não necessitando qualquer
+alteração manual. Os arquivos deste diretório
+são no formato texto, não sendo necessário nenhum
+banco de dados no provedor. </font> </li>
+  <li><font color="#0000ff"><span style="font-style: italic; font-weight: bold;">Subdiretório "prg/modelos"</span>: Possui
+os arquivos "templates" das páginas dinâmicas que
+serão preechidas pelos módulos PHP. Estes arquivos, que
+possuem extensão "shtml", deverão ser remodelados pelo
+designer conforme o projeto visual da imobiliária. </font> </li>
+  <li><font color="#0000ff"><span style="font-style: italic; font-weight: bold;">Arquivos "index.html" e "clionline.html"</span>:
+Estes arquivos deverão ser remodelados pelo designer conforme o
+projeto visual da imobiliária.</font></li>
+</ul>
+
+
+
+
+
+<p><font color="#0000ff"><br>
+</font></p>
+
+
+
+
+
+<p><font color="#0000ff"><strong>2. ALTERAÇÃO DAS
+PÁGINAS HTML</strong></font></p>
+
+
+
+
+
+<p><font color="#0000ff">As páginas contidas em "prg/modelos"
+são utilizadas pelos módulos PHP como templates para a
+geração das páginas dinâmicas. Para isto,
+existem "tags de substituição" especiais que serão
+substituídas pelo PHP e que não devem ser removidas das
+páginas. </font></p>
+
+
+
+
+
+<font color="#0000ff">Estas "tags de substituição", na
+sua forma simples,&nbsp;possuem o formato "<font color="#ff0000">{...id...}</font>"
+como no exemplo abaixo: </font>
+<font color="#0000ff">&lt;div align="center"&gt;<br>
+&lt;font color="#ffffff"&nbsp;face="Verdana, Arial, Helvetica,
+sans-serif" size="1"&gt;&lt;small&gt;&lt;b&gt;<br>
+&lt;font&nbsp;color="#ffcc33"&gt; <font color="#ff0000">{TITULO}</font>&lt;/font&gt;
+&lt;/b&gt; &lt;/small&gt;&lt;/font&gt;<br>
+&lt;/div&gt;<br>
+</font>
+<p><br>
+<font color="#0000ff">As "tags de substituição"
+para&nbsp;listas&nbsp;possuem um formato mais complexo como nos
+exemplos abaixo: </font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff"><font color="#ff0000">&lt;!-- BEGIN DYNAMIC
+BLOCK: BAIRROS --&gt;</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;option value="<font color="#ff0000">{BVALOR}</font>"&gt;<font color="#ff0000">{BOPCAO}</font>&lt;/option&gt;<br>
+</font><font color="#ff0000">&lt;!-- END DYNAMIC BLOCK: BAIRROS --&gt;</font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff"><font color="#ff0000">&lt;!-- BEGIN DYNAMIC
+BLOCK: IMOV_RES --&gt;</font>&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;tr bgcolor="#ffffff" border="0"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;td align="center" width="7%" height="20"&gt;&lt;font<br>
+&nbsp;face="Verdana, Arial, Helvetica, sans-serif" color="#000000"
+size="1"&gt;&lt;small&gt;<font color="#ff0000">{COD}</font>&lt;/small&gt;&lt;/font&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;td align="center" width="15%" height="20"&gt;&lt;font<br>
+&nbsp;face="Verdana, Arial, Helvetica, sans-serif" color="#000000"
+size="1"&gt;&lt;small&gt;<font color="#ff0000">{BAIRRO}</font>&lt;/small&gt;&lt;/font&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;td align="left" width="45%" height="20"&gt;&lt;font<br>
+&nbsp;face="Verdana, Arial, Helvetica, sans-serif" color="#000000"
+size="1"&gt;&lt;small&gt;&amp;nbsp;<font color="#ff0000">{END}</font>&lt;/small&gt;&lt;/font&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;td align="center" width="8%" height="20"&gt;&lt;font<br>
+&nbsp;face="Verdana, Arial, Helvetica, sans-serif" color="#000000"
+size="1"&gt;&lt;small&gt;<font color="#ff0000">{AREA}</font>&lt;/small&gt;&lt;/font&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;td align="right" width="15%" height="20"&gt;&lt;font<br>
+&nbsp;face="Verdana, Arial, Helvetica, sans-serif" color="#000000"
+size="1"&gt;&lt;small&gt;<font color="#ff0000">{VAL}</font>&amp;nbsp;&lt;/small&gt;&lt;/font&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;td align="center" width="5%" height="20"&gt;&lt;input<br>
+&nbsp;type="image" height="20" src="<font color="#ff0000">{_SRC}</font>"
+width="25" border="0"<br>
+&nbsp;onclick="<font color="#ff0000">{_CLICK}</font>" alt="<font color="#ff0000">{_ALT}</font>"&gt; &lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&lt;/tr&gt;<br>
+<font color="#ff0000">&lt;!-- END DYNAMIC BLOCK: IMOV_RES --&gt;</font><br>
+<br>
+Vale ressaltar que as páginas podem ter sua estrutura de tags
+html&nbsp;totalmente remodelada, mas devem ser mantidas as "tags de
+substituição", destacadas em vermelho nos exemplos acima bem como os códigos em Javascript existentes.<br>
+</font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>&nbsp;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff"><font color="#0000ff"><strong>3. CONFIGURAÇÃO</strong></font></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff">Juntamente com os módulos PHP na pasta </font><font color="#0000ff"><span style="font-weight: bold; font-style: italic;">"prg"</span></font><font color="#0000ff">
+existe o arquivo "config.inc-dist.php" que contém os
+parâmetros que configuram várias funcionalidades do site.
+Este arquivo deve ser renomeado (ou criada uma cópia) para </font><font color="#0000ff">"config.inc.php" e modificado conforme as características desejadas.<br>
+</font></p>
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff">Os parâmetros deste arquivo de configuração são descritos na tabela a seguir:<br>
+</font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table style="text-align: left; width: 100%;" cellspacing="2" cellpadding="2" border="1">
+
+
+
+
+
+
+
+
+
+
+
+  <tbody>
+    <tr style="vertical-align: top; font-weight: bold; text-align: center; background-color: rgb(255, 255, 204);">
+      <td>PARÂMETRO<br>
+      </td>
+      <td>VALOR DEFAULT<br>
+      </td>
+      <td>DESCRIÇÃO<br>
+      </td>
+    </tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">CHAVE_GOOGLEMAPS </font></td>
+		<td valign="top" align="left"><br></td>
+		<td valign="top" align="left">Chave do site no Google Maps para exibir a localização do imóvel. (<a href="http://code.google.com/intl/pt-BR/apis/maps/signup.html">Clique aqui para mais detalhes</a>)</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">CIDADE_LOC</font></td>
+		<td valign="top" align="left"><br></td>
+		<td valign="top" align="left">Nome da cidade que aparece pré-selecionada na pesquisa de locação</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">CIDADE_VENDA </font></td>
+		<td valign="top" align="left"><br></td>
+		<td valign="top" align="left">Nome da cidade que aparece pré-selecionada na pesquisa de venda </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">DIAS_VALIDADE_DOC_VENCIDO_COND</font></td>
+		<td sdval="30" sdnum="1046;" valign="top" align="right">30</td>
+		<td valign="top" align="left">Determinar o número de dias que um DOC de condomínio vencido continua a ser exibido para o cliente.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">DIAS_VALIDADE_DOC_VENCIDO_LOC</font></td>
+		<td sdval="30" sdnum="1046;" valign="top" align="right">30</td>
+		<td valign="top" align="left">Determinar o número de dias que um DOC de locação vencido continua a ser exibido para o cliente.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">DIR_ANEXOS</font></td>
+		<td valign="top" align="left">../Anexos</td>
+		<td valign="top" align="left">Diretório que contém a estrutura de documentos anexos para a área do cliente.</td>
+	</tr>
+ <tr>
+<td valign="top" align="left" height="32"><font color="#0000FF">DIR_DADOS</font></td>
+<td valign="top" align="left">./dados</td>
+<td valign="top" align="left">Diretório que contém os arquivos de dados enviados pelo servidor da Imobiliária</td>
+</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">DIR_FOTOS</font></td>
+		<td valign="top" align="left">../Fotos</td>
+		<td valign="top" align="left">Diretório que contém os arquivos "jpg" contendo as fotos dos imóveis.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">DIR_IMAGENS</font></td>
+		<td valign="top" align="left">../imagens</td>
+		<td valign="top" align="left">Diretório que contém os arquivos com as imagens utilizadas nas páginas "shtml".</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">DIR_LANCAMENTOS</font></td>
+		<td valign="top" align="left">../Lanctos</td>
+		<td valign="top" align="left">Diretório que contém os arquivos "jpg" contendo as digitalizações dos lançamentos dos extratos e demonstrativos.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">DIR_MODELOS</font></td>
+		<td valign="top" align="left">./modelos</td>
+		<td valign="top" align="left">Diretório que contém as páginas "shtml" utilizadas como modelos pelos scripts PHP.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_COND_ANEXOS</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção de "Documentos Anexos do Condomínio" na lista de serviços na Área do Cliente. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="17"><font color="#0000FF">EXIBE_COND_LANCTOS_FUTUROS </font></td>
+		<td valign="top" align="left">SIM</td>
+		<td valign="top" align="left">Exibir lista de lançamentos futuros no extrato de condomínio.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_COND_TOTAL_DOCS </font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Exibir o resumo de totalização dos DOCs no extrato de condomínio.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_ENDERECO_LOCACAO </font></td>
+		<td valign="top" align="left">SIM</td>
+		<td valign="top" align="left">Exibir o endereço do imóvel na lista resultante da pesquisa da locação. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_ENDERECO_VENDA </font></td>
+		<td valign="top" align="left">SIM</td>
+		<td valign="top" align="left">Exibir o endereço do imóvel na lista resultante da pesquisa da venda.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_EXTRATOCOND_ATUAL</font></td>
+		<td valign="top" align="left">SIM</td>
+		<td valign="top" align="left">Determinar se o extrato de condomínio do mês corrente deve ser exibido na lista de serviços na Área do Cliente. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_IMAGEM_LACTO</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Exibir icone no lançamento do extrato de condomínio para exibir a imagem digitalizada do mesmo.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_INADIMPL_SEPARADO</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção "Inadimplências" na lista de serviços na Área do Cliente ao invés de exibir dentro do extrato do condomínio.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_IR_ANUAL</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção "Informativo dos Valores Acumulados (IR - Aluguéis) " na lista de serviços na Área do Cliente. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_LISTA_CONDOMINOS</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção de "Lista de Condôminos" na lista de serviços na Área do Cliente. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_OBS_COMERC_PESSOA</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Exibir o nome da pessoa que relatou a observação na lista de "Observações da Comercialização".</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_OBS_COMERCIALIZACAO </font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção "Observações da Comercialização" na lista de serviços na Área do Cliente.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_OBS_INADIMPLENCIA</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Exibir observações existentes na lista de inadimplências do condomínio.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_RESID_COMERC_LOCACAO</font></td>
+		<td valign="top" align="left">SIM</td>
+		<td valign="top" align="left">Apresentar a seleção "Residencial/Comercial" na pesquisa de imóveis para locação.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_RESID_COMERC_VENDA</font></td>
+		<td valign="top" align="left">SIM</td>
+		<td valign="top" align="left">Apresentar a seleção "Residencial/Comercial" na pesquisa de imóveis para venda.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="17"><font color="#0000FF">EXIBE_THUMBNAILS </font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Exibir a lista de imóveis com a imagem reduzida da fachada.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="17"><font color="#0000FF">EXIBE_THUMBNAILS_FOTOS </font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Exibir a lista de fotos do imóvel na forma de imagens reduzidas. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_TODAS_CIDADES</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção "Todas" na lista de cidades dos imóveis a pesquisar</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">EXIBE_TODOS_TIPOS </font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção "Todos" na lista de tipos de imóveis a pesquisar (apto, sala, casa, etc.)</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="17"><font color="#0000FF">LARGURA_THUMBNAILS_FOTOS </font></td>
+		<td sdval="80" sdnum="1046;" valign="top" align="right">80</td>
+		<td valign="top" align="left">Largura em pixels das imagens reduzidas das fotos do imóvel. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">LARGURA_THUMBNAILS_PESQUISA </font></td>
+		<td sdval="100" sdnum="1046;" valign="top" align="right">100</td>
+		<td valign="top" align="left">Largura em pixels da imagem reduzida da fachada a ser exibida na lista de imóveis.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">LOGIN_CPFCNPJ </font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Efetuar o login na Área do Cliente pelo CPF/CNPJ ao invés do código do cliente.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">LOGIN_EMAIL</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Efetuar o login na Área do Cliente pelo CPF/CNPJ ao invés do código do cliente.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="47"><font color="#0000FF">MESES_NO_SITE</font></td>
+		<td sdval="3" sdnum="1046;" valign="top" align="right">3</td>
+		<td valign="top" align="left">Determinar
+ o número default de meses que os documentos&nbsp; serão&nbsp; mantidos 
+no site e continuarão a ser exibidos para o cliente. Os demonstrativos 
+de proprietário sempre utilizam este parâmetro.</td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">MESES_NO_SITE_BOLETOS</font></td>
+		<td sdval="2" sdnum="1046;" valign="top" align="right">2</td>
+		<td valign="top" align="left">Determinar
+ o número específico de meses que os boletos serão&nbsp; mantidos no 
+site e continuarão a ser exibidos para o cliente. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="47"><font color="#0000FF">MESES_NO_SITE_EXTRATOCOND</font></td>
+		<td sdval="3" sdnum="1046;" valign="top" align="right">3</td>
+		<td valign="top" align="left">Determinar
+ o número específico de meses que os extratos de condomínios serão&nbsp;
+ mantidos no site e continuarão a ser exibidos para o cliente. </td>
+	</tr>
+	<tr>
+  <td valign="top"><font color="#0000FF">MESES_NO_SITE_DEMONSTRATIVOLOC</font></td>
+  <td valign="top" align="right">1<br>
+  </td>
+  <td valign="top">Determinar
+ o número específico de meses que os demonstrativos de locação serão&nbsp;
+ mantidos no site e continuarão a ser exibidos para o cliente.</td>
+</tr>
+<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">PESQUISA_GARAGEM </font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresenta opção de número de vagas de garagem na pesquisa de imóveis. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="32"><font color="#0000FF">PLANILHA_GAS_COND</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Apresentar a opção de "Planilha de Gás/Água" na lista de serviços na Área do Cliente. </td>
+	</tr>
+	<tr>
+		<td valign="top" align="left" height="47"><font color="#0000FF">SERVICOS_EXTRAS_COND</font></td>
+		<td valign="top" align="left">NAO</td>
+		<td valign="top" align="left">Exibir nos
+ serviços na Área do Cliente a opção extra que pode ser customizada pelo
+ desenvolvedor do site para apresentar serviços extras ao condomínio 
+(reserva de salão, mural, etc.)</td>
+	</tr>
+
+
+
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff"><font color="#0000ff"><strong>3.1. SEGURANÇA DOS DADOS<br>
+</strong></font></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff">É muito importante que os diretórios de dados 
+não possuam permissão de navegação, ou seja, que nenhum arquivo nesses 
+diretórios possa ser acessado diretamente por uma </font><font color="#0000ff"><font color="#0000ff">URL</font> no navegador. <br>
+  </font></p>
+
+
+
+
+
+
+
+
+<p><font color="#0000ff">Por exemplo, no caso do servidor onde o site 
+esteja hospedado utilize o Apache então basta utilizar arquivos 
+<i>.htaccess</i> com as restrições desejadas (consulte manual do Apache para 
+maiores detalhes).<br>
+  </font></p>
+
+
+
+
+
+
+
+
+<p><font color="#0000ff">Caso não seja possível restringir o acesso como
+ descrito acima então sugere-se renomear a pasta de dados padrão para um
+ nome diferente e conhecido apenas pela equipe de desenvolvimento. Outra
+ sugestão é mover toda a estrutura de diretórios de dados para uma pasta
+ inacessível por URL mas ainda possa ser acessada pelos scripts PHPs. 
+Vale lembrar que qualquer mudança de nome de diretório deve ser 
+devidamente informada no parâmetro de configuração correspondente.<br>
+  <br>
+<br>
+  </font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<font color="#0000ff"><strong></strong></font>
+<p><font color="#0000ff"><font color="#0000ff"><strong>4. TESTES DO SITE</strong></font></font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff">Logo após a instalação o
+"esqueleto" do site deverá estar perfeitamente operacional,
+possuindo alguns dados básicos para fins de teste.<br>
+</font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff"><br>
+</font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff"><strong>4.1. </strong>Para acessar o cliente
+on-line informe o número 18971 para login e senha. </font></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><font color="#0000ff"><br>
+<table style="margin-left: auto; margin-right: auto; text-align: left;" width="473" cellspacing="0" cellpadding="0" bgcolor="#999999" height="30" border="0">
+  <tbody>
+    <tr align="center">
+      <td>
+      <table width="470" cellspacing="0" cellpadding="3" border="0">
+        <tbody>
+          <tr>
+            <td width="75">
+            <div align="right"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">LOGIN:</font></b></div>
+            </td>
+            <td width="160"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><input size="12" value="18971" name="LOGIN"> </font></td>
+            <td width="75">
+            <div align="right"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">SENHA:</font></b></div>
+            </td>
+            <td width="160"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><input size="12" value="*****" name="SENHA" type="password"> </font></td>
+          </tr>
+        </tbody>
+      </table>
+      <table width="473" cellspacing="0" cellpadding="4" border="0">
+        <tbody>
+          <tr>
+            <td>
+            <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><input id="submit1" value="     Entrar     " name="submit1" type="submit"> </font></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</font></p>
+
+
+
+
+
+
+
+<p><font color="#0000ff"><br>
+</font><font color="#0000ff">O resultado deste login deve apresentar
+uma página com conteúdo similar ao seguinte:</font><font color="#0000ff"> <br>
+</font></p>
+
+
+
+
+
+
+
+
+<table style="width: 760px; height: 149px;" cellspacing="0" cellpadding="0" border="0">
+
+
+
+
+
+
+
+  <tbody>
+    <tr>
+      <td width="586" valign="top">
+      <table width="272" cellspacing="0" cellpadding="0" bgcolor="#666666" height="70" border="0">
+        <tbody>
+          <tr valign="top">
+            <td> <font size="1" face="Arial, Helvetica, sans-serif" color="#ffffff"><br>
+USUÁRIO: <small> JOAO DA SILVA </small><br>
+            </font></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <table width="760" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+          <tr>
+            <td width="567" valign="top">
+            <table style="background-color: rgb(153, 153, 153);" width="573" cellspacing="0" cellpadding="0" height="19" border="0">
+              <tbody>
+                <tr>
+                  <td height="67">
+                  <div align="center"><br>
+                  <table style="background-color: rgb(153, 153, 153);" width="98%" cellspacing="5" cellpadding="5" border="0">
+                    <tbody>
+                      <tr>
+                        <td style="background-color: rgb(102, 102, 102);" colspan="4" bgcolor="#456092" align="center"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"> SERVIÇOS
+DISPONÍVEIS:</font> </td>
+                      </tr>
+                      <tr>
+                        <td width="68%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="left"><font size="2" face="Arial, Helvetica, sans-serif"> Extrato de
+Proprietário - JOAO DA SILVA </font></div>
+                        </td>
+                        <td colspan="3" width="32%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                        <form action="exibeDoc.php" method="post"> <input name="id" value="18971" type="hidden"> <input name="PROD" value="A" type="hidden"> <input name="ASSESSOR" value="" type="hidden"> <input name="ASSESSOR_EMAIL" value="" type="hidden"> <input name="TIPO" value="Proprietário" type="hidden"> <input name="CHAVE" value="00018971" type="hidden"> <input name="DESC_SERV" value="JOAO DA SILVA" type="hidden"> <input value=" Exibir 11/2004" name="btn" type="submit"><br>
+                          <br>
+                          <input value=" Exibir 10/2004" name="btn" type="submit"><br>
+                          <br>
+                        </form>
+                        </font></div>
+<!-- N --><!-- ? --> </td>
+                      </tr>
+                      <tr>
+                        <td width="68%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="left"><font size="2" face="Arial, Helvetica, sans-serif"> Demonstrativo de
+Prorietário - JOAO DA SILVA </font></div>
+                        </td>
+                        <td colspan="3" width="32%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                        <form action="exibeDoc.php" method="post"> <input name="id" value="18971" type="hidden"> <input name="PROD" value="L" type="hidden"> <input name="ASSESSOR" value="" type="hidden"> <input name="ASSESSOR_EMAIL" value="" type="hidden"> <input name="TIPO" value="Proprietário" type="hidden"> <input name="CHAVE" value="00001687" type="hidden"> <input name="DESC_SERV" value="JOAO DA SILVA" type="hidden"> <input value=" Exibir 10/2004" name="btn" type="submit"><br>
+                          <br>
+                          <input value=" Exibir 09/2004" name="btn" type="submit"><br>
+                          <br>
+                        </form>
+                        </font></div>
+<!-- N --><!-- ? --> </td>
+                      </tr>
+                      <tr>
+                        <td width="68%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="left"><font size="2" face="Arial, Helvetica, sans-serif"> Demonstrativo
+Sintético - JOAO DA SILVA </font></div>
+                        </td>
+                        <td colspan="3" width="32%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                        <form action="exibeDoc.php" method="post"> <input name="id" value="18971" type="hidden"> <input name="PROD" value="S" type="hidden"> <input name="ASSESSOR" value="" type="hidden"> <input name="ASSESSOR_EMAIL" value="" type="hidden"> <input name="TIPO" value="Proprietário" type="hidden"> <input name="CHAVE" value="00026129" type="hidden"> <input name="DESC_SERV" value="JOAO DA SILVA" type="hidden"> <input value=" Exibir 10/2004" name="btn" type="submit"><br>
+                          <br>
+                          <input value=" Exibir 09/2004" name="btn" type="submit"><br>
+                          <br>
+                        </form>
+                        </font></div>
+<!-- N --><!-- ? --> </td>
+                      </tr>
+                      <tr>
+                        <td width="68%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="left"><font size="2" face="Arial, Helvetica, sans-serif"> Extrato de
+Condomínio - CENTRO EMPRESARIAL XXX PRINCIPAL </font></div>
+                        </td>
+                        <td colspan="3" width="32%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                        <form action="exibeDoc.php" method="post"> <input name="id" value="18971" type="hidden"> <input name="PROD" value="C" type="hidden"> <input name="ASSESSOR" value="EXCLUIDOS" type="hidden">
+                          <input name="ASSESSOR_EMAIL" value="" type="hidden"> <input name="TIPO" value="Condôomino" type="hidden"> <input name="CHAVE" value="00108UNC" type="hidden"> <input name="DESC_SERV" value="CENTRO EMPRESARIAL XXX                 PRINCIPAL" type="hidden">
+                          <input value=" Exibir 11/2004" name="btn" type="submit"><br>
+                          <br>
+                          <input value=" Exibir 10/2004" name="btn" type="submit"><br>
+                          <br>
+                        </form>
+                        </font></div>
+<!-- N --><!-- N --> </td>
+                      </tr>
+                      <tr>
+                        <td width="68%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="left"><font size="2" face="Arial, Helvetica, sans-serif"> Extrato de
+Condomínio - CENTRO EMPRESARIAL XXX FDO DE RESERVA </font></div>
+                        </td>
+                        <td colspan="3" width="32%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                        <form action="exibeDoc.php" method="post"> <input name="id" value="18971" type="hidden"> <input name="PROD" value="C" type="hidden"> <input name="ASSESSOR" value="EXCLUIDOS" type="hidden">
+                          <input name="ASSESSOR_EMAIL" value="" type="hidden"> <input name="TIPO" value="Condôomino" type="hidden"> <input name="CHAVE" value="00108F01" type="hidden"> <input name="DESC_SERV" value="CENTRO EMPRESARIAL XXX                 FDO DE RESERVA" type="hidden"> <input value=" Exibir 11/2004" name="btn" type="submit"><br>
+                          <br>
+                          <input value=" Exibir 10/2004" name="btn" type="submit"><br>
+                          <br>
+                        </form>
+                        </font></div>
+<!-- N --><!-- F --> </td>
+                      </tr>
+                      <tr>
+                        <td width="68%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="left"><font size="2" face="Arial, Helvetica, sans-serif"> DOC:
+Locação &nbsp;&nbsp; Vencimento: 10/09/2004
+                        <br>
+R EUGENIA LIMA, 194 - AP 203 </font></div>
+                        </td>
+                        <td colspan="3" width="32%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                        <form action="exibeBoleto.php" method="post" onsubmit="return OpenDoc('./dados/bloquetos/18971/4479.txt')"> <input name="fboleto" value="./dados/bloquetos/18971/4479.txt" type="hidden">
+                          <input value=" Exibir" name="btn" type="submit"><br>
+                          <br>
+                        </form>
+                        </font></div>
+                        <br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="68%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="left"><font size="2" face="Arial, Helvetica, sans-serif"> DOC:
+Locação &nbsp;&nbsp; Vencimento: 10/09/2004
+                        <br>
+PC PEREIRA PASSOS, 130 - SL 1502 </font></div>
+                        </td>
+                        <td colspan="3" width="32%" bgcolor="#ffffff" align="center" height="34">
+                        <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+                        <form action="exibeBoleto.php" method="post" onsubmit="return OpenDoc('./dados/bloquetos/18971/5895.txt')"> <input name="fboleto" value="./dados/bloquetos/18971/5895.txt" type="hidden">
+                          <input value=" Exibir" name="btn" type="submit"><br>
+                          <br>
+                        </form>
+                        </font></div>
+                        <br>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <form action="" method="get">
+				  <!-- O CAMPO 'url' ï¿½ OPCIONAL PARA QUANDO SE DESEJA UMA PAGINA ESPECï¿½FICA APï¿½S LOGOUT.
+
+					   ATENCAO: DEVE SER INFORMADO UM URI ABSOLUTO.
+
+				  -->
+				    <input name="url" value="../index.html" type="hidden">
+                    <input name="btn" value="Encerrar Cliente On-Line" type="submit"> </form>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+<p><font color="#0000ff">Cada um dos botões da tela acima
+irá exibir as telas correspondentes para Extrato e Demonstrativo
+de
+Proprietário, Extrato de Condomínio e DOCs. No caso de
+não ser exibido algum dos botões acima, entre em contato
+para revalidar os dados pois existe uma expiração dos
+dados após decorrer 3 meses da sua geração.</font>
+</p>
+
+
+
+
+
+
+
+<p><font color="#0000ff"><br>
+</font></p>
+
+
+
+
+
+
+
+<p><font color="#0000ff"><strong>4.2. </strong>Para testes da pesquisa
+de
+locação acompanha uma pequena quantidade de dados apenas
+para a cidade de Porto Alegre. Existem duas opções de telas de pesquisa conforme apresentado no index.html.<br>
+<br>
+</font></p>
+
+
+
+
+
+
+
+<p><font color="#0000ff"><span style="font-weight: bold;">4.2.1.</span> Pesquisa de Imóveis de Locação ou Venda (tela única) <br>
+</font></p>
+
+
+
+
+
+
+
+<table style="background-color: rgb(120, 120, 120);" width="473" cellspacing="0" cellpadding="0" height="19" border="0" background="../consulta/images/form_01.gif">
+
+
+
+
+
+
+
+
+  <tbody>
+	<tr>
+	  <td style="text-align: center; background-color: rgb(102, 102, 102);" wrap="">
+	  &nbsp;<span style="font-weight: bold; color: rgb(255, 255, 102);">PESQUISA DE IMÓVEIS </span><br>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<table style="background-color: rgb(153, 153, 153);" width="473" cellspacing="0" cellpadding="0" height="30" border="1">
+
+
+
+
+
+
+
+
+  <tbody>
+	<tr valign="middle" align="center">
+	  <td>
+	  <form name="" action="../prg/pesqImovRes.php" method="post">
+		<input name="lv" value="L" type="hidden">
+		<table style="width: 90%;" cellspacing="3" cellpadding="5" border="0">
+		  <tbody>
+			<tr style="background-color: rgb(120, 120, 120);">
+			  <td>
+			  <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+				<font face="Arial, Helvetica, sans-serif">
+				Selecione as condições para a consulta e aperte o botão.
+				</font></font>
+			  </div>
+			  </td>
+			</tr>
+		  </tbody>
+		</table>
+		<table width="100%" cellspacing="3" cellpadding="5" border="0">
+		  <tbody>
+			<tr>
+			  <td width="36%">
+			  <div align="right">
+			  <b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">CIDADE:</font></b></div>
+			  </td>
+			  <td width="64%">
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  <select name="selcidade" id="selcidade" onchange="VerBairros()"><option selected="selected" value=" 7994 :PORTO ALEGRE">PORTO ALEGRE</option><option value=" 7502 :CACHOEIRINHA">CACHOEIRINHA</option><option value=" 7533 :CANOAS">CANOAS</option><option value=" 7697 :ESTEIO">ESTEIO</option><option value=" 8294 :VIAMAO">VIAMAO</option></select>
+			  </font></td>
+			</tr>
+
+			<tr>
+			  <td width="36%">
+			  <div align="right">
+			  <b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  OCUPAÇÃO:</font></b></div>
+			  </td>
+			  <td width="64%">
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  <input name="selocup" id="selocup" value="R" checked="checked" onchange="VerTipos(this.value)" type="radio">
+			  </font>
+			  <font size="2" face="Arial, Helvetica, sans-serif" color="#ffffff">
+			  Residencial </font>
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  <input name="selocup" id="selocup" value="C" onchange="VerTipos(this.value)" type="radio"> </font>
+			  <font size="2" face="Arial, Helvetica, sans-serif" color="#ffffff">
+			  Comercial</font>
+			  <font size="2" face="Arial, Helvetica, sans-serif" color="#ffffff"> </font>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td width="26%">
+			  <div align="right"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  Tipo de Imóvel:</font></b></div>
+			  </td>
+			  <td width="74%">
+			  <table width="100%">
+				<tbody>
+				  <tr>
+					<td>
+					<select name="seltipo" id="seltipo" onchange="javascript:VerQuartos()"><option selected="selected" value=" ">- QUALQUER TIPO -</option><option value="R1">Apartamento ==&gt;</option><option value="R7">Box</option><option value="R4">Casa Resid. ==&gt;</option><option value="R5">Cobertura ==&gt;</option><option value="R22">Estacion. Resid.</option><option value="R3">Flat</option><option value="R24">Garag. Resid.</option><option value="R2">JK</option><option value="R29">Loft ==&gt;</option><option value="R25">Lote</option><option value="R28">Outros Resid.</option><option value="R6">Sobrado ==&gt;</option><option value="R19">Telefone Resid.</option><option value="R18">Terreno</option></select>
+					</td>
+					<td width="50%">
+					<div style="display: none;" id="tem_quartos"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">&nbsp;&nbsp;Nº Dormitórios:<select name="nro_quartos"><option selected="selected">Todos</option><option>1</option><option>2</option><option>3</option><option>4 ou mais</option></select></font></b></div>
+					<br>
+</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td width="26%">
+			  <div align="right"><b>
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  <input name="reg_bairro" value="B" checked="checked" type="hidden">
+			  Bairro:</font></b>
+			  <small>(use a tecla control+click do mouse para marcar vários bairros para a pesquisa)</small>
+			  </div>
+			  </td>
+			  <td width="74%"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  <select name="selbairro[]" id="selbairro" multiple="multiple" size="10"><option selected="selected"> - QUALQUER BAIRRO - </option><option value="ABERTA DOS MORROS">ABERTA DOS MORROS</option><option value="AGRONOMIA">AGRONOMIA</option><option value="ANCHIETA">ANCHIETA</option><option value="ARQUIPELAGO">ARQUIPELAGO</option><option value="AUXILIADORA">AUXILIADORA</option><option value="AZENHA">AZENHA</option><option value="BELA VISTA">BELA VISTA</option><option value="BELEM NOVO">BELEM NOVO</option><option value="BELEM VELHO">BELEM VELHO</option><option value="BOA VISTA">BOA VISTA</option><option value="BOM FIM">BOM FIM</option><option value="BOM JESUS">BOM JESUS</option><option value="CAMAQUA">CAMAQUA</option><option value="CASCATA">CASCATA</option><option value="CAVALHADA">CAVALHADA</option><option value="CENTRO">CENTRO</option><option value="CHACARA DAS PEDRAS">CHACARA DAS PEDRAS</option><option value="CHAPEU DO SOL">CHAPEU DO SOL</option><option value="CIDADE BAIXA">CIDADE BAIXA</option><option value="CORONEL APARICIO BORGES">CORONEL APARICIO BORGES</option><option value="CRISTAL">CRISTAL</option><option value="CRISTO REDENTOR">CRISTO REDENTOR</option><option value="ESPIRITO SANTO">ESPIRITO SANTO</option><option value="FARRAPOS">FARRAPOS</option><option value="FARROUPILHA">FARROUPILHA</option><option value="FLORESTA">FLORESTA</option><option value="GLORIA">GLORIA</option><option value="GUARUJA">GUARUJA</option><option value="HIGIENOPOLIS">HIGIENOPOLIS</option><option value="HIPICA">HIPICA</option><option value="HUMAITA">HUMAITA</option><option value="INDEPENDENCIA">INDEPENDENCIA</option><option value="IPANEMA">IPANEMA</option><option value="JARDIM BOTANICO">JARDIM BOTANICO</option><option value="JARDIM CARVALHO">JARDIM CARVALHO</option><option value="JARDIM DO SALSO">JARDIM DO SALSO</option><option value="JARDIM FLORESTA">JARDIM FLORESTA</option><option value="JARDIM ITU SABARA">JARDIM ITU SABARA</option><option value="JARDIM LINDOIA">JARDIM LINDOIA</option><option value="JARDIM SAO PEDRO">JARDIM SAO PEDRO</option><option value="LAGEADO">LAGEADO</option><option value="LAMI">LAMI</option><option value="LOMBA DO PINHEIRO">LOMBA DO PINHEIRO</option><option value="MARCILIO DIAS">MARCILIO DIAS</option><option value="MARIO QUINTANA">MARIO QUINTANA</option><option value="MEDIANEIRA">MEDIANEIRA</option><option value="MENINO DEUS">MENINO DEUS</option><option value="MOINHOS DE VENTO">MOINHOS DE VENTO</option><option value="MONT SERRAT">MONT SERRAT</option><option value="NAVEGANTES">NAVEGANTES</option><option value="NONOAI">NONOAI</option><option value="NOSSA SENHORA DAS GRACAS">NOSSA SENHORA DAS GRACAS</option><option value="PARTENON">PARTENON</option><option value="PASSO D'AREIA">PASSO D'AREIA</option><option value="PASSO DAS PEDRAS">PASSO DAS PEDRAS</option><option value="PEDRA REDONDA">PEDRA REDONDA</option><option value="PETROPOLIS">PETROPOLIS</option><option value="PONTA GROSSA">PONTA GROSSA</option><option value="PRAIA DE BELAS">PRAIA DE BELAS</option><option value="PROTASIO ALVES">PROTASIO ALVES</option><option value="RESTINGA">RESTINGA</option><option value="RIO BRANCO">RIO BRANCO</option><option value="RUBEM BERTA">RUBEM BERTA</option><option value="SANTA CECILIA">SANTA CECILIA</option><option value="SANTA MARIA GORETTI">SANTA MARIA GORETTI</option><option value="SANTA TEREZA">SANTA TEREZA</option><option value="SANTANA">SANTANA</option><option value="SANTO ANTONIO">SANTO ANTONIO</option><option value="SAO GERALDO">SAO GERALDO</option><option value="SAO JOAO">SAO JOAO</option><option value="SAO JOSE">SAO JOSE</option><option value="SAO SEBASTIAO">SAO SEBASTIAO</option><option value="SARANDI">SARANDI</option><option value="SERRARIA">SERRARIA</option><option value="TERESOPOLIS">TERESOPOLIS</option><option value="TRES FIGUEIRAS">TRES FIGUEIRAS</option><option value="TRISTEZA">TRISTEZA</option><option value="VILA ASSUNCAO">VILA ASSUNCAO</option><option value="VILA CONCEICAO">VILA CONCEICAO</option><option value="VILA INTERCAP">VILA INTERCAP</option><option value="VILA IPIRANGA">VILA IPIRANGA</option><option value="VILA JARDIM">VILA JARDIM</option><option value="VILA JOAO PESSOA">VILA JOAO PESSOA</option><option value="VILA NOVA">VILA NOVA</option></select>
+			  </font><br>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td width="26%">
+			  <div align="right"><b><font size="2" face="tahoma,arial">
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  Faixa de Preço:</font></font></b></div>
+			  </td>
+			  <td width="74%"> <font size="2" face="tahoma,arial">
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  <b>De </b>R$ </font></font>
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  <input maxlength="8" name="faixa1" size="8"> &nbsp;,00 <b>A</b> R$ </font>
+			  <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  <input maxlength="8" name="faixa2" size="8">&nbsp;,00</font>
+			  </td>
+			</tr>
+
+			<tr>
+			  <td width="26%"><br>
+			  </td>
+			  <td width="74%"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+			  <input value=" Pesquisar Imóveis " name="Button" type="submit"> </font></td>
+			</tr>
+		  </tbody>
+		</table>
+	  </form>
+	  </td>
+	</tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<font color="#0000ff">Se ficar decidido o uso deste formato de tela única então devem ser utilizados os modelos <span style="font-style: italic;">"pesqImovLoc.shtml"</span> e <span style="font-style: italic;">"pesqImovVenda.shtml"</span>, sendo descartados os modelos <span style="font-style: italic;">"cidadeloc.shtml", "busca.shtml", "cidadevenda.shtml" </span>e<span style="font-style: italic;"> "buscavenda.shtml"</span>.<br>
+<br>
+</font>
+
+
+
+<!-- pesqImov.shtml (= cidadeloc.shtml + busca.shtml) -->
+<p><font color="#0000ff"><span style="font-weight: bold;">4.2.2.</span> Pesquisa de Imóveis de Locação ou Venda (duas telas: cidade+busca) <br>
+
+</font></p>
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      <span style="color: rgb(255, 255, 102);"></span>
+
+<table width="473" cellspacing="0" cellpadding="0" bgcolor="#dca001" height="19" border="0" background="../consulta/images/form_01.gif">
+
+
+
+
+
+
+
+  <tbody>
+    <tr>
+      <td style="text-align: center; background-color: rgb(102, 102, 102);"><span style="color: rgb(255, 255, 102);">&nbsp;</span><span style="font-weight: bold; color: rgb(255, 255, 102);">PESQUISA DE
+IMÓVEIS</span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<table style="background-color: rgb(153, 153, 153);" width="473" cellspacing="0" cellpadding="0" height="30" border="1">
+
+
+
+
+
+
+
+  <tbody>
+    <tr>
+      <td>
+      <form name="" action="../prg/pesqImov.php" method="post"> <input name="lv" value="L" type="hidden">
+        <table width="100%" cellspacing="10" cellpadding="5" border="0">
+          <tbody>
+            <tr>
+              <td>
+              <div style="background-color: rgb(102, 102, 102);" align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"> <input name="we" value="4" type="hidden"> <font face="Arial, Helvetica, sans-serif">Selecione a cidade para a consulta
+e aperte o botão.</font></font></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table width="100%" cellspacing="10" cellpadding="5" border="0">
+          <tbody>
+            <tr>
+              <td width="36%">
+              <div align="right"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">CIDADE:</font></b></div>
+              </td>
+              <td width="64%"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+              <select name="selcidade"><option value=" 7502 ">CACHOEIRINHA</option><option value=" 7533 ">CANOAS</option><option value=" 7697 ">ESTEIO</option><option selected="selected" value=" 7994 ">PORTO ALEGRE</option><option value=" 8294 ">VIAMAO</option></select>
+              </font></td>
+            </tr>
+            <tr>
+              <td width="36%">
+              <div align="right"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">
+			  OCUPAÇÃO</font></b><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">:</font></b></div>
+              </td>
+              <td width="64%"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif"> <input name="seltipo" value="R" checked="checked" type="radio"> </font><font size="2" face="Arial, Helvetica, sans-serif" color="#ffffff">Residencial </font><font size="1" face="Verdana, Arial, Helvetica, sans-serif"> <input name="seltipo" value="C" type="radio"> </font><font size="2" face="Arial, Helvetica, sans-serif" color="#ffffff">Comercial</font><font size="2" face="Arial, Helvetica, sans-serif" color="#ffffff"> </font></td>
+            </tr>
+            <tr>
+              <td colspan="2" height="51">
+              <div style="background-color: rgb(153, 153, 153);" align="center"> <font size="1" face="Verdana, Arial, Helvetica, sans-serif"> <input value="  Pesquisar Imóveis   " name="Button" type="submit"> </font></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+<p><font color="#0000ff"><br>
+Existe apenas um imóvel com foto que é
+acessado com as seguintes características de pesquisa:</font></p>
+
+
+
+
+
+
+
+<p>
+<table style="background-color: rgb(120, 120, 120);" width="473" cellspacing="0" cellpadding="0" height="19" border="0" background="../consulta/images/form_01.gif">
+  <tbody>
+    <tr>
+      <td style="text-align: center;">&nbsp;<span style="font-weight: bold; color: rgb(255, 255, 102);">PESQUISA DE
+IMOVEIS</span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="background-color: rgb(153, 153, 153);" width="473" cellspacing="0" cellpadding="0" height="30" border="1">
+  <tbody>
+    <tr valign="center" align="center">
+      <td>
+      <table width="100%" cellspacing="3" cellpadding="5" border="0">
+        <tbody>
+          <tr>
+            <td width="26%">
+            <div align="right"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">Tipo
+de Imóvel:</font></b></div>
+            </td>
+            <td width="74%">
+            <table width="100%">
+              <tbody>
+                <tr>
+                  <td>
+                  <select id="seltipo" onchange="javascript:VerQuartos()" name="seltipo"><option value="R1   ">Apartamento --&gt;</option><option value="R7   ">Box</option><option value="R4   " selected="selected">Casa
+Resid. --&gt;</option><option value="R5   ">Cobertura --&gt;</option><option value="R22  ">Estacion. Resid.</option><option value="R3   ">Flat</option><option value="R24  ">Garag. Resid.</option><option value="R2   ">JK</option><option value="R29  ">Loft --&gt;</option><option value="R25  ">Lote</option><option value="R28  ">Outros Resid.</option><option value="R6   ">Sobrado --&gt;</option><option value="R19  ">Telefone Resid.</option><option value="R18  ">Terreno</option></select>
+                  </td>
+                  <td width="50%">
+                  <div id="tem_quartos"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">&nbsp;&nbsp;Nº
+Dormitórios:</font>
+                  <select name="nro_quartos"><option>1</option><option>2</option><option>3</option><option selected="selected">4</option></select>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td width="26%">
+            <div align="right"><b><font size="2" face="tahoma,arial"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">Bairro:</font></b></font></b><small>(use
+a tecla control+click do mouse para marcar vários bairros para a
+pesquisa)</small></div>
+            </td>
+            <td width="74%"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+            <select multiple="multiple" size="10" name="selbairro[]"><option>- QUALQUER BAIRRO -</option><option value="ABERTA DOS MORROS">ABERTA DOS
+MORROS</option><option value="AGRONOMIA" selected="selected">AGRONOMIA</option><option value="ANCHIETA">ANCHIETA</option><option value="ARQUIPELAGO">ARQUIPELAGO</option><option value="AUXILIADORA">AUXILIADORA</option><option value="AZENHA">AZENHA</option><option value="BELA VISTA">BELA VISTA</option><option value="BELEM NOVO">BELEM NOVO</option><option value="BELEM VELHO">BELEM VELHO</option><option value="BOA VISTA">BOA VISTA</option><option value="BOM FIM">BOM FIM</option><option value="BOM JESUS">BOM JESUS</option><option value="CAMAQUA">CAMAQUA</option><option value="CASCATA">CASCATA</option><option value="CAVALHADA">CAVALHADA</option><option value="CENTRO">CENTRO</option><option value="CHACARA DAS PEDRAS">CHACARA DAS
+PEDRAS</option><option value="CHAPEU DO SOL">CHAPEU DO SOL</option><option value="CIDADE BAIXA">CIDADE BAIXA</option><option value="CORONEL APARICIO BORGES">CORONEL
+APARICIO BORGES</option><option value="CRISTAL">CRISTAL</option><option value="CRISTO REDENTOR">CRISTO REDENTOR</option><option value="ESPIRITO SANTO">ESPIRITO SANTO</option><option value="FARRAPOS">FARRAPOS</option><option value="FARROUPILHA">FARROUPILHA</option><option value="FLORESTA">FLORESTA</option><option value="GLORIA">GLORIA</option><option value="GUARUJA">GUARUJA</option><option value="HIGIENOPOLIS">HIGIENOPOLIS</option><option value="HIPICA">HIPICA</option><option value="HUMAITA">HUMAITA</option><option value="INDEPENDENCIA">INDEPENDENCIA</option><option value="IPANEMA">IPANEMA</option><option value="JARDIM BOTANICO">JARDIM BOTANICO</option><option value="JARDIM CARVALHO">JARDIM CARVALHO</option><option value="JARDIM DO SALSO">JARDIM DO SALSO</option><option value="JARDIM FLORESTA">JARDIM FLORESTA</option><option value="JARDIM ITU SABARA">JARDIM ITU
+SABARA</option><option value="JARDIM LINDOIA">JARDIM LINDOIA</option><option value="JARDIM SAO PEDRO">JARDIM SAO PEDRO</option><option value="LAGEADO">LAGEADO</option><option value="LAMI">LAMI</option><option value="LOMBA DO PINHEIRO">LOMBA DO
+PINHEIRO</option><option value="MARCILIO DIAS">MARCILIO DIAS</option><option value="MARIO QUINTANA">MARIO QUINTANA</option><option value="MEDIANEIRA">MEDIANEIRA</option><option value="MENINO DEUS">MENINO DEUS</option><option value="MOINHOS DE VENTO">MOINHOS DE VENTO</option><option value="MONT SERRAT">MONT SERRAT</option><option value="NAVEGANTES">NAVEGANTES</option><option value="NONOAI">NONOAI</option><option value="NOSSA SENHORA DAS GRACAS">NOSSA
+SENHORA DAS GRACAS</option><option value="PARTENON">PARTENON</option><option value="PASSO D'AREIA">PASSO D'AREIA</option><option value="PASSO DAS PEDRAS">PASSO DAS PEDRAS</option><option value="PEDRA REDONDA">PEDRA REDONDA</option><option value="PETROPOLIS">PETROPOLIS</option><option value="PONTA GROSSA">PONTA GROSSA</option><option value="PRAIA DE BELAS">PRAIA DE BELAS</option><option value="PROTASIO ALVES">PROTASIO ALVES</option><option value="RESTINGA">RESTINGA</option><option value="RIO BRANCO">RIO BRANCO</option><option value="RUBEM BERTA">RUBEM BERTA</option><option value="SANTA CECILIA">SANTA CECILIA</option><option value="SANTA MARIA GORETTI">SANTA MARIA
+GORETTI</option><option value="SANTA TEREZA">SANTA TEREZA</option><option value="SANTANA">SANTANA</option><option value="SANTO ANTONIO">SANTO ANTONIO</option><option value="SAO GERALDO">SAO GERALDO</option><option value="SAO JOAO">SAO JOAO</option><option value="SAO JOSE">SAO JOSE</option><option value="SAO SEBASTIAO">SAO SEBASTIAO</option><option value="SARANDI">SARANDI</option><option value="SERRARIA">SERRARIA</option><option value="TERESOPOLIS">TERESOPOLIS</option><option value="TRES FIGUEIRAS">TRES FIGUEIRAS</option><option value="TRISTEZA">TRISTEZA</option><option value="VILA ASSUNCAO">VILA ASSUNCAO</option><option value="VILA CONCEICAO">VILA CONCEICAO</option><option value="VILA INTERCAP">VILA INTERCAP</option><option value="VILA IPIRANGA">VILA IPIRANGA</option><option value="VILA JARDIM">VILA JARDIM</option><option value="VILA JOAO PESSOA">VILA JOAO PESSOA</option><option value="VILA NOVA">VILA NOVA</option></select>
+            </font><br>
+            </td>
+          </tr>
+          <tr>
+            <td width="26%">
+            <div align="right"><b><font size="2" face="tahoma,arial"><b><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff">Faixa
+de Preço:</font></b></font></b></div>
+            </td>
+            <td width="74%"><font size="2" face="tahoma,arial"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><b>De:</b>
+R$ </font></font><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><input maxlength="8" size="8" name="faixa1">
+&nbsp;,00 <b>a</b> R$ </font><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><input maxlength="8" size="8" name="faixa2">&nbsp;,00</font> </td>
+          </tr>
+          <tr>
+            <td width="26%"><br>
+            </td>
+            <td width="74%"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><input value=" Pesquisar Imóveis " name="Button" type="submit"> </font></td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table><br>
+<font color="#0000ff">Se ficar decidido o uso deste formato de duas telas então devem
+ser utilizados os modelos </font><font style="font-style: italic;" color="#0000ff">"cidadeloc.shtml", "busca.shtml",
+"cidadevenda.shtml" </font><font color="#0000ff">e</font><font style="font-style: italic;" color="#0000ff"> "buscavenda.shtml</font><font color="#0000ff"><span style="font-style: italic;">"</span>, sendo descartados os modelos </font><font style="font-style: italic;" color="#0000ff">"pesqImovLoc.shtml" </font><font color="#0000ff">e</font><font style="font-style: italic;" color="#0000ff"> "pesqImovVenda.shtml"</font><font color="#0000ff">.<br>
+</font><br>
+
+</p>
+
+
+
+
+<p><font color="#0000ff">
+</font><font color="#0000ff"><span style="font-weight: bold;">4.2.3.</span> </font><font color="#0000ff">O resultado da pesquisa de uma casa residencial de 4 dormitórios no bairro Agronomia em Porto Alegre deve apresentar o
+seguinte:</font></p>
+
+
+
+
+
+
+
+<p>
+<table width="760" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td style="text-align: center;" valign="top" height="41"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">Foram
+encontrados os seguintes imóveis que se enquadram na sua
+pesquisa:</font></td>
+    </tr>
+  </tbody>
+</table>
+<table width="760" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr align="center">
+      <td width="759" valign="top"><br>
+      <table width="700" cellspacing="0" cellpadding="0" bgcolor="#999999" height="30" border="0">
+        <tbody>
+          <tr>
+            <td>
+            <table width="100%" cellspacing="5" cellpadding="5" border="0">
+              <tbody>
+                <tr bgcolor="#666666">
+                  <td width="50%" align="center" height="20">
+                  <div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small><b><font color="#ffcc33">PORTO ALEGRE :</font> </b>Casa Resid. 4
+Dormitório(s)</small></font></div>
+                  </td>
+                  <td width="50%" align="center" height="20">
+                  <div align="left"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small><b><font color="#ffcc33">&nbsp;&nbsp;<!--Bairro:--></font></b></small></font></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="100%" cellspacing="2" cellpadding="5" bgcolor="#869cc6" border="0">
+              <tbody>
+                <tr bgcolor="#666666">
+                  <td width="7%" align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small><b>Codigo</b></small></font></td>
+                  <td width="15%" align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small><b>Bairro</b></small></font></td>
+                  <td width="45%" align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small><b>Endereço</b></small></font></td>
+                  <td width="8%" align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small><b>Área(m2)</b></small></font></td>
+                  <td width="15%" align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small><b>Aluguel</b></small></font></td>
+                  <td width="5%" align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#ffffff"><small>&nbsp;</small></font></td>
+                </tr>
+              </tbody>
+            </table>
+            <table width="100%" cellspacing="2" cellpadding="2" bgcolor="#869cc6" border="0">
+              <tbody>
+                <tr border="0" bgcolor="#ffffff">
+                  <td width="7%" align="center" height="20"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><small>13742
+                  </small></font></td>
+                  <td width="15%" align="center" height="20"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><small>AGRONOMIA</small></font></td>
+                  <td width="45%" align="left" height="20"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><small>&nbsp;R
+TOCANTINS, 869/20- COND. FECHADO.</small></font></td>
+                  <td width="8%" align="center" height="20"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><small>440.00</small></font></td>
+                  <td width="15%" align="right" height="20"><font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><small>3265.00&nbsp;</small></font></td>
+                  <td width="5%" align="center" height="20"><img alt="" src="imagens/maquina.png" width="25" height="20"> </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table width="100%" cellspacing="1" cellpadding="5" border="0">
+              <tbody>
+                <tr>
+                  <td colspan="2">
+                  <div align="center"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><input id="voltartela" onclick="javascript:history.back();" value="Nova Consulta" name="voltartela" type="button"> </font></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div align="center"><br>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+
+
+
+
+
+
+
+<p><font color="#0000ff">Ao clicar na&nbsp;imagem da máquina
+fotográfica <img src="imagens/maquina.png">que fica na
+última coluna da lista será exibida uma janela com as
+fotos e características do imóvel. Quando não
+houver fotos associadas ao imóvel será exibida a imagem <img src="imagens/info.png">.</font></p>
+
+
+
+
+
+
+
+<p><font color="#0000ff"><strong></strong></font>&nbsp;</p>
+
+
+
+
+
+
+
+<p><font color="#0000ff"><strong>4.3.</strong> As demais pesquisas e
+acessos para teste podem ser realizados sem restrições ou
+senhas.<br>
+<br>
+</font></p>
+
+
+
+
+
+
+
+<p><font color="#0000ff">
+</font></p>
+
+<hr id="null"><span style="font-size: 10pt; font-family: Arial;">InetSoft
+Informática Ltda. <br>
+Fone/Fax: (51)3072-7200 <br>
+E-mail: <u><span style="color: blue;"><a href="mailto:inetsoft@inetsoft.com.br">suporte@inetsoft.com.br</a></span></u><br>
+Endereço: Av. Taquara 375 cj. 501<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Bairro Petrópolis - Porto Alegre - RS <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+90460-210<br>
+</span>
+
+
+
+
+
+<p>&nbsp;<!--  --></p>
+
+
+
+
+
+
+
+</body></html>

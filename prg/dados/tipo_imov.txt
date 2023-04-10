@@ -1,0 +1,29 @@
+26  Andar                         CNS
+1   Apartamento                   RSS
+7   Box                           RNS
+14  Box Comerc.                   CNS
+12  Casa Comer.                   CNS
+4   Casa Resid.                   RSS
+5   Cobertura                     RSS
+9   Conjunto                      CNS
+15  Depósito                      CNS
+21  Estacion. Comerc.             CNS
+22  Estacion. Resid.              RNS
+3   Flat                          RNS
+23  Garag. Comerc.                CNS
+24  Garag. Resid.                 RNS
+2   JK                            RNS
+29  Loft                          RSS
+10  Loja                          CNS
+25  Lote                          RNN
+27  Outros Comerc.                CNN
+28  Outros Resid.                 RNN
+16  Pavilhão                      CNS
+17  Prédio                        CNS
+8   Sala                          CNS
+13  Salão                         CNN
+6   Sobrado                       RSS
+11  Sobre-Loja                    CNS
+20  Telefone Comerc.              CNN
+19  Telefone Resid.               RNN
+18  Terreno                       RNN
